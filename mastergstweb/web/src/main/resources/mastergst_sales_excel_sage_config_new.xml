@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+  <worksheet name="Sales_Register">
+	<!-- <section startRow="0" endRow="0"></section> -->
+	<loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">GST- Sale(Outward) Register Report</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="2">Branch</cellcheck>
+			<cellcheck offset="9">Customer Code</cellcheck>
+			<cellcheck offset="10">Name of Recepient</cellcheck>
+			<cellcheck offset="11">Recepient GSTIN</cellcheck>
+			<cellcheck offset="12">Recepient State</cellcheck>
+			<cellcheck offset="13">Inv Type</cellcheck>
+			<cellcheck offset="14">Inv_Category</cellcheck>
+			<cellcheck offset="15">Reverse Charge</cellcheck>
+			<cellcheck offset="17">Invoice No.</cellcheck>
+			<cellcheck offset="18">Invoice Date</cellcheck>
+			<cellcheck offset="19">Original Invoice No</cellcheck>
+			<cellcheck offset="20">Original Invoice Date</cellcheck>
+			<cellcheck offset="21">ITEM TYPE</cellcheck>
+			<cellcheck offset="22">HSN/SAC</cellcheck>
+			<cellcheck offset="23">Quantity Of good supplied</cellcheck>
+			<cellcheck offset="26">Invoice Value</cellcheck>
+			<cellcheck offset="29">Taxable Value - INR</cellcheck>
+			<cellcheck offset="30">IGST Rate</cellcheck>
+			<cellcheck offset="31">IGST Amount</cellcheck>
+			<cellcheck offset="32">CGST Rate</cellcheck>
+			<cellcheck offset="33">CGST Amount</cellcheck>
+			<cellcheck offset="34">SGST Rate</cellcheck>
+			<cellcheck offset="35">SGST Amount</cellcheck>
+			<cellcheck offset="36">UTGST Rate</cellcheck>
+			<cellcheck offset="37">UTGST Amount</cellcheck>
+			<cellcheck offset="38">Item Code</cellcheck>
+			<cellcheck offset="39">Item Description</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="invoiceList" var="invoice" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="2">invoice.branch</mapping>
+		<mapping row="2" col="9">invoice.invoiceCustomerId</mapping>
+		<mapping row="2" col="10">invoice.billedtoname</mapping>
+		<mapping row="2" col="11">invoice.b2b[0].ctin</mapping>
+		<mapping row="2" col="12">invoice.statename</mapping>
+		<mapping row="2" col="13">invoice.invtype</mapping>
+		<mapping row="2" col="14">invoice.categorytype</mapping>
+		<mapping row="2" col="15">invoice.revchargetype</mapping>
+		<mapping row="2" col="17">invoice.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="18">invoice.strDate</mapping>
+		<mapping row="2" col="19">invoice.cdnr[0].nt[0].inum</mapping>
+		<mapping row="2" col="20">invoice.cdnr[0].nt[0].idt</mapping>
+		<mapping row="2" col="21">invoice.items[0].category</mapping>
+		<mapping row="2" col="22">invoice.items[0].hsn</mapping>
+		<mapping row="2" col="23">invoice.items[0].quantity</mapping>
+		<mapping row="2" col="26">invoice.items[0].total</mapping>
+		<mapping row="2" col="29">invoice.items[0].taxablevalue</mapping>
+		<mapping row="2" col="30">invoice.items[0].igstrate</mapping>
+		<mapping row="2" col="31">invoice.items[0].igstamount</mapping>
+		<mapping row="2" col="32">invoice.items[0].cgstrate</mapping>
+		<mapping row="2" col="33">invoice.items[0].cgstamount</mapping>
+		<mapping row="2" col="34">invoice.items[0].sgstrate</mapping>
+		<mapping row="2" col="35">invoice.items[0].sgstamount</mapping>
+		<mapping row="2" col="36">invoice.items[0].ugstrate</mapping>
+		<mapping row="2" col="37">invoice.items[0].ugstamount</mapping>
+		<mapping row="2" col="38">invoice.items[0].itemno</mapping>
+		<mapping row="2" col="39">invoice.items[0].desc</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="13"></cellcheck>
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+</workbook>

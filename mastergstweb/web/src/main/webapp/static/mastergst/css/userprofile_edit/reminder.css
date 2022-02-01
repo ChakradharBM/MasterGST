@@ -1,0 +1,9 @@
+.signcheck .meterialform .checkbox input:checked~.helper::before{height: 11px;width: 2px;left: 5px;top: 11px;}
+.signcheck .meterialform .checkbox input:checked~.helper::after{height: 6px;top: 7px;left: 0px;}
+.signcheck .meterialform .checkbox .helper{border-radius:4px;color: #337ab7;margin-top:2px;}
+#reminder_usrdetails,#reminder_usrdetails_all{display:inline-block;}
+#addSignLink{float: right;}
+ul.multiselect-container.dropdown-menu {width: max-content; max-width: 300px;overflow-x: auto;max-height: 300px;overflow-y: auto;}
+#dbTableReminders_supplierstab tbody tr td:last-child {display:inline-flex;min-width: 105px;}
+
+

@@ -1,0 +1,22 @@
+#fillingoption_ledger::after,#fillingoption1_trail::after{display:none;}
+.datepicker-dropdown{top:183px!important;}
+.Process_text{position: absolute;top: 55%;width: 100%;font-weight: 700;z-index: 2;color: red;}
+ #fillingoption::after , #fillingoption1::after{content:unset}
+.chooseperiod{float: right;margin: 5px 22px;}
+.chooseperiod .dropdown-toggle{margin-right: 10px; display: inline-flex;}
+.chooseperiod .dropdown-toggle .typ-ret{border: 1px solid; border-radius: 2px; padding: 2px; background-color: white; padding-right: 14px; height: 27px; align-items: top; min-width: 104px;}
+.chooseperiod .dropdown-toggle .typ-ret .input-group-addon{display: inline-block; padding: 0px !important; border: none !important; background-color: unset !important; font-size: 1.5rem; position: relative; top: -7px; left: 8px;}
+.chooseperiod .ret-type{WIDTH: 104px !important; min-width: 36px;top: 26px; border-radius: 2px}
+.cdpMonths{border: 1px solid; border-radius: 2px; padding: 2px; background-color: white; padding-right: 0px; margin-right: 10px;width: 115.5px;height: 27px;}
+#cfinancialYear1{top: 26px; border-radius: 2px;width: 114px!important;min-width: auto;}
+.chooseperiod .dropdown , .btn-greendark {z-index:2}
+#opnening,.ledgerReportTable tfoot tr th {color:black!important;padding-right:7px;border:none;border-top: 1px solid lightgray;}
+#opnening,.ledgerReportTable tfoot tr , .dataTables_length select {border:1px solid lightgray}
+.dataTables_length select {background-color: white;}
+span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open , span.select2.select2-container.select2-container--default.select2-container--focus , span.select2.select2-container.select2-container--default{width:180px!important}
+.select2-container{box-sizing: unset;}
+.select2-container--default .select2-selection--single{border: 1px solid lightgray!important;border-radius: 4px;box-sizing: unset;box-shadow: none;}
+.select2-container--default .select2-search--dropdown .select2-search__field{box-sizing: inherit;box-shadow: none;}
+#ledgerJournalsViewTable tbody td{border-right:1px solid lightgray!important}
+.leftindent{margin-left:20px;}
+#opnening{font-size: 14px; background-color: #fffbf5!important;}

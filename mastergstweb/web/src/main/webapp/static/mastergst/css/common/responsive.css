@@ -1,0 +1,457 @@
+@media only screen and (min-width:180px) and (max-width:540px) {
+.coreteam li{    display: table; width: 100%;}
+.carousel-item .img-fluid {
+height:200px!important;
+width:100%
+}
+.signup-box{ float:none!important; margin:10px auto!important;}
+.pull-1{ right:0!important;}
+.featr-title{ background-color:#eee; margin-top:5px;}
+.featr-box{ width:100%; border-bottom:1px solid #dadcdc; border-right:1px solid #dadcdc}
+}
+@media only screen and (min-width:541px) and (max-width:767px) {
+.featr-box{ width:25%; border-bottom:1px solid #dadcdc; border-right:1px solid #dadcdc}
+.coreteam li{    display: inline-block; width: 40% }
+.carousel-item .img-fluid {
+height:350px!important;
+width:100%
+}
+}
+@media only screen and (max-width:767px) {
+.footerwrap .footer-l, .footerwrap .footer-r{ width:100%!important;}
+.balancetable-col, .noramltable-row .normaltable-col, .profiletable-row .profiletable-col{ width:100%!important; display: inline-block!important; text-align:left}
+.formblock-1 .cols,  .formblock-3 .cols,  .formblock-3 .cols{ width:50%!important; } 
+.gstdateinfo li{ display:inline-block!important; width:50%!important;}
+/*.datetimetxt{ float:none!important}*/
+.img_abt{ text-align:center}
+.navbar-inverse .navbar-brand img {
+    max-width: 115px!important;
+}
+.btnwrap, .customtable .customtable-hdr, .navbar.navbar-db .mainnav-right li.nav-item .badge, .slider-boxes {
+position:static!important
+}
+table.dataTable.display tbody tr:first-child td, table.dataTable.display tbody tr:first-child th, table.dataTable.row-border tbody tr:first-child td, table.dataTable.row-border tbody tr:first-child th {
+border-top:1px solid #ddd!important
+}
+table.dataTable thead {
+display:none
+}
+table.dataTable tbody td {
+display:block;
+padding:.6rem
+}
+table.dataTable tbody tr td:first-child {
+background:#26b1f3;
+color:#fff;
+padding:15px 5px
+}
+table.dataTable tbody td:before {
+content:attr(data-th);
+font-weight:700;
+display:inline-block;
+width:45%;
+ text-align:left;
+}
+.related-posts-box, .sliderbox {
+width:100%!important
+}
+.customtable .meterialform .checkbox {
+margin-top:-34px!important
+}
+.signupbox {
+padding:0!important
+}
+.sliderbox {
+background-color:#5769bb;
+margin-top:10px;
+margin-bottom:10px
+}
+.slider-boxes .sliderboxw:nth-child(2n+1) .sliderbox .sliderbox-r h4, .slider-boxes .sliderboxw:nth-child(2n+1) .sliderbox .sliderbox-r p {
+color:#fff
+}
+.signupbox .meterialform.col-11 {
+max-width:100%!important
+}
+.push-1 {
+left:0!important
+}
+.bodybgwrap {
+background:#f2f5f5!important
+}
+#mainCarousel .carousel-caption {
+top:25%!important
+}
+#mainCarousel .carousel-caption h3 {
+font-size:18px!important;
+margin-bottom:10px
+}
+.btnwrap .form-group {
+margin-bottom:20px!important
+}
+.footer-r {
+text-align:center
+}
+.tollfree {
+display:inline-block
+}
+.socialfree {
+display:block
+}
+#enrollboxwrap, .formboxwrap {
+padding:20px 10px!important
+}
+.db-nav-tabs-wrap .nav-tabs {
+border:0;
+display:table
+}
+.bg-inverse {
+box-shadow:2px 2px 2px #ddd
+}
+.db-box {
+margin-bottom:10px
+}
+.blogslider h6 {
+margin-top:15px
+}
+.btnwrap, .btnwrap .btn.btn-green {
+width:100%
+}
+.btnwrap {
+margin:20px auto 0
+}
+.btnwrap p {
+color:#5769bb;
+font-weight:700;
+text-align:center!important
+}
+.btnwrap .form-group {
+margin:0 auto;
+width:90%!important;
+max-width:90%
+}
+.main-carousel-wrap {
+margin-top:55px!important
+}
+.otp_form_input input[type=text] {
+width:18%!important;
+font-size:15px!important
+}
+.navbar-brand{ max-width:115px;}
+.comingsoon{ position:static; margin-top:30%!important}
+}
+@media only screen and (max-width:992px) {
+.formbox.p-5{ padding:20px!important}
+.f-g-l, .f-g-r{ width:100%!important}
+.alert.sucess-txt{ text-align:center}
+.rainbow-bg{background: url(../../images/consumers/rainbow1-sm.png) bottom center no-repeat!important;width: 220px!important;}
+.customers-wrap.darkblue .rainbow-bg {
+    background: url(../../images/consumers/rainbow2-sm.png) bottom center no-repeat!important;width: 220px!important;
+}
+.customers-wrap.darkblue{ background-position:top!important}
+
+.customers-wrap {
+background-position:bottom!important
+}
+
+.rainbow-bg {
+position:static!important;
+}
+.rainbow-bg img.bgicon {
+ position: static!important;
+ margin-top: 85px;
+}
+.left-sidebar{ padding:0 30px!important}
+.mainnav-right.mobile {
+display:block!important;
+}
+.customers-wrap{ padding-bottom:0!important; margin-top:30px!important}
+.navbar-inverse .navbar-toggler {
+margin-top:11px!important
+}
+.navbar-nav.mainnav-right.mobile {
+float:right;
+display:table;
+position:absolute;
+top:0px;
+right:145px;
+width:auto;
+}
+.mainnav-right li.nav-item {
+margin-bottom:10px!important
+}
+.mainnav-right li.nav-item.signuplink {
+display:none
+}
+}
+@media only screen and (max-width:1023px) {
+.btnwrap, .slider-boxes {
+position:static!important
+}
+.navbar-nav.mainnav-right.mobile li.nav-item {
+margin-bottom:5px;
+float:left;
+margin-right:0;
+}
+.navbar-nav.mainnav-right.mobile  li.nav-item:last-child .nav-link{ margin-right:0}
+.signupbox {
+padding:5px!important
+}
+.sliderbox {
+background-color:#5769bb;
+width:100%!important;
+margin-top:10px;
+margin-bottom:10px
+}
+.lrnmore a, .slider-boxes .sliderboxw:nth-child(2n+1) .sliderbox .sliderbox-r h4, .slider-boxes .sliderboxw:nth-child(2n+1) .sliderbox .sliderbox-r p {
+color:#fff
+}
+.btnwrap {
+width:100%;
+margin:20px auto 0;
+display:table
+}
+.btnwrap p {
+color:#282828;
+text-align:center!important
+}
+.btnwrap .form-inline {
+display:table;
+width:95%;
+margin:0 auto
+}
+.btnwrap .form-group-inline {
+display:inline-block!important;
+margin:5px
+}
+}
+@media only screen and (min-width:1366px) {
+.carousel-item .img-fluid {
+width:100%;
+height:100%
+}
+}
+.mainnav-wrap{ width:100%}
+/* only for safari */
+  ::i-block-chrome, .mainnav-wrap{ width:82%!important } 
+	
+::i-block-chrome, .meterialform .form-group input[type="file"].has-value, 
+::i-block-chrome, .meterialform .form-group input[type="file"]:focus, 
+::i-block-chrome, .meterialform .form-group input[type="file"]:valid{ margin-left:-20px;} 
+::i-block-chrome, .row{display:table;width:100%}
+::i-block-chrome, #rtperiod{margin-left: -28px!important;margin-top:0px!important; margin-right:0px!important; margin-bottom:0px!important;}
+body{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale}
+::i-block-chrome, [class*="col-"] { display:inline-block}
+::i-block-chrome, .fy-upload-invoice{margin-left:36%!important}
+::i-block-chrome, div#details{height:603px!important;margin-bottom:20px}
+::i-block-chrome, .gstinfobox{padding:8px!important;}
+::i-block-chrome, .select#templateType{height: 28px;}
+::i-block-chrome, h6.vert_branch.vert_text{margin-right:29px!important;}
+::i-block-chrome, h6.vert_branch{margin-left: 112px!important;margin-right:30px;}
+::i-block-chrome, .reportTable2 #reportTable tbody td{ padding:6px!important;}
+::i-block-chrome, .link-dv-br{border-image: unset!important;}
+@media screen and (-webkit-min-device-pixel-ratio: 0) { _::-webkit-full-page-media, _:future, :root , .link-dv-br{border-image: unset!important;} }
+@media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none) {
+	.link-dv-br{border-image: unset!important;}
+	.salestable .reportmenu .reportmenu#monthlydwnldxls , .salestable .reportmenu .reportmenu#yearlydwnldxls{width:195px!important}
+	}}
+@supports (-webkit-overflow-scrolling: touch) {
+.select#templateType{height: 28px;}
+h6.vert_branch.vert_text{margin-right:29px!important;}
+ h6.vert_branch{margin-left: 112px!important;margin-right:30px;}
+ .reportTable2 #reportTable tbody td{ padding:6px!important;}
+ .fy-upload-invoice{margin-left:36%!important}
+ .link-dv-br{border-image: unset!important;}
+}
+@media only screen and (min-width:992px) and (max-width:1160px) {
+.navbar-nav li.nav-item {    margin: 0 3px;}
+}
+/*--only for Ie --*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.scrollbar{-ms-overflow-style: -ms-autohiding-scrollbar;}
+	#custom-sp .to-picker{float:unset;}
+#date-drop{margin-top:-8px}
+select#templateType{margin-left:3px!important;}
+.custom-sp #date-drop{margin-left:14px;margin-top:-6px}
+.monthely-sp #date-drop{margin-top:-6px}
+.yearly-sp #date-drop{margin-top:25px}
+#idMisMatchBody tr td:last-child{display: inline-flex!important;border-right:none!important;font-size: 11px !important;color:#5769bb !important}
+.db-ca-wrap table.dataTable.row-border tbody tr td:last-child{border-right:none}
+#dbTable3_wrapper #dbTable3{border:1px solid #eaeaea}
+#gtab3 .modal-body.meterialform.bs-fancy-checks{margin-top:0px!important}
+#gtab3 .imgsize-wrap-thumb{position:absolute!important;left:67%;margin-top:-12px}
+.input-group-addon.add-on.pull-right .fa.fa-sort-desc{left: -17px; top: 5px; line-height: 0.7; font-size: 22px !important; position: absolute; background-color: white;}
+.yearly-sp .input-group-addon{ margin-top:0px}
+.subbraadd_div{position:absolute;right:48.5%}
+.veradd_div{position:absolute;right:49.5%}
+li.nav-item.dropdown.import-menu-drop .dropdown-menu{width: 443px !important;}
+ .sales-back-btn , .filing_sbtn{margin-top:-42px!important}
+ .DTFC_ScrollWrapper {width: 1110px;}
+ .clearfix.bdr-b.col-12.p-0.mb-4{display:none}
+ .conf-inv-num-ie{z-index:1}
+ .clearfix{display:none}
+ .col-12{display:none}
+ .gstdateinfo{margin-bottom:10px}
+ .bankTerms{ margin-bottom::50px}
+ .breadcrumbwrap{margin-top:49px!important}
+ form#upload{width:50%!important}
+ .astrich::after {margin-left: 5px!important;}
+ .modal-dialog.col-6.modal-center{left:35%}
+ .branchbox.addbranch.row.m-0 , .verticalbox.addvertical.row.m-0 ,.verticalbox.addsubVertical.row.m-0 ,.branchbox.addsubBranch.row.m-0{display:block}
+ .whitebg.otp{ height:288px}
+ .bluebg.text-center.pb-2{height:104px}
+ .col-sm-3 .hdrtitle1{margin-left:32px!important}
+ .col-sm-3 select#financialYear{margin-right: -30px!important;}
+ #sel_inv_Type {margin-right: 29px!important; }
+ #endInvoiceNo:-ms-input-placeholder ,#email:-ms-input-placeholder ,#bgstnnumber:-ms-input-placeholder ,#addresss:-ms-input-placeholder ,#supplieremail:-ms-input-placeholder ,#suppliergstnnumber:-ms-input-placeholder ,#supplieraddress:-ms-input-placeholder ,#numberOfClientsId:-ms-input-placeholder ,#customernotes:-ms-input-placeholder ,#termsandconditions:-ms-input-placeholder,#customerid:-ms-input-placeholder,#customerId:-ms-input-placeholder,#customerTanPanNumber:-ms-input-placeholder,#bcontactperson:-ms-input-placeholder,#customerPanNumber:-ms-input-placeholder,#customerTanNumber:-ms-input-placeholder,#gstnnumber:-ms-input-placeholder,#customerpannumber:-ms-input-placeholder,#customertannumber:-ms-input-placeholder,#contactperson:-ms-input-placeholder,#custaddress:-ms-input-placeholder,#supplierCustomerId:-ms-input-placeholder,#suppliercontactperson:-ms-input-placeholder,#supplierPanNumber:-ms-input-placeholder,#customertanpannumber:-ms-input-placeholder,#suppliercustomerid:-ms-input-placeholder,#supplierTanPanNumber:-ms-input-placeholder,#supplierTanNumber:-ms-input-placeholder{ /* IE 10+ */
+ color: #dadada; } 
+ span#messages3 ,span#messages4 ,span#messages5{opacity:1!important}
+ #client-fy{margin-left:-30px}
+ .navbar-nav.mainnav-right li:last-child.nav-item .nav-link { margin-right :0px!important}
+ .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 ,body,.compname , table.dataTable thead th, table.dataTable tfoot th ,.noramltable-row-hdr ,.noramltable-row .normaltable-col-txt , .bold-txt ,.retutprdntxt , .steptext , .profiletable-col , .f-18-b , .lable-txt ,.gstdateinfo .datename ,.gst-summery-desc ,.dataTables_wrapper .toolbar .btn , .hdrtitle .btn , .usertxt{font-weight:500!important}
+ .boldtxt , .compname1 , .gstr-info-tabs .nav-tabs .nav-item.show .nav-link, .gstr-info-tabs .nav-tabs .nav-link.active, .gstr-info-tabs .nav-tabs .nav-link:hover, .gstr-info-tabs .nav-tabs .nav-link.active:hover , #fillingoption , .font-weight-bold  , b, strong {font-weight:500!important}
+.form-group.col-md-6.col-sm-12.brancherror{width:305px;}
+.form-group.col-md-6.col-sm-12.verticalerror{width:310px;}
+.bdr-dashed-r{float:left}
+.cred-wrap{display:block}
+.userkeys .text-center.modal-footer{display:block}
+.crde-keys{display:block}
+#customer_notes_wrap{margin-bottom: 5%;}
+.edit_active_wrap .col-md-2.col-sm-12{float:right;margin-top:0px!important}
+ }
+ /*-- only for mozilla firefox --*/
+@-moz-document url-prefix() {
+select#templateType{margin-left:4px!important;}
+#idMisMatchBody tr td:last-child { padding: 0px;font-size: 11px !important;color:#5769bb !important}
+#customer_notes_wrap{margin-bottom: 5%;}
+li.nav-item.dropdown.import-menu-drop .dropdown-menu{width: 443px !important;}
+ span#messages3 ,span#messages4 ,span#messages5{opacity:1!important}
+ .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 ,body,.compname , table.dataTable thead th, table.dataTable tfoot th ,.noramltable-row-hdr ,.noramltable-row .normaltable-col-txt , .bold-txt ,.retutprdntxt , .steptext , .profiletable-col , .f-18-b , .lable-txt ,.gstdateinfo .datename ,.gst-summery-desc, .dataTables_wrapper .toolbar .btn , .hdrtitle .btn , .usertxt{font-weight:500!important}
+ .boldtxt , .compname1 , .gstr-info-tabs .nav-tabs .nav-item.show .nav-link, .gstr-info-tabs .nav-tabs .nav-link.active, .gstr-info-tabs .nav-tabs .nav-link:hover, .gstr-info-tabs .nav-tabs .nav-link.active:hover , #fillingoption , .font-weight-bold  , b, strong {font-weight:500!important}
+ }
+span#messages3 ,span#messages4 ,span#messages5{opacity:0}
+
+#rtperiod{margin:0px 0px 0px -70px;padding:0px!important;}
+#ledge-month{margin-top:8px!important}
+#liabilityLedger{margin-left: -10%;}
+
+
+/*-- min screen width 1281 --*/
+@media (min-width: 1281px) {
+  input#invokegstnPublicAPI1{width: 56%!important;margin-right:17px!important;}
+  span.selectdate{right: 24%;}
+ }
+
+ /*-- screen width between 1025  1280 --*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  input#invokegstnPublicAPI1{width: 56%!important;margin-right: 3px!important;}
+  
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+	.navbar.navbar-db .navbar-nav.mainnav-left.db-ca{margin-left:0px!important}
+	.addlist-dd{margin:0 7px;}
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*  for 768 below dashboard ca 
+	.dash_tabs ul.nav.nav-tabs.nav-justified .nav-link {padding: 6px 3px;}
+  .dash_tabs_container{margin-left: -37px;}*/
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+	.container{width:100%;}
+	.navbar-left li a{padding:4px 8px!important;}
+	span.comptxt{font-size:13px;}
+	.xdsoft_datetimepicker{margin-top: -42px!important;}
+  .salesinvoceform div#wrapper{margin-left:10px}
+  #Address_wrap{display: contents;}
+  .gst-notifications{width: 95%;}
+  /* .db-inner-txt{margin-left: 0px!important;} */
+  .stpsblock p.col-md-10.col-sm-12{padding-right: 0px;}
+  .stpsblock p.col-md-2.col-sm-12{    text-indent:11px;}
+  .bdr-dashed-r{padding:0px!important}
+  .swagger-section .swagger-ui-wrap{min-width: 100%!important;max-width: 100%!important;}
+  .stepwizard-iner #upload .setup-content{margin-left: -22%;}
+  .bodybreadcrumb.main{margin-top: -5px!important;}
+  ul.navbar-nav.mainnav-left.db-ca {margin-left: 17%;}
+  .graph_row_wrap{width: 86%;}
+  .graph_row_wrap .whitebgbox{margin-left:0px!important}
+  .addlist-dd{margin:0 2px;} /* plus icon in client header position*/
+  .client_datepicker_row{max-height:43px}
+  .formbox{width: 411px;margin-left: -92px;}
+  ul.nav.nav-tabs.dash_bread-nav .nav-link{padding-left:0px;padding-right:0px}
+  .gstinfobox{padding:0px!important}
+  .rightside-wrap ul{width:256px!important;}
+  .down-client-files{margin-left:2px}
+  .client-info{margin-left: 3%;}
+  #summary2 h4.hdrtitle{margin-bottom: 19px;}
+  .breadcrumbwrap{margin-top: 51px!important;}
+  div#client-fy{margin-left: -76px;}
+  #client-fy select#financialYear{position: absolute;}
+  .breadcrumbwrap.dash_bread{margin-top: 46px!important;}
+  label.bold-txt.astrich{padding:0px}
+  .db-ca-wrap{padding-top: 113px!important;}
+  .cilent-db-ca-wrap{padding: 0px;}
+  div#idImportBody{margin-left: -268px;}
+  .addsales.dropdown.pull-right.btn-all-iview-sales{margin-top: 33px;position: absolute;margin-right: 11px;}
+  .gstr-info-tabs .nav-tabs .nav-link{font-size:11px!important}
+  .gstr-info-tabs .nav-link{padding: 0em 0em!important;margin: 0 5px!important;}
+  .gstr-info-tabs .nav-tabs{max-width: 100%!important;width: 100%!important;}
+  a.btn.btn-blue.permissionImport_Invoice.pull-right.btn-all-iview-sales{position: absolute;right: 204px;margin-top: 34px;}
+  span.multiselect-native-select{padding: 5px 3px 5px 0!important;}
+  .mb-sm-0, .my-sm-0{margin-right: 7px!important;}
+  div#dbTableGSTR1_length{font-size: 13px!important;}
+  label#include_old_invoices{font-size: 13px!important;}
+  .customtable.db-ca-view.tabtable1.invtabtable1.dbTableGSTR1 , div#dbTablePurchase_Register_wrapper{margin-top: 41px;}
+  .pull-right.helpguide{margin-bottom: 17px;margin-top: 9px;}
+  .filing-status-table{width: 690px;overflow-x: auto;}
+  div#all_client{width: 673px;}
+  /* div#wrapper .row{display: inline;} */
+  .xdsoft_datetimepicker{margin-top: 1px!important;}
+  /* div#wrapper .col-md-4.col-sm-12{margin-top: -40px!important;padding:0px;margin:0px} */
+  div#wrapper .col-md-8.col-sm-12{width: 735px!important;padding:0px;margin:0px;margin-top: 35px;}
+  /* div#wrapperv .col-md-3.col-sm-12.form-group{padding:0px;margin:0px} */ 
+  div#wrapper .col-md-8.col-sm-12 .row{width: 735px!important;}
+  .add-invoice-popup-table {width: 700px;overflow-x: scroll;}
+  .billing-col {}
+  .billing-row {position: relative;width: 500px;}
+  .main-body-inv-pop-up{display:inline}
+ .col-md-2.col-sm-12.bnkdetail , #selectBankDiv{top: 6px;right: 0%;}
+ .sortable-form .bdr-b{margin-top: 8%;}
+ .salesinvoceform .row.mt-2{width:100%}
+ .sortable-form .row.mt-2{width:100%}
+  #selectBankDiv1 { margin-left:10%}
+  #snil-bdetails{left:11%;width: 167px;padding: 0px;}
+  .col-md-4.col-sm-12.nil{display:none}
+  #snilvertical1{margin-left: 10%;}
+  .sortable-form .col-md-2.col-sm-12{margin-left: 9%;}
+  .bnkdetail .mb-sm-0, .my-sm-0{width:130px}
+  input#invokegstnPublicAPI1{margin-left: 0px!important;margin-right: 0!important;} /*for gstin button in add invoice popup */
+  .customtable.db-ca-gst.tabtable1.mt-2 {width: 600px;overflow-x: scroll;}  /* gstr3b 3.1 table width  */
+  #todate_Msg, #fromDate_Msg {margin-top: -51px!important;} /* ledger error msg */
+}
+
+/*-- footer fixed at the end of the page css --*/
+.container-fluid.footerwrap {position: absolute;right: 0;bottom: 0;left: 0;}
+ body {position: relative;min-height: 94.5%;;padding-bottom:3rem!important; background-color: #f6f9fb;}
+ html {height: 100%}
+ 
+ @media(min-height:720px) and (max-height:850px)
+{
+  div#details{height:603px!important;}
+
+   }
+   
+   .no-scroll {
+    overflow-y: hidden!important;
+}
+.container-fluid.footerwrap{padding: 0px;margin: 0px;} 
+.container-fluid.footerwrap .footer-l p{margin:0px;padding-top: 3px;}
+span#EmailId_Msg ,span#Password_Msg{height:20px}
+.invoice #returnmenu { width:355px!important;left: 66px!important;}
+ #returnmenu{width: 525px!important;}
+ #navledger{width:430px!important}
+li.nav-item.dropdown.import-menu-drop .dropdown-menu{width: 494px!important;}
+#custom-sp .to-picker{float:right;}

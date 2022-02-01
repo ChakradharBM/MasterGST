@@ -1,0 +1,28 @@
+.xdsoft_select.xdsoft_monthselect.xdsoft_scroller_box{display:none}
+.xdsoft_select.xdsoft_yearselect.xdsoft_scroller_box{display:none}
+table#sortable_table td:nth-child(2) input[type=text] {max-width: unset;width: unset;min-width: 91%;padding-right: 21px!important;}
+.hsnsrcherror{left: 516px!important;}
+.uqcsrcherror{left:652px!important;}
+table#payementTable tr th {background-color: #5769bb;color: #fff;padding: 5px 3px;text-align: center;}
+table#payementTable1 tr th {background-color: #5769bb;color: #fff;padding: 5px 3px;text-align: center;}
+/* #paymentsModal thead th {border: 1px solid black;} */
+tfoot{background: #f1f1f1;}
+#diffpercent.checkbox .helper::before , #tcsvaldiv.checkbox .helper::before{top:10px;left:5px}
+#diffpercent.checkbox .helper::after , #tcsvaldiv.checkbox .helper::after{top:6px;left:0px}
+table#sortable_table tbody td input.itemname1{ max-width: unset; width: 98%;}
+#dropdownMenuitemdec::after{content:none;}
+.search1 textarea{resize: both;}
+.itemDetails{ width: 100%;padding: 10px;text-align:left;}
+.dropdown-search1{position: relative;margin-right: 8px;margin-top: -23.5px;width: 20px;float: right;}
+.item_notes{border: 1px solid lightgray;font-size:14px!important;box-shadow: -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)!important;-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)!important;box-shadow: 2px 3px 5px 0px rgb(236, 238, 239)!important;}
+.product_notes.row{border: none!important;margin-bottom: 0px;}
+.attachfiletable th , .attachfiletable td{padding: .4rem;} 
+.popup_error{position: fixed;width:60%;z-index: 5;left: 20%;top:6.5%;display:none;background-color: hsla(4, 89%, 56%, 0.27);color:red;font-weight: bold;padding: 6px;}
+#email_custdetails{display:table-caption;margin-left: 28px;}
+.emailSigncheck .meterialform .checkbox input:checked~.helper::before{height: 11px;width: 2px;left: 5px;top: 11px;}
+.emailSigncheck .meterialform .checkbox input:checked~.helper::after{height: 6px;top: 7px;left: 0px;}
+.emailSigncheck .meterialform .checkbox .helper{border-radius:4px;color: #337ab7;margin-top:2px;}
+#email_tabs li{min-width: 70px;text-align: center;}
+#invBodyGSTR1 tr td:last-child {padding-left:0;width:77px;}
+#itemForm p.lable-txt,#itemEForm p.lable-txt{padding-top:15px;}
+#customer_notes_wrap , .col-md-6.col-sm-12.form-group.backdetails_wrap{padding-top: 20px;}

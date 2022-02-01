@@ -1,0 +1,101 @@
+#dbEinvoiceTable thead tr th{font-weight:500;}
+#einvoiceModal{ font-family:'latolight', sans-serif;  transition: all 0.5s ease; -ms-transition: all 0.2s ease; -webkit-transition: all 0.2s ease;}
+#einvoiceModal .invoice-hdr.bluehdr { padding:10px 10px 5px; }
+#einvoice_table{ margin:0; width:100%; border-collapse:collapse}
+#einvoice_table tr { font-size:13px; border-collapse:collapse }
+table#einvoice_table tr td{ border:1px solid #ddd; border-collapse:collapse }
+table#einvoice_table tr td { padding:5px 3px; }
+table#einvoice_table tr th { background-color:#5769bb; color:#fff; padding:5px 3px; text-align:center ;}
+table#einvoice_table thead tr th {border: 1px solid #8793c7;font-weight:500;}
+addrowshadow { -webkit-appearance: none;-webkit-box-shadow: 0 0 6px 2px #BDBDBD; box-shadow:0 0 6px 2px #BDBDBD; z-index:9; -ms-transition: all 0.2s ease; -webkit-transition: all 0.2s ease;  }
+.sortable-form { font:'latolight', sans-serif; }
+#einvoiceModal .modal-footer { background-color:#e5e5e5;padding:6px; }
+#einvoiceModal .modal-footer .btn { padding:3px 10px; }
+#einvoice_table{display:inline-table;}
+.sortable-form .form-control { height:auto!important; padding: 5px; border-radius:0px; }
+.sortable-form textarea.form-control { min-height:80px; padding: 5px; resize: vertical; overflow-x: hidden; overflow-y: auto }
+.sortable-form select.form-control { height:28px!important; border-radius:0px; min-width: 138px;}
+.sortable-form input.form-control, .sortable-form select.form-control{max-width:180px; width:180px}
+#einvoiceModal tfoot tr, #einvoiceModal tfoot th { border:1px solid #ddd; color:#000000!important; }
+#einvoiceModal tfoot th.tfootbg { background-color:#FFCCCC; color:#000000; text-align:right }
+.tfootwitebg { background-color:#fff!important; }
+.tablegreybg { background-color:#f5f5f5; pointer:event }
+.table#einvoice_table { position:relative; z-index:9 }
+#einvoice_table select.form-control{height:auto!important;padding: 0px;}
+ table#einvoice_table .form-control { width:95%; min-width:auto; padding:5px 1px; font-family:'latolight', sans-serif; font-size:12px }
+ table#einvoice_table td:nth-child(2) input[type=text]{ max-width: unset; width: 89%;padding-right: 21px!important;}
+ .reportmenu:hover .dropdown-menu#reportdrop, .invoicemenu:hover .dropdown-menu#invoicedrop{display:block}
+.reportmenu,.invoicemenu{ border-top-right-radius: 0!important; border-bottom-right-radius: 0!important;}
+.reportdrop,.invoicedrop{top: 28px;}
+button#monthlydwnldxls ,#yearlydwnldxls,#customdwnldxls,#menudropdown,#idmenudropdown{margin-left: 0px;height: 30px;box-shadow:none;}
+button.btn.btn-blue.dropdown-toggle.permissionInvoices-Sales-Add.b-split-right.b-r-cta.b-m-super-subtle,button.btn.btn-blue.dropdown-toggle.permissionInvoices-Purchase-Add.b-split-right.b-r-cta.b-m-super-subtle{position: absolute;
+    right: 0%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-left-color: #435a93;
+	padding-left: 12px!important; 
+	box-shadow:none}
+	.btn-esm{height:30px;font-size: .875rem;}
+	#sellerdetails .form-group,#buyerdetails .form-group,#dispatcherdetails .form-group,#shipmentdetails .form-group,#payeedetails .form-group,#refdetails .form-group{margin-bottom:0px;}
+.einvbillingAddressLabel,.ShipmentAddressLabel,.einvbuyerLabel{display: inline-block; text-decoration: underline;width: auto;  margin-right: 10px;}
+.addrHdr{padding: 1px 20px 0px!important;text-align: left;font-size: 24px;font-weight: bold;color: #fff;display: inline-block; margin: 0;text-transform: uppercase;}
+.exchange-span {
+	display: inline-block;
+	width: 145px;
+	position: relative;
+	text-align: right;
+	font-size: 15px;
+	margin-top: 3px;
+	color: #464a4c;
+}
+
+#exchangeRate{
+	position: absolute;
+	bottom: 0px;
+	background-color: transparent;
+	width: 150px;
+	color: #464a4c;
+}
+.exchange_span {
+	display: inline-block;
+	width: 120px;
+	position: relative;
+	text-align: right;
+	font-size: 15px;
+	margin-top: 3px;
+	color: #464a4c;
+}
+#exchange_Rate {
+	position: absolute;
+	bottom: 0px;
+	background-color: transparent;
+	width: 125px;
+	color: #464a4c;height:28px!important; 
+}
+.usd-lable{
+	padding-top: 2px!important;	
+	border: 1px solid lightgray;
+    margin-left: 15px;
+    color: #464a4c;
+    font-size: 12px;
+    height: 28px;
+    border-right:0px;
+    max-width: 67px
+}
+#dbEinvoiceTable_body tr td:last-child {padding-left:0;width:70px;}
+.einvemailSigncheck .meterialform .checkbox input:checked~.helper::before{height: 11px;width: 2px;left: 5px;top: 11px;}
+.einvemailSigncheck .meterialform .checkbox input:checked~.helper::after{height: 6px;top: 7px;left: 0px;}
+.einvemailSigncheck .meterialform .checkbox .helper{border-radius:4px;color: #337ab7;margin-top:2px;}
+#einvemail_tabs li{min-width: 70px;text-align: center;}
+#einvemail_custdetails{display:table-caption;margin-left: 28px;}
+#sortable_table tbody tr , .tablegreybg {background-color:unset!important}
+.einv-buyer-disp-ship h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #4e4f4f;
+    margin: 25px auto;
+}
+.einv-buyer-disp-ship .btn {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}

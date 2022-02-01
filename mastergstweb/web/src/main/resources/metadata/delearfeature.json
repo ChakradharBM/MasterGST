@@ -1,0 +1,9 @@
+{'delearfeature': [
+{'deleartype':'Compound', 'featureid': '1, 5, 12, 13, 14, 15, 16, 17, 18, 19, 20'},
+{'deleartype':'NonCompound', 'featureid': '1, 2, 3, 4, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 23'},
+{'deleartype':'Casual', 'featureid': '1, 6, 12, 13, 14, 15, 16, 17, 18, 19, 20'},
+{'deleartype':'NonResident', 'featureid': '1, 6, 12, 13, 14, 15, 16, 17, 18, 19, 20'},
+{'deleartype':'InputServiceDistributor', 'featureid': '7,10,11'},
+{'deleartype':'SezUnit', 'featureid': '1,2,3,4,9,10,11,23'},
+{'deleartype':'SezDeveloper', 'featureid': '1,2,3,4,9,10,11,23'}
+]}

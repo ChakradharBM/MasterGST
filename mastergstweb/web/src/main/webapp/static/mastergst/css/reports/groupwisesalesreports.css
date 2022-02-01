@@ -1,0 +1,13 @@
+button.multiselect.dropdown-toggle.btn-block.text-left.btn.btn-default{text-align: center!important;}
+ul.multiselect-container.dropdown-menu{width:max-content;max-width: 300px;overflow-x: auto;}
+ul.multiselect-container.dropdown-menu li{white-space: pre;}
+ul.multiselect-container.dropdown-menu::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);border-radius: 10px;background-color: #ffffff;}
+ul.multiselect-container.dropdown-menu::-webkit-scrollbar{width: 12px;background-color: #F5F5F5;}
+ul.multiselect-container.dropdown-menu::-webkit-scrollbar-thumb{border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);	background-color: #e5e5e5;}
+div#globalsalestable1_length, div#globalsalestable2_length, div#globalsalestable3_length {position: relative;}
+
+.dropdown-menu.ret-type{left:16.4%!important;top: 28px;width: 108px;min-width: unset;}
+.custom1 .container .chooseteam .dropdown-menu.ret-type{left:16.7%!important}
+ #group_and_client{position: absolute;right: 48%;margin-top: 199px;z-index:2;}
+ #filing_option1::after,#filingoption1::after{display:none;}
+

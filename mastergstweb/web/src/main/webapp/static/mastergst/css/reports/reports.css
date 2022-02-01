@@ -1,0 +1,62 @@
+.db-ca-wrap .dataTables_wrapper .toolbar h4 { font-size: 18px; margin-top: 14px; }
+.customtable.db-ca-view .dataTables_wrapper .dataTables_filter input { padding: 4px 5px; font-size: 14px; height: auto; background-image: none; border-radius: 3px; width: 440px; max-width: 440px; border-color: #eaeaea; }
+.reportTable h6 { font-size:14px; margin:0 0 3px }
+.reportTable p { margin:0 }
+.reportTable tr td:first-child, .reportTable tr th:first-child { background-color:#bbdef9; color:#000000!important; border-bottom: 1px solid #fff }
+.reportTable tr:nth-child(1) {background-color:#f6effd!important}
+.reportTable tr:nth-child(2) ,.reportTable tr:nth-child(19) ,.reportTable tr:nth-child(36) ,.reportTable tr:nth-child(53){ background-color:#e6f9f8!important}
+.reportTable tr:nth-child(3) ,.reportTable tr:nth-child(20) ,.reportTable tr:nth-child(37) ,.reportTable tr:nth-child(54){ background-color:#f6effd!important}
+.reportTable tr:nth-child(4) ,.reportTable tr:nth-child(21),.reportTable tr:nth-child(38) ,.reportTable tr:nth-child(55){ background-color:#def9de!important}
+.reportTable tr:nth-child(5) ,.reportTable tr:nth-child(22),.reportTable tr:nth-child(39) ,.reportTable tr:nth-child(56){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(6) ,.reportTable tr:nth-child(23),.reportTable tr:nth-child(40) ,.reportTable tr:nth-child(57){ background-color:#f6effd!important}
+.reportTable tr:nth-child(7) ,.reportTable tr:nth-child(24),.reportTable tr:nth-child(41) ,.reportTable tr:nth-child(58){ background-color:#def9de!important}
+.reportTable tr:nth-child(8) ,.reportTable tr:nth-child(25) ,.reportTable tr:nth-child(42) ,.reportTable tr:nth-child(59){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(9) ,.reportTable tr:nth-child(26) ,.reportTable tr:nth-child(43) ,.reportTable tr:nth-child(60){ background-color:#f6effd!important}
+.reportTable tr:nth-child(10) ,.reportTable tr:nth-child(27) ,.reportTable tr:nth-child(44) ,.reportTable tr:nth-child(61){ background-color:#def9de!important}
+.reportTable tr:nth-child(11) ,.reportTable tr:nth-child(28) ,.reportTable tr:nth-child(45) ,.reportTable tr:nth-child(62){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(12) ,.reportTable tr:nth-child(29) ,.reportTable tr:nth-child(46) ,.reportTable tr:nth-child(63){ background-color:#f6effd!important}
+.reportTable tr:nth-child(13) ,.reportTable tr:nth-child(30) ,.reportTable tr:nth-child(47) ,.reportTable tr:nth-child(64){ background-color:#def9de!important}
+.reportTable tr:nth-child(14) ,.reportTable tr:nth-child(31) ,.reportTable tr:nth-child(48) ,.reportTable tr:nth-child(65){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(15) ,.reportTable tr:nth-child(32) ,.reportTable tr:nth-child(49) ,.reportTable tr:nth-child(66){ background-color:#f6effd!important}
+.reportTable tr:nth-child(16) ,.reportTable tr:nth-child(33) ,.reportTable tr:nth-child(50) ,.reportTable tr:nth-child(67){ background-color:#def9de!important}
+.reportTable tr:nth-child(17) ,.reportTable tr:nth-child(34) ,.reportTable tr:nth-child(51) ,.reportTable tr:nth-child(68){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(18) ,.reportTable tr:nth-child(35) ,.reportTable tr:nth-child(52) ,.reportTable tr:nth-child(69){ background-color:#f6effd!important}
+.finance-year { float:right; font-size: 18px; margin-top: 14px; }
+.reportTable{margin-bottom:30px}
+/*.customtable .row-border{ border-collapse:collapse}*/
+.customtable .row-border tbody td{ border:1px solid #fff; border-collapse:collapse}
+.customtable .row-border tbody td:first-child{ border-left:none}
+.toolbar .datetimetxt {margin: 5px 7px 0!important; font-weight:bold}
+/**--------**/
+.redirectbox .lrnmore {  }
+.redirectbox { transition:all 0.1s ease; -webkit-transition:all 0.1s ease; -ms-transition:all 0.1s ease; -webkit-box-shadow: 0 0 8px 1px #fff; box-shadow: 0 0 8px 1px #fff; background-color: #fff; border:1px solid #eee; display:table; padding:15px; border-radius: 0px; float: left; min-height:170px; width:100%; margin-bottom:20px; }
+.redirectbox-in { display:table; width:100%; }
+.redirectbox-l { display:table-cell; vertical-align:top; padding:0; width:60px; }
+.redirectbox .hdrtitle { line-height:20px;}
+.redirectbox-l .fa { font-size:30px; color:#666 }
+.redirectbox-r { display:table-cell; width:73% }
+.redirectbox h4, .redirectbox h1, .redirectbox .hdrtitle, .redirectbox h4 a, .redirectbox h1 a, .redirectbox .hdrtitle a { color:#4456a9; font-size:16px; font-weight:bold; text-transform:uppercase; margin-bottom:15px; text-align:center; }
+.redirectbox-r p, .redirectbox-r a { color:#303030; font-size:14px; margin-bottom:10px }
+.redirectbox-r .lrnmore { color:#303030; font-size:10px; text-decoration:underline; float:right }
+.redirectbox-in .lrnmore{ font-size:12px; float:right; text-decoration:underline}
+.redirectbox-in ul{ margin:0; padding:0}
+.redirectbox-in li{ display: block; font-size:14px; background:url(../../images/master/arrow-menu.png) 0 5px no-repeat; list-style-position:outside; padding-left:20px;}
+.redirectbox-in li a{ display:block; padding:2px;}
+.lrnmore a { color:#303030; }
+.lrnmore:hover a { color:#b6ea2a; }
+.redirectbox-l .icon-circle { display: inline-block; vertical-align: middle; text-align: center; position: relative; }
+.redirectbox:hover { -webkit-box-shadow: 0 0 8px 1px #C9C9C9; box-shadow: 0 0 8px 1px #C9C9C9; }
+.reportTable th.text-center{border-right:1px solid #fff}
+.ytd{font-weight:bold}
+.reportdrop a{padding: 6px 10px;}
+.customtable.reportTable{width:1109px;overflow-x:hidden!important}
+.DTFC_LeftBodyWrapper{box-shadow: 6px 0 20px 1px rgba(177, 162, 162, 0.3);}
+.DTFC_RightBodyWrapper{box-shadow: -15px 0 20px 1px rgba(177, 162, 162, 0.3);}
+ div.dataTables_wrapper {width: 100%;margin: 0 auto;}
+.DTFC_LeftBodyLiner,.DTFC_RightBodyLiner{overflow: hidden!important;width: auto!important;}
+.DTFC_LeftHeadWrapper{overflow: hidden!important;}
+.db-ca-wrap table.dataTable.fixed-col.no-footer{min-width:103px!important}
+.DTFC_LeftBodyWrapper{min-width: 103px!important;}
+.customtable.fixed-col-div .dataTables_wrapper thead th, .customtable.dataTables_wrapper thead td{min-width: 116px;}
+.dataTables_scrollBody{border-bottom:none!important}
+.reconbtns{color: #404144;;margin-left:10px;font-size: 12px;float: right; position: absolute; padding: 2px 6px 0px;}

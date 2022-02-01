@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Email</title>
+</head>
+<body>
+<table align="center" width="650" border="0" cellspacing="5" cellpadding="5" style="background-color:#f9f9f9; color:#282828;font-family:Arial, Helvetica, sans-serif; font-size:14px; padding:0px 20px 20px 20px;">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="10" cellpadding="5" style="background-color:#f9f9f9; color:#282828;font-family:Arial, Helvetica, sans-serif; font-size:14px; padding:0px 20px 20px 20px;">
+        <tr>
+          <td align="center" style="padding:20px; text-align:center; border-bottom:1px solid #dddddd;"><img src="https://www.mastergst.com/static/images/master/logo-mastergst.png" alt="Master Gst" /></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>Dear <span lang="EN-US">$fullname</span></strong></td>
+        </tr>
+        <tr>
+          <td><span lang="EN-US"><p>The request for bulk import of records is completed successfully. Please check your MasterGST account</p><p>Please check the file for the record which are failed to import</p> </span></td>
+        </tr>
+        <tr>
+			<td>
+			
+				#if ($resource.error)
+
+					<span lang="EN-US"><p>$resource.error</p></span>
+				#end
+			
+				#if ($summary)
+					<table class="bulk-data" width="620" border="0px" cellspacing="0" cellpadding="5" style="border-left:1px solid black;border-top:1px solid black">
+						<thead style="background-color:#5769bb; color:#fff;font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+							<tr>
+				            	<th style="border-right:1px solid black"></th>
+				            	<th colspan="2" style="border-right:1px solid black;border-bottom:1px solid black">Totals</th>
+				            	<th colspan="2" style="border-right:1px solid black;border-bottom:1px solid black">Imported</th>
+				            	<th colspan="2" style="border-right:1px solid black;border-bottom:1px solid black">Failed</th>
+            				</tr>
+			                <tr>
+			                	<th style="border-right:1px solid black">Invoice Name</th>
+			                	<th style="border-right:1px solid black">Line Items</th>
+			                	<th style="border-right:1px solid black">Invoices</th>
+			                	<th style="border-right:1px solid black">Line Items</th>
+			                	<th style="border-right:1px solid black">Invoices</th>
+			                	<th style="border-right:1px solid black">Line Items</th>
+			                	<th style="border-right:1px solid black">Invoices</th>
+			                </tr>
+						</thead>
+						<tbody>
+							<tr>
+								#foreach($summry in $summary)
+									<tr>
+										<td style="border-right:1px solid black;border-bottom:1px solid black">$summry.name</td>
+										<td style="text-align:right; color:black;border-right:1px solid black;border-bottom:1px solid black">$summry.total</td>
+										<td style="text-align:right; color:black;border-right:1px solid black;border-bottom:1px solid black">$summry.totalinvs</td>
+										<td style="text-align:right; color:green;border-right:1px solid black;border-bottom:1px solid black">$summry.success</td>
+										<td style="text-align:right; color:green;border-right:1px solid black;border-bottom:1px solid black">$summry.invsuccess</td>
+										<td style="text-align:right; color:red;border-right:1px solid black;border-bottom:1px solid black">$summry.failed</td>
+										<td style="text-align:right; color:red;border-right:1px solid black;border-bottom:1px solid black">$summry.invfailed</td>
+									</tr>
+								#end
+							</tr>
+						</tbody>
+				  </table>
+				#end
+		  </td>
+        </tr>
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><p><span lang="EN-US">Thanks, </span></p>
+            <p><span lang="EN-US">MasterGST Team </span></p>
+            <p><span lang="EN-US"><a href="mailto:Info@mastergst.com" target="_blank">Info@mastergst.com</a> | <a href="mailto:support@mastergst.com" target="_blank">support@mastergst.com</a> |+91 7901022478 </span></p>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

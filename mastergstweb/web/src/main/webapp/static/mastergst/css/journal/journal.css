@@ -1,0 +1,20 @@
+table.journaltable.display tbody tr.odd , table.journaltable.display tbody tr.odd > .sorting_1, table.journaltable.display tbody tr.odd > .sorting_2, table.journaltable.display tbody tr.odd > .sorting_3  , table.journaltable.display tbody tr:hover, table.journaltable.display tbody tr.even > .sorting_1,table.journaltable.display tbody tr:hover,table.journaltable.display tbody tr:hover>.sorting_3,table.journaltable.display tbody tr.even>.sorting_2,table.journaltable.display tbody tr.even>.sorting_3{background-color: white!important;}
+     table.journaltable.display tbody th, table.journaltable.display tbody td ,.db-ca-wrap table.journaltable tbody tr{border: unset;}
+  	.journaltable tbody td:nth-child(2) , .journaltable tbody td:nth-child(1){text-align:left!important} 
+   .journaltable tbody td {text-align:right} 
+   /* .sorting_1{border:1px solid lightgrey!important} */
+   .abcde{border-bottom: 1px dashed lightgrey!important}
+   .leftindent{margin-left:15px}
+     .journaltable thead tr th:nth-child(3) ,.journaltable thead tr th:nth-child(4){text-align:center} 
+    .journaltable tbody tr td{border-right:1px solid lightgray!important}
+    .journalsumwrap .journalsum li:nth-child(2) h5{background-color:#53bc45}
+    .journalsumwrap .journalsum li:nth-child(2) p{color:#53bc45}
+    #fillingoption::after , #fillingoption1::after{content:unset}
+    .chooseperiod{float: right;margin: 5px 22px;}
+    .chooseperiod .dropdown-toggle{margin-right: 10px; display: inline-flex;}
+    .chooseperiod .dropdown-toggle .typ-ret{border: 1px solid; border-radius: 2px; padding: 2px; background-color: white; padding-right: 14px; height: 27px; align-items: top; min-width: 104px;}
+    .chooseperiod .dropdown-toggle .typ-ret .input-group-addon{display: inline-block; padding: 0px !important; border: none !important; background-color: unset !important; font-size: 1.5rem; position: relative; top: -7px; left: 8px;}
+    .chooseperiod .ret-type{WIDTH: 104px !important; min-width: 36px;top: 26px; border-radius: 2px}
+    .jdpMonths{border: 1px solid; border-radius: 2px; padding: 2px; background-color: white; padding-right: 0px; margin-right: 10px;width: 115.5px;height: 27px;}
+    #jfinancialYear1{top: 26px; border-radius: 2px;width: 114px!important;min-width: auto;}
+    .datepicker-orient-left{top:194px!important}

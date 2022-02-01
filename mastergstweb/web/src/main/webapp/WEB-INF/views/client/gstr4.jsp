@@ -1,0 +1,2 @@
+<%@include file="/WEB-INF/views/includes/taglib.jsp" %>
+<a class="dropdown-item urllink" href="#" onclick="showInvPopup('<%=MasterGSTConstants.B2BUR%>','<c:out value="${returntype}"/>',true)" link1="${contextPath}/addsinv/<c:out value="${id}"/>/<c:out value="${fullname}"/>/<c:out value="${usertype}"/>/<c:out value="${client.id}"/>/<c:out value="${returntype}"/>?stype=<%=MasterGSTConstants.B2BUR%>">Add B2B Unregistered</a>

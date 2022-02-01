@@ -1,0 +1,14 @@
+#config_invoice_check .meterialform .checkbox input:checked~.helper::before{height: 10px;margin-left: 0px; width: 2px;    margin-top: 1px;}
+.meterialform .form-check{ margin:0!important}
+#config_invoice_check .meterialform .checkbox input:checked~.helper::after{height: 6px;margin-top: 3px;margin-left: 1px;}
+.row.congic_number {margin-bottom: 12px;}
+.gstr-info-tabs .nav-tabs .nav-link.active::before, .gstr-info-tabs .nav-tabs .nav-link:hover::before { border-top: 10px solid #ffffff;}
+li.paramitem{font-size: 14px;font-weight: bold;margin-top: 10px;list-style: none;}
+.form-check.form-check-inline.pull-right{margin-top: -18px!important;right:10%;}
+#prefix{text-transform: uppercase;}
+/* input#invoicetext{border: 1px solid lightgray;width: 60%!important;float: right;margin-right: 97px;margin-top: -6px;} */
+input#invoicetext,input#invoiceqtytext,input#invoiceratetext,input#invoiceauthsigntext,input#einvoiceheadertext{width: 300px;border: 1px solid lightgray;}
+div#dbTable_length{margin-top: 5px;}
+.hidden{display:none}
+.sigwrape{width: 100%; min-width: 0; padding: 0; margin: 0; border: 0; height: 165px; border-radius: 7px; border-color: lightgray!important; display: block!important;margin-inline-start: 2px;padding-block-start: 0.35em;padding-inline-start: 1.75em;padding-inline-end: 0.75em;padding-block-end: 0.625em;min-inline-size: min-content!important;border-width: 1px!important;border-style: solid;border-color: lightgray;border-image: initial!important;}
+.sigwrape legend {width: 20%;font-size: 18px;font-weight: bold;}

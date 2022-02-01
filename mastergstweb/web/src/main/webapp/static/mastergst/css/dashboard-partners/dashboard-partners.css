@@ -1,0 +1,56 @@
+.db-ca-wrap {min-height:550px ;margin-top: 25px!important;padding-top:75px!important}
+.db-ca-wrap h3 { font-size:24px; text-align:center; color:#4e4f4f; margin:25px auto }
+ .img-sm-rounded { background-color: #f6f9fb; border: 1px solid #b8babe; color:#b8babe; width: 35px; height: 35px; float: left; text-align: center; vertical-align: middle; line-height: 35px; margin-right:10px; }
+.compname { color:#333;font-weight:bold; font-size:13px; float:left; }
+.caption { color:#aaa; font-size:11px; display:block }
+.db-ca-wrap .dataTables_wrapper .dataTables_filter input { margin-left: 0.5em; box-shadow: none; border: 1px solid #eaeaea; padding: 5px 10px; border-radius:4px; background:#fff url(../../images/dashboard-ca/search-icon.png) 97% 7px no-repeat; width:250px; }
+.db-ca-wrap table.dataTable tbody tr { border:1px solid #eaeaea; }
+.db-ca-wrap table.dataTable.row-border tbody tr td:first-child { border-left:1px solid #eaeaea;   /* background-color: #374583;  color:#fff;*/ width:40% }
+.db-ca-wrap table.dataTable.row-border tbody tr td:last-child { border-right:1px solid #eaeaea; }
+.db-ca-wrap .dataTables_wrapper .toolbar h4 { font-size:18px; margin-top:14px; }
+.db-ca-wrap table.dataTable thead { font-size:12px }
+.db-ca-wrap table.dataTable.row-border tbody tr td { font-size:13px; }
+.db-ca-wrap table.dataTable.no-footer { border-bottom:1px solid #eaeaea }
+.db-ca-wrap table.dataTable thead .sorting, .db-ca-wrap table.dataTable thead .sorting_asc { /*background-image:none*/ }
+.db-ca-wrap .dataTables_wrapper .dataTables_info { font-size:12px }
+.db-ca-wrap table.dataTable tbody tr td .btn { color:#374583; cursor:pointer; padding:5px 10px; font-size:14px }
+ 
+ /*--- meterialform ----*/
+.meterialform .form-group input, .meterialform .form-group textarea { font-size:14px }
+.meterialform .form-group .lable-txt { margin-bottom:0 }
+.meterialform .form-group, .meterialform .form-radio { margin-bottom:5px; }
+.datetimebox { position:relative }
+.datetimebox .form-control { background-color:transparent; border:0; display:inline-block; color:#6666cc; width: 120px; max-width: 200px; min-width: 120px; }
+.datetimebox .fa { display:inline-block; position:absolute; right:20px; color:#6666cc; margin-top: 5px; }
+.addnew-client .lable-txt { font-size:13px; }
+.meterialform .addnew-client .form-group { margin-bottom:10px }
+.meterialform .addnew-client .form-radio { margin-bottom:0; }
+.txt-lg.mt-6p { display:block }
+.bdr-t { border-top:1px solid #f0f2f3; }
+.bdr-b { border-bottom:1px solid #f0f2f3; }
+ 
+/*--- normaltable ----*/
+.db-ca-wrap .customtable table.dataTable.row-border tbody tr td:first-child { width:auto }
+.dataTables_wrapper .toolbar .btn { float:right; padding: 6px 15px 5px; font-weight: bold; color: #435a93; float: right; margin-left: 10px; }
+.customtable.db-ca-view .dataTables_wrapper .dataTables_filter input { padding:4px 5px; font-size:14px; height:auto; background-image:none; border-radius:3px; width:150px; max-width:440px; border-color:#eaeaea }
+ 
+/*------invoice-wrap ----*/
+.bdr-b3 { border-bottom:3px solid #eaeaea; height:3px; display:table; width:100% }
+.bdr-b1 { border-bottom:1px solid #eaeaea; height:1px; display:table; width:100% }
+ 
+.invoice-hdr.bluehdr { background-color:#344371; padding:20px; }
+.invoice-hdr.bluehdr .invoice-hdr-info .col .hdr, .invoice-hdr.bluehdr h3 .gstid { color:#7a99f7; font-size:14px; }
+.invoice-hdr.bluehdr h3 { text-transform:uppercase }
+.invoice-hdr.bluehdr h3, .invoice-hdr.bluehdr .invoice-hdr-info .col .hdrinfo { color:#fff }
+  /*-------*/
+ .db-box{border:2px solid #2cc46d;border-radius:10px;display:table;padding:10px;width:100%}.db-box-count,.db-box-sm-txt{font-family:latolight;text-align:center;display:block}.db-box.red{border:2px solid #ff6b6b}.db-box.orange{border:2px solid #ffa200}.db-box.red .db-box-title{color:#ff6b6b}.db-box.orange .db-box-title{color:#ffa200}.db-box-title{font-size:14px;font-weight:700;color:#2cc46d;float:left;text-transform:uppercase}.db-box-sm-txt{font-size:12px;color:#8e8f8f}.db-box-count{font-size:24px;color:#4e4f4f}
+ 
+ .partner-id{ font-size:16px; color:#fff; float:left; font-weight:bold}
+  .partner-id>span{ font-weight:bold; font-size:18px}
+	.navbar-left.float-r{ float:right; margin:0}
+	.navbar-left.float-r li .dropdown-menu{ width:270px}
+.meterialform .form-group {margin-top: 0px!important;  margin-bottom: 18px;}
+span.coln-txt {float: right;}
+
+/* ---- For Safari ---*/
+::i-block-chrome, .db-ca-wrap{padding-top:36%!important}

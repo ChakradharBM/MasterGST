@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mastergst.usermanagement.runtime.domain</groupId>
+	<artifactId>mastergst-usermanagement-runtime-domain</artifactId>
+	<packaging>jar</packaging>
+	<name>Master GST User Management Runtime Domain</name>
+	<description>Master GST User Management Runtime Domain</description>
+	<url>http://www.mastergst.com</url>
+	<parent>
+		<groupId>usermanagement-runtime</groupId>
+		<artifactId>usermanagement-runtime</artifactId>
+		<version>1.0</version>
+		<relativePath>../</relativePath>
+	</parent>
+	 <dependencies>
+		<dependency>
+			<groupId>com.mastergst.core</groupId>
+			<artifactId>mastergst-core</artifactId>
+			<version>1.0</version>
+		</dependency>
+	 </dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin> 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${maven-jar-plugin.version}</version>
+
+				<executions>
+					
+					<execution>
+							<id>default-jar</id>
+							<phase>package</phase>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+
+							
+						</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		
+	</build>
+
+</project>
+

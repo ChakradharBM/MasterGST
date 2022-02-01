@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+  <worksheet name="Invoices">
+  	<loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+            <cellcheck offset="0">Document Type*</cellcheck>
+			<cellcheck offset="1">Document No*</cellcheck>
+			<cellcheck offset="2">Document Date*</cellcheck>
+			<cellcheck offset="3">Customer Name</cellcheck>
+			<cellcheck offset="4">Place Of Supply*</cellcheck>
+			<cellcheck offset="5">GSTIN*</cellcheck>
+			<cellcheck offset="6">Supply Type*</cellcheck>
+			<cellcheck offset="7">SubSupply Type*</cellcheck>
+			<cellcheck offset="8">From Pincode*</cellcheck>
+			<cellcheck offset="9">To Pincode*</cellcheck>
+			<cellcheck offset="10">Transporter Id</cellcheck>
+			<cellcheck offset="11">Transporter Name</cellcheck>
+			<cellcheck offset="12">Trans Distance*</cellcheck>
+			<cellcheck offset="13">Transaction Type*</cellcheck>
+			<cellcheck offset="14">Vehicle Number*</cellcheck>
+			<cellcheck offset="15">Trans Mode*</cellcheck>
+			<cellcheck offset="16">Vehicle Type</cellcheck>
+			<cellcheck offset="17">Transport Document No</cellcheck>
+			<cellcheck offset="18">Transport Document date</cellcheck>
+			<cellcheck offset="19">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="20">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="21">Unique Quantity Code</cellcheck>
+			<cellcheck offset="22">Quantity</cellcheck>
+			<cellcheck offset="23">Item Rate*</cellcheck>
+			<cellcheck offset="24">Total Taxable Value*</cellcheck>
+			<cellcheck offset="25">IGST Rate*</cellcheck>
+			<cellcheck offset="26">IGST Amount*</cellcheck>
+			<cellcheck offset="27">CGST Rate*</cellcheck>
+			<cellcheck offset="28">CGST Amount*</cellcheck>
+			<cellcheck offset="29">SGST Rate*</cellcheck>
+			<cellcheck offset="30">SGST Amount*</cellcheck>
+			<cellcheck offset="31">CESS Rate</cellcheck>
+			<cellcheck offset="32">CESS Amount</cellcheck>
+			<cellcheck offset="33">CessNonAdvol Value</cellcheck>
+			<cellcheck offset="34">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="invoiceList" var="invoice" varType="com.mastergst.usermanagement.runtime.domain.EWAYBILL">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">invoice.docType</mapping>
+		<mapping row="2" col="1">invoice.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="2">invoice.strDate</mapping>
+		<mapping row="2" col="3">invoice.billedtoname</mapping>
+		<mapping row="2" col="4">invoice.statename</mapping>
+		<mapping row="2" col="5">invoice.b2b[0].ctin</mapping>
+		<mapping row="2" col="6">invoice.supplyType</mapping>
+		<mapping row="2" col="7">invoice.subSupplyType</mapping>
+		<mapping row="2" col="8">invoice.fromPin</mapping>
+		<mapping row="2" col="9">invoice.toPin</mapping>
+		<mapping row="2" col="10">invoice.transporterId</mapping>
+		<mapping row="2" col="11">invoice.transporterName</mapping>
+		<mapping row="2" col="12">invoice.transDistance</mapping>
+		<mapping row="2" col="13">invoice.transType</mapping>
+		<mapping row="2" col="14">invoice.vehiclListDetails[0].vehicleNo</mapping>
+		<mapping row="2" col="15">invoice.vehiclListDetails[0].transMode</mapping>
+		<mapping row="2" col="16">invoice.vehicleType</mapping>
+		<mapping row="2" col="17">invoice.vehiclListDetails[0].transDocNo</mapping>
+		<mapping row="2" col="18">invoice.strTransDate</mapping>
+		<mapping row="2" col="19">invoice.items[0].category</mapping>
+		<mapping row="2" col="20">invoice.items[0].hsn</mapping>
+		<mapping row="2" col="21">invoice.items[0].uqc</mapping>
+		<mapping row="2" col="22">invoice.items[0].quantity</mapping>
+		<mapping row="2" col="23">invoice.items[0].rateperitem</mapping>
+		<mapping row="2" col="24">invoice.items[0].taxablevalue</mapping>
+		<mapping row="2" col="25">invoice.items[0].igstrate</mapping>
+		<mapping row="2" col="26">invoice.items[0].igstamount</mapping>
+		<mapping row="2" col="27">invoice.items[0].cgstrate</mapping>
+		<mapping row="2" col="28">invoice.items[0].cgstamount</mapping>
+		<mapping row="2" col="29">invoice.items[0].sgstrate</mapping>
+		<mapping row="2" col="30">invoice.items[0].sgstamount</mapping>
+		<mapping row="2" col="31">invoice.items[0].cessrate</mapping>
+		<mapping row="2" col="32">invoice.items[0].cessamount</mapping>
+		<mapping row="2" col="33">invoice.items[0].cessNonAdvolValue</mapping>
+		<mapping row="2" col="34">invoice.items[0].total</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+</workbook>

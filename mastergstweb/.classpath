@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="configuration/src/main/java"/>
+	<classpathentry kind="src" path="mgst-storage/src/main/java"/>
+	<classpathentry kind="src" path="usermanagement/runtime/response/src/main/java"/>
+	<classpathentry kind="src" path="core/src/main/java"/>
+	<classpathentry kind="src" path="login/runtime/controller/src/main/java"/>
+	<classpathentry kind="src" path="login/runtime/domain/src/main/java"/>
+	<classpathentry kind="src" path="login/runtime/repository/src/main/java"/>
+	<classpathentry kind="src" path="login/runtime/service/src/main/java"/>
+	<classpathentry kind="src" path="usermanagement/runtime/controller/src/main/java"/>
+	<classpathentry kind="src" path="usermanagement/runtime/domain/src/main/java"/>
+	<classpathentry kind="src" path="usermanagement/runtime/repository/src/main/java"/>
+	<classpathentry kind="src" path="usermanagement/runtime/service/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="configuration/target/classes"/>
+</classpath>

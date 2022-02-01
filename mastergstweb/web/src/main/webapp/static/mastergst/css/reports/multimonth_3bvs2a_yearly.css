@@ -1,0 +1,42 @@
+
+.customtable.db-ca-view.reportTable.reportTable4{width: 1110px; overflow-x: scroll;}
+.reportTable4 table tr td:first-child {min-width:200px}
+.3bvs2ainfo {font-weight:500!important;font-size:15px!important;}
+.datepicker-orient-left{top:190px!important}
+th.text-center.books_header{color: white!important;background-color: rgb(87, 105, 187)!important;}
+th.text-center.month_header{color:black;background-color:#e6edfb!important;font-size:22px!important;font-weight:500;}
+.arrow-bottom{border-left: 7px solid transparent;border-right: 7px solid transparent;border-top: 7px solid #f2e6e7;position: absolute;left: 50%;bottom: -7px;}
+.arrow-top{border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid #9d696c;position: absolute;left: 50%;top: -4px;}
+.taxinfo {color: white; padding: 16px;font-size: 16px;border: none;}
+.dropdown {position: relative;display: inline-block;}
+.dropdown-content {display: none;left: 16%;position: absolute;background-color: white;width: 877px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+.dropdown-content a {color: black;padding: 12px 16px; text-decoration: none;display: block;}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.rcminfo td.dropdown{display:table-cell;}
+.isdinfo td.dropdown{display:table-cell;}
+.creditinfo td.dropdown{display:table-cell;}
+.eligibleinfo td.dropdown{display:table-cell;}
+.ineligibleinfo td.dropdown{display:table-cell;}
+.dropdown-content .arrow-left{ border-right:10px solid #white; }
+.inner_table{width:880px;}
+.dropdown-content.creditdata{bottom:46px;}
+.dropdown-content.ineligibledata{bottom:46px;}
+.dropdown-content.eligibledata{bottom:48px;}
+tbody#yeartotoalreport tr td:first-child{width:200px;}
+.inner_table tbody tr td:first-child{width:65px!important;}
+.dropdown-content{box-shadow: 17px 17px 25px 8px rgba(0, 0, 0, 0.36)}
+.inner_table thead tr th{background-color: #7d3938ba!important;color:white!important;border-right: 1px solid white;}
+.inner_table tbody tr:first-child td , .inner_table tbody tr:last-child td{background-color: #6645b514;}
+.inner_table tbody tr td:first-child{background-color:rgb(242, 230, 231)!important}
+.dropdown-content.rcmdata,.dropdown-content.isddata,.dropdown-content.eligibledata,.dropdown-content.ineligibledata,.dropdown-content.creditdata{left:100%;}
+#yeartotoalreport td{text-align:right;}
+.dropdown:hover .dropdown-content{display: block;}
+.arrow-up {width: 0; height: 0; border-left: 9px solid transparent;border-right: 9px solid transparent;border-bottom: 12px solid white; position: absolute;top: -8px;}
+.dropdown {position: relative;display: inline-block;}
+.dropdown-content.report3BVS2A ul li{list-style:none;}
+.dropdown-content.report3BVS2A{display: none;position: absolute;background-color: white;width: 500px;min-width: 500px!important; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;color: black!important;padding: 12px 16px;text-decoration: none;margin-left: -27px; text-transform: capitalize;}
+/* .helpicon.dropdown:hover .dropdown-content{display: block;} */
+.excel_btn{background-color: #8ee3fe;margin-right: 10px;color: #435a9e !important;font-size: 14px;padding: 5px 10px!important;border-radius: 4px;border: 1px;width: 73px;cursor: pointer;font-weight: bold;}
+.excel_btn:hover{background-color: #364365!important;color: white!important;text-decoration:unset}
+#month4_reportTable , .month_header , .tax_hr{border:1px solid white}

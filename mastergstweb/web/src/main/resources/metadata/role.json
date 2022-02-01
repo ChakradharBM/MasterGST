@@ -1,0 +1,512 @@
+{'role': [
+	{
+		'name': 'Sales', 
+		'category': 'Invoices',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Purchase', 
+		'category': 'Invoices',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+
+	{
+		'name': 'Profile', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	
+	{
+		'name': 'Configurations', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Customers', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Suppliers', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Items', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Users', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Roles', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Branches', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Verticals', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Bank Information', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Accounting', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'E Commerce Operator', 
+		'category': 'Settings',
+		'privileges':['Add','View','Edit','Delete'] 
+	},
+	{
+		'name': 'Upload Sales', 
+		'category': 'GSTN Actions' 
+	},
+	{
+		'name': 'Download Sales', 
+		'category': 'GSTN Actions' 
+	},
+	{
+		'name': 'Upload Purchases', 
+		'category': 'GSTN Actions' 
+	},
+	{
+		'name': 'Download Purchases', 
+		'category': 'GSTN Actions' 
+	},
+	{
+		'name': 'Download GSTR2A', 
+		'category': 'GSTN Actions' 
+	},
+	{
+		'name': 'Submit GST Returns', 
+		'category': 'GSTN Actions' 
+	},
+	{
+		'name': 'File GST Returns', 
+		'category': 'GSTN Actions' 
+	},
+	{
+		'name': 'Sales', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Purchase', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'MultiMonthGSTR2A', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Filing Status', 
+		'category': 'Reports' 
+	},
+	
+	{
+		'name': 'Sales Vs GSTR3B Vs GSTR1 Monthly', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Sales Vs GSTR3B Vs GSTR1 Yearly', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Purchases Vs GSTR3B Vs GSTR2A Monthly', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Purchases Vs GSTR3B Vs GSTR2A Yearly', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Invoice Wise GSTR2 Vs GSTR2A', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Supplier Wise GSTR2 Vs GSTR2A', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'ITC Claimed', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'ITC Unclaimed', 
+		'category': 'Reports' 
+	},
+	
+	{
+		'name': 'HSN Wise Sales', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'HSN Wise Purchase', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Tax Slab Wise Sales', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Tax Slab Wise Purchase', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'MultiMonthGSTR3B', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Suppliers GST Filing summary', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Monthly Tax and ITC summary', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Tax Slab Wise Purchase', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Eway Bill', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Einvoice', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Multi Month GSTR1', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Yearly Reconcile', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Trial Balance', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'P And L', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Balance Sheet', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Cash Ledger', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Credit Ledger', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Liability Ledger', 
+		'category': 'Reports' 
+	},
+	{
+		'name': 'Stock Summary', 
+		'category': 'Inventory Reports' 
+	},
+	{
+		'name': 'Stock Detail', 
+		'category': 'Inventory Reports' 
+	},
+	{
+		'name': 'Stock Ledger', 
+		'category': 'Inventory Reports' 
+	},
+	{
+		'name': 'Rate List', 
+		'category': 'Inventory Reports' 
+	},
+	{
+		'name': 'Item Sales Summary', 
+		'category': 'Inventory Reports' 
+	},
+	{
+		'name': 'Low Stock Level', 
+		'category': 'Inventory Reports' 
+	},
+	{
+		'name': 'Stock Aging', 
+		'category': 'Inventory Reports' 
+	},
+	
+	{
+		'name': 'Amendments',
+		'category': 'GSTR1',
+	},
+	
+	{
+		'name': 'Filing GSTR1',
+		'category': 'GSTR1',
+	},
+	{
+		'name': 'Upload Documents',
+		'category': 'GSTR1',
+	},
+	
+	{
+		'name': 'Delivery Challans',
+		'category': 'GSTR1',
+	},
+	{
+		'name': 'Estimates',
+		'category': 'GSTR1',
+	},
+	{
+		'name': 'Proforma Invoices',
+		'category': 'GSTR1',
+	},
+	
+	
+	{
+		'name': 'GSTR2',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'Purchases',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'GSTR2A',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'MisMatched',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'Unclaimed ITC',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'Filing GSTR2',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'Purchase Invoices',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'Purchase Order',
+		'category': 'GSTR2',
+	},
+	{
+		'name': 'Accept GSTR2A',
+		'category': 'GSTR2',
+	},
+ 	{
+		'name': 'GSTR3B',
+		'category': 'GSTR3B',
+	},
+	{
+		'name': 'Filing GSTR3B',
+		'category': 'GSTR3B',
+	},
+	{
+		'name': 'Offset Liability',
+		'category': 'GSTR3B',
+	},
+	{
+		'name': 'TAX Payment',
+		'category': 'GSTR3B',
+	},
+	{
+		'name': 'GSTR3B Invoices',
+		'category': 'GSTR3B',
+	},
+	
+	{
+		'name': 'GSTR4',
+		'category': 'GSTR4',
+	},
+	{
+		'name': 'Filing GSTR4',
+		'category': 'GSTR4',
+	},
+	
+	{
+		'name': 'Filing GSTR5',
+		'category': 'GSTR5',
+	},
+	{
+		'name': 'GSTR5',
+		'category': 'GSTR5',
+	},
+ 	
+	{
+		'name': 'GSTR6',
+		'category': 'GSTR6',
+	},
+	{
+		'name': 'Amendments',
+		'category': 'GSTR6',
+	},
+	{
+		'name': 'Filing GSTR6',
+		'category': 'GSTR6',
+	},
+	{
+		'name': 'Import Sales',
+		'category': 'General',
+	},
+	{
+		'name': 'Import Purchases',
+		'category': 'General',
+	},
+	{
+		'name': 'Import Templates',
+		'category': 'General',
+	},
+	{
+		'name': 'Bulk Imports',
+		'category': 'General',
+	},
+	{
+		'name': 'Invoice Config',
+		'category': 'All Configurations',
+	},
+	{
+		'name': 'Notes And Terms',
+		'category': 'All Configurations',
+	},
+	{
+		'name': 'Print Config',
+		'category': 'All Configurations',
+	},
+	{
+		'name': 'Reconcile Config',
+		'category': 'All Configurations',
+	},
+	{
+		'name': 'Other Config',
+		'category': 'All Configurations',
+	},
+	{
+		'name': 'Eway Bill Config',
+		'category': 'All Configurations',
+	},
+	{
+		'name': 'Einvoice Config',
+		'category': 'All Configurations',
+	},
+	
+	{
+		'name': 'Sales',
+		'category': 'Excel Download In Books And Returns'
+	},
+	{
+		'name': 'GSTR1A',
+		'category': 'Excel Download In Books And Returns'
+	},
+	{
+		'name': 'Purchases',
+		'category': 'Excel Download In Books And Returns'
+	},
+	{
+		'name': 'GSTR2',
+		'category': 'Excel Download In Books And Returns'
+	},
+	{
+		'name': 'GSTR2A',
+		'category': 'Excel Download In Books And Returns'
+	},
+	{
+		'name': 'Reconcile',
+		'category': 'Excel Download In Books And Returns'
+	},
+	{
+		'name': 'Unclaimed ITC',
+		'category': 'Excel Download In Books And Returns'
+	},
+	
+	
+	{
+		'name': 'Sales',
+		'category': 'Excel Download In Reports'
+	},
+	{
+		'name': 'Purchases',
+		'category': 'Excel Download In Reports'
+	},
+	{
+		'name': 'Multi month GSTR1',
+		'category': 'Excel Download In Reports'
+	},
+	{
+		'name': 'Multi month GSTR2A',
+		'category': 'Excel Download In Reports'
+	},
+	{
+		'name': 'Invoice Wise GSTR2 Vs GSTR2A',
+		'category': 'Excel Download In Reports'
+	},
+	{
+		'name': 'Supplier Wise GSTR2 Vs GSTR2A',
+		'category': 'Excel Download In Reports'
+	},
+	{
+		'name': 'Multi GSTIN SEARCH',
+		'category': 'Multi GSTIN',
+	},
+	{
+		'name': 'Acknowledgements', 
+		'category': 'Acknowledgement' 
+	},
+	{
+		'name': 'Acknowledgement User', 
+		'category': 'Acknowledgement' 
+	},
+	{
+		'name': 'E-invoice', 
+		'category': 'New Returns' 
+	},
+	{
+		'name': 'Ewaybill',
+		'category': 'New Returns' 
+	},
+	{
+		'name': 'Generate IRN', 
+		'category': 'Einvoice Actions' 
+	},
+	{
+		'name': 'Cancel IRN', 
+		'category': 'Einvoice Actions' 
+	},
+	{
+		'name': 'Generate Ewaybill', 
+		'category': 'Ewaybill Actions' 
+	},
+	{
+		'name': 'Download Ewaybill', 
+		'category': 'Ewaybill Actions' 
+	},
+	{
+		'name': 'Cancel Ewaybill', 
+		'category': 'Ewaybill Actions' 
+	},
+	{
+		'name': 'Update Vehicle', 
+		'category': 'Ewaybill Actions' 
+	},
+]
+}

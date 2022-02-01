@@ -1,0 +1,37 @@
+#refClientTable tbody tr td:last-child{text-align:right;}
+.headerkeysTab2 .toolbar{height:0px;}
+.user_field.user_details_field{font-weight: bold;}
+.footer-fixed-bottom{position:fixed;}
+#financialYear{font-size: 18px;}
+#reportTable3 td{border:1px solid white!important}
+.user-admin .row-border tbody td{border: 1px solid #fff;   border-collapse: collapse;}
+.reportTable tr td:first-child, .reportTable tr th:first-child { background-color:#bbdef9!important; color:#000000!important; border-bottom: 1px solid #fff }
+.reportTable tr:nth-child(1){ background-color:#e6f9f8!important}
+.reportTable tr:nth-child(2){ background-color:#f6effd!important}
+.reportTable tr:nth-child(3){ background-color:#def9de!important}
+.reportTable tr:nth-child(4){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(5){ background-color:#def9de!important}
+.reportTable tr:nth-child(6){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(7){ background-color:#def9de!important}
+.reportTable tr:nth-child(8){ background-color:#e6edfb!important}
+.reportTable tr:nth-child(9){ background-color:#def9de!important}
+.login-details{display:inline-flex;margin-right:20px;color: white;margin-left:40%;float: right;}
+#chckbox_spamusrschckbox .checkbox .helper::before, #chckbox_spamusrschckbox .checkbox .helper::after, #chckbox_spamusrschckbox .checkbox .helper::before, #chckbox_spamusrschckbox .checkbox .helper::after{background-color:white!important}
+#chckbox_spamusrschckbox .checkbox .helper::after{top:6px}
+#chckbox_spamusrschckbox .checkbox .helper::before{top:11px}
+input.einvoiceProduction, input.einvoiceSandbox{border:1px solid lightgray;border-color: lightgray!important;border-width: 1px!important;}
+#leadsTable{word-break: break-all;}
+.DTFC_LeftBodyLiner,.DTFC_RightBodyLiner{padding-right:0px!important}
+#userModal .modal-footer.footer-fixed-bottom{position: absolute;top: 92%;}
+/*--- gstr-info-tabs -----*/
+.gstr-info-tabs .nav-tabs { margin-bottom:10px;margin-left: -10px; }
+.gstr-info-tabs .nav-tabs .nav-item.show .nav-link, .gstr-info-tabs .nav-tabs .nav-link.active, .gstr-info-tabs .nav-tabs .nav-link:hover, .gstr-info-tabs .nav-tabs .nav-link.active:hover { background:transparent; border-bottom:3px solid #8ee3fe; border-left:0; border-right:0; border-top:0; color:#374583; font-weight:bold;font-size:13px }
+.gstr-info-tabs .nav-tabs .nav-link { border-bottom:3px solid transparent; border-left:0; border-right:0; border-top:0; color:#707172; font-size:13px; text-transform:uppercase }
+.gstr-info-tabs .nav-tabs .nav-link:hover { border-bottom:3px solid #8ee3fe; border-left:0; border-right:0; border-top:0; font-size:13px}
+.gstr-info-tabs .nav-tabs { border:0 }
+.gstr-info-tabs .nav-tabs .nav-item { position:relative;margin-right: 10px; }
+.gstr-info-tabs .nav-tabs .nav-link.active::after, .gstr-info-tabs .nav-tabs .nav-link:hover::after {content:'';border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #8ee3fe;position:absolute;left:40%;bottom:-10px;}
+.gstr-info-tabs .nav-tabs .nav-link.active::before, .gstr-info-tabs .nav-tabs .nav-link:hover::before {content: '';border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #f6f9fb;position: absolute;left: 40%;bottom: -6px;z-index: 1;}
+#admin_tabs li{min-width: 70px!important; text-align: center;}
+.menu-link{sdcolor: white;}
+.navbar-nav.mainnav-right .img-sm-rounded{padding: 4px;}

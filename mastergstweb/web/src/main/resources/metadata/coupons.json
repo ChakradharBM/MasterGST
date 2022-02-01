@@ -1,0 +1,10 @@
+{'coupons': [
+{'code':'MVBR10','value':10},
+{'code':'MVBR20','value':20},
+{'code':'DIS25','value':25},
+{'code':'DIS50','value':50},
+{'code':'DIS75','value':75},
+{'code':'DIS100','value':100},
+{'code':'MGST10','value':10},
+{'code':'MGST500','disCountValue':500}
+]}

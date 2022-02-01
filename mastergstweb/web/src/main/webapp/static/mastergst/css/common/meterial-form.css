@@ -1,0 +1,327 @@
+.meterialform .button:focus, .meterialform .form-group input:focus, .meterialform .form-group select:focus, .meterialform .form-group textarea:focus { outline:0 }
+.meterialform .form-group, .meterialform .form-radio { position:relative; margin-top:5px; margin-bottom:10px }
+.meterialform .form-group.inline, .meterialform .form-radio.inline{ display:inline-block; margin-right:10px;}
+.meterialform .form-inline>.btn, .meterialform .form-inline>.form-group { display:inline-block; margin-bottom:0 }
+.meterialform .form-help {
+margin-top:.125rem;
+margin-left:.125rem; color:#b3b3b3; font-size:.8rem
+}
+.form-radio .form-help, .meterialform .checkbox .form-help, .meterialform .form-group .form-help { position:absolute; width:100% }
+.meterialform .checkbox .form-help { position:relative; margin-bottom:1rem }
+.meterialform .form-radio .form-help {
+padding-top:.25rem; margin-top:-1rem }
+.meterialform .form-group input { height:1.9rem }
+.meterialform .form-group textarea { resize:none }
+.meterialform .form-group select { width:100%; font-size:1rem; height:1.6rem; padding:.125rem .125rem .0625rem;
+background:0 0; border:none; line-height:1.6; box-shadow:none }
+.meterialform .form-group .control-label { position:absolute; top:.25rem;
+pointer-events:none; padding-left:.125rem;
+z-index:1; color:#b3b3b3; font-size:1rem; font-weight:400; -webkit-transition:all .28s ease;
+transition:all .28s ease
+}
+.meterialform .form-group .bar { position:relative; border-bottom:.0625rem dashed #4664be;
+display:block }
+.meterialform .form-group .bar::before {
+content:'';
+height:.125rem;
+width:0;
+left:50%;
+bottom:-.0625rem;
+position:absolute;
+background:#4664be;
+-webkit-transition:left .28s ease, width .28s ease;
+transition:left .28s ease, width .28s ease;
+z-index:1
+}
+.meterialform .form-group input, .meterialform .form-group textarea { display:block; padding:.125rem .125rem .0625rem;
+font-size:1rem; border-width:0; border-color:transparent; line-height:1.9; width:100%; -webkit-transition:all .28s ease;
+transition:all .28s ease;
+box-shadow:none }
+.meterialform .form-group input[type=file] { line-height:1; opacity:0!important; margin-left:-200px; color:#333!important\9;
+text-indent:-20px; width:130% }
+.meterialform .form-group-file { /*overflow-x:hidden*/ }
+.meterialform .form-group input[type=file].has-value, .meterialform .form-group input[type=file]:focus, .meterialform .form-group input[type=file]:valid {
+    line-height: 1;
+    opacity: 1!important;
+    margin-left: -90px;
+    color: #333!important\9;
+    text-indent: -200px;
+    width: 100%;
+    border: none!important;
+    outline: 0;
+}
+.meterialform .form-group input.form-file, .meterialform .form-group input.has-value, .meterialform .form-group input:focus, .meterialform .form-group input:valid, .meterialform .form-group select, .meterialform .form-group textarea.form-file, .meterialform .form-group textarea.has-value, .meterialform .form-group textarea:focus, .meterialform .form-group textarea:valid {
+color:#333
+}
+.meterialform .form-group input.form-file~.control-label, .meterialform .form-group input.has-value~.control-label, .meterialform .form-group input:focus~.control-label, .meterialform .form-group input:valid~.control-label, .meterialform .form-group select~.control-label, .meterialform .form-group textarea.form-file~.control-label, .meterialform .form-group textarea.has-value~.control-label, .meterialform .form-group textarea:focus~.control-label, .meterialform .form-group textarea:valid~.control-label {
+font-size:.8rem;
+color:gray;
+top:-1rem;
+left:0
+}
+.form-group select:focus~.control-label, .meterialform .form-group input:focus~.control-label, .meterialform .form-group textarea:focus~.control-label {
+color:#337ab7
+}
+.meterialform .form-group input:focus~.bar::before, .meterialform .form-group select:focus~.bar::before, .meterialform .form-group textarea:focus~.bar::before {
+width:100%;
+left:0
+}
+.meterialform .checkbox label, .meterialform .form-radio label { position:relative; cursor:pointer; padding-left:1.7rem; text-align:left; color:#333; display:block; margin-bottom:0; }
+.meterialform .checkbox input, .meterialform .form-radio input { width:auto; opacity:.00000001; position:absolute; left:0 }
+.radio { margin-bottom:1rem }
+.meterialform .radio .helper { position:absolute; top:-.25rem;
+left:-.25rem;
+cursor:pointer; display:block; font-size:1rem; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; color:#999 }
+.meterialform .radio input:checked~.helper::before, .meterialform .radio label:hover .helper {
+color:#8ee3fe
+}
+.meterialform .radio input:checked~.helper::before {border:.5rem solid #8ee3fe}
+.meterialform .radio .helper::after, .meterialform .radio .helper::before {
+content:'';
+position:absolute;
+left:0;
+top:0;
+margin:.5rem;
+width:1rem;
+height:1rem;
+-webkit-transition:-webkit-transform .28s ease;
+transition:-webkit-transform .28s ease;
+transition:transform .28s ease;
+transition:transform .28s ease, -webkit-transform .28s ease;
+border-radius:50%;
+border:.125rem solid #5769bb
+}
+.meterialform .radio .helper::after {
+-webkit-transform:scale(0);
+transform:scale(0);
+background-color:#337ab7;
+border-color:#337ab7
+}
+.meterialform .radio input:checked~.helper::after {
+-webkit-transform:scale(.5);
+transform:scale(.5)
+}
+.meterialform .checkbox .helper { color:#999; position:absolute; top:0; left:0; width:1rem; height:1rem; z-index:0; border:.1rem solid currentColor;
+border-radius:.0625rem;
+-webkit-transition:border-color .28s ease;
+transition:border-color .28s ease
+}
+.meterialform .checkbox .helper::after, .meterialform .checkbox .helper::before {
+position:absolute;
+height:0;
+width:.2rem;
+background-color:#337ab7;
+display:block;
+-webkit-transform-origin:left top;
+transform-origin:left top;
+border-radius:.25rem;
+content:'';
+-webkit-transition:opacity .28s ease, height 0s linear .28s;
+transition:opacity .28s ease, height 0s linear .28s;
+opacity:0
+}
+.meterialform .checkbox .helper::before {
+top:.65rem;
+left:.38rem;
+-webkit-transform:rotate(-135deg);
+transform:rotate(-135deg);
+box-shadow:0 0 0 .0625rem #fff
+}
+.meterialform .checkbox .helper::after {
+top:.3rem;
+left:0;
+-webkit-transform:rotate(-45deg);
+transform:rotate(-45deg)
+}
+.meterialform .checkbox input:checked~.helper, .meterialform .checkbox label:hover .helper {
+color:#337ab7
+}
+.meterialform .checkbox input:checked~.helper::after, .meterialform .checkbox input:checked~.helper::before {
+opacity:1;
+-webkit-transition:height .28s ease;
+transition:height .28s ease
+}
+.meterialform .checkbox input:checked~.helper::after {
+height:.5rem
+}
+.meterialform .checkbox input:checked~.helper::before {
+height:1.2rem;
+-webkit-transition-delay:.28s;
+transition-delay:.28s
+}
+.meterialform .checkbox+.checkbox, .meterialform .radio+.radio { margin-top:1rem }
+.meterialform .has-error .legend.legend, .meterialform .has-error.checkbox .form-help, .meterialform .has-error.checkbox .helper, .meterialform .has-error.form-group .control-label.control-label, .meterialform .has-error.form-group .form-help, .meterialform .has-error.form-group .helper, .meterialform .has-error.form-radio .form-help, .meterialform .has-error.form-radio .helper, .meterialform .has-error.radio .form-help, .meterialform .has-error.radio .helper { color:#d9534f }
+.meterialform .has-error .bar::before {
+background:#d9534f;
+left:0;
+width:100%
+}
+.meterialform .button { position:relative; background:currentColor; border:1px solid currentColor; font-size:1.1rem; color:#4f93ce; margin:3rem 0; padding:.75rem 3rem;
+cursor:pointer; -webkit-transition:background-color .28s ease, color .28s ease, box-shadow .28s ease;
+transition:background-color .28s ease, color .28s ease, box-shadow .28s ease;
+overflow:hidden; box-shadow:0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12) }
+.meterialform .button span { color:#fff; position:relative; z-index:1 }
+.meterialform .button::before {
+content:'';
+position:absolute;
+background:#071017;
+border:50vh solid #1d4567;
+width:30vh;
+height:30vh;
+border-radius:50%;
+display:block;
+top:50%;
+left:50%;
+z-index:0;
+opacity:1;
+-webkit-transform:translate(-50%, -50%) scale(0);
+transform:translate(-50%, -50%) scale(0)
+}
+.meterialform .button:hover { color:#337ab7; box-shadow:0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2) }
+.meterialform .button:active::before, .meterialform .button:focus::before {
+-webkit-transition:opacity .28s ease 364ms, -webkit-transform 1.12s ease;
+transition:opacity .28s ease 364ms, -webkit-transform 1.12s ease;
+transition:transform 1.12s ease, opacity .28s ease 364ms;
+transition:transform 1.12s ease, opacity .28s ease 364ms, -webkit-transform 1.12s ease;
+-webkit-transform:translate(-50%, -50%) scale(1);
+transform:translate(-50%, -50%) scale(1);
+opacity:0
+}
+.meterialform .labletxt { text-transform:uppercase; margin-bottom:0 }
+.customtable .meterialform th { background-color:#5769bb; color:#fff }
+.customtable .meterialform th .checkbox .helper { border-radius:4px; color:#8ee3fe }
+.customtable .meterialform .checkbox .helper,   .meterialform.filters .checkbox .helper { border-radius:4px; color:#5769bb }
+.meterialform.filters .checkbox .helper{ width:19px; height:19px;} 
+.customtable .meterialform th .checkbox { margin-left:0 }
+.customtable .meterialform .checkbox { margin-top:-10px }
+.customtable .meterialform .checkbox .helper::before, .meterialform .checkbox .helper::after, 
+ .meterialform.filters .checkbox .helper::before, .meterialform.filters .checkbox .helper::after {
+height:0;
+width:2px;
+background-color:#5769bb;
+border-radius:.25rem
+}
+.customtable .meterialform th .checkbox .helper::before, .meterialform th .checkbox .helper::after {
+background-color:#8ee3fe
+}
+#bankCheck .helper::before,#samebilladdress .helper::before{
+	top:10px!important;
+left:5px!important;
+box-shadow:none
+}
+#bankCheck .helper::after,#samebilladdress .helper::after{
+	top: 6px!important;
+    left: 0px!important;
+}
+.customtable .meterialform .checkbox .helper::before,
+.meterialform.filters .checkbox .helper::before {
+top:13px;
+left:7px;
+box-shadow:none
+}
+
+.customtable .meterialform .checkbox .helper::after, .meterialform.filters .checkbox .helper::after {
+top:8px;
+left:2px
+}
+
+#einvoceform .customtable .meterialform .checkbox .helper::before,
+.meterialform.filters .checkbox .helper::before {
+top:11px;
+left:5px;
+box-shadow:none
+}
+
+#einvoceform .customtable .meterialform .checkbox .helper::after, .meterialform.filters .checkbox .helper::after {
+top:7px;
+left:0px
+}
+
+.customtable .meterialform .checkbox input:checked~.helper::before, .meterialform.filters .checkbox input:checked~.helper::before {
+height:10px
+}
+.customtable .meterialform .checkbox input:checked~.helper::after, .meterialform.filters .checkbox input:checked~.helper::after {
+height:6px
+}
+.form-group-inline .form-checkbox, .form-group-inline .form-radio { display:inline-block; margin-right:10px }
+.form-group-inline .form-checkbox .checkbox, .form-group-inline .form-radio .radio { margin-bottom:0 }
+.meterialform input::-webkit-input-placeholder {
+color:#d5d5d5;
+opacity:1
+}
+.meterialform input::-moz-placeholder {
+color:#d5d5d5;
+opacity:1
+}
+.meterialform input:-ms-input-placeholder {
+color:#d5d5d5;
+opacity:1
+}
+.meterialform input::placeholder {
+color:#d5d5d5;
+opacity:1
+}
+.meterialform .form-check { margin-left:-6px; }
+.meterialform  .form-check { margin-top:-25px; }
+.meterialform  .form-check-input { margin-left:0; z-index:99; width: 20px; height: 20px; }
+ .meterialform  [type="checkbox"]:not(:checked), .meterialform  [type="checkbox"]:checked {
+ position: absolute;
+ opacity:0;
+ filter:alpha(opacity=0);
+}
+ .meterialform  [type="checkbox"]:not(:checked) + label, .meterialform  [type="checkbox"]:checked + label {
+ position: relative;
+ padding-left: 1.95em;
+ cursor: pointer;
+}
+ .meterialform  [type="checkbox"]:not(:checked) + label:before, .meterialform  [type="checkbox"]:checked + label:before {
+ content: '';
+ position: absolute;
+ left: 0;
+ top: -5px;
+ width: 16px;
+ height: 16px;
+ border: 1px solid #ced0da;
+ background: #fefffe;
+ background: -moz-linear-gradient(top, #fefffe 0%, #f3f5f8 100%);
+ background: -webkit-linear-gradient(top, #fefffe 0%, #f3f5f8 100%);
+ background: linear-gradient(to bottom, #fefffe 0%, #f3f5f8 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefffe', endColorstr='#f3f5f8', GradientType=0 ); /* IE6-9 */
+ border-radius: 4px;
+}
+.meterialform  [type="checkbox"]:checked + label:before { background: #55d63f; background: -moz-linear-gradient(top, #55d63f 0%, #2cb615 100%); background: -webkit-linear-gradient(top, #55d63f 0%, #2cb615 100%); background: linear-gradient(to bottom, #55d63f 0%, #2cb615 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55d63f', endColorstr='#2cb615', GradientType=0 ); /* IE6-9 */
+border: 1px solid #27aa11 }
+ .meterialform  [type="checkbox"]:not(:checked) + label:after, .meterialform  [type="checkbox"]:checked + label:after {
+ content:url(../../images/td-check.png);
+ position: absolute;
+ top: -4px;
+ left: 1px;
+ font-size: 1.3em;
+ line-height: 0.8;
+ color: #fff;
+ transition: all .2s;
+}
+ .meterialform  [type="checkbox"]:not(:checked) + label:after {
+ opacity: 0;
+ transform: scale(0);
+}
+.meterialform  [type="checkbox"]:checked + label:after { opacity: 1; transform: scale(1); }
+ .meterialform  [type="checkbox"]:disabled:not(:checked) + label:before, .meterialform  [type="checkbox"]:disabled:checked + label:before {
+ box-shadow: none;
+ border-color: #bbb;
+ background-color: #ddd;
+}
+.meterialform  [type="checkbox"]:disabled:checked + label:after { color: #999; }
+.meterialform  [type="checkbox"]:disabled + label { color: #aaa; }
+ .meterialform  [type="checkbox"]:checked:focus + label:before, .meterialform  [type="checkbox"]:not(:checked):focus + label:before {
+ border: 1px solid #27aa11;
+}
+.customtable .meterialform .checkbox input:checked~.helper.che-box::before, .meterialform.filters .checkbox input:checked~.helper::before {
+height: 10px!important;left: 6px!important;top: 11px!important;
+}
+.customtable .meterialform .checkbox input:checked~.helper.che-box::after, .meterialform.filters .checkbox input:checked~.helper::after {
+ height: 6px;top: 7px;left: 1px;
+}
+.meterialform.addItemForm .checkBoxCustomField .checkbox input:checked~.helper::before,.meterialform.addItemForm .echeckBoxCustomField .checkbox input:checked~.helper::before{height: 11px;width: 2px;left: 5px;top: 11px;}
+.meterialform.addItemForm .checkBoxCustomField .checkbox input:checked~.helper::after,.meterialform.addItemForm .echeckBoxCustomField .checkbox input:checked~.helper::after{height: 6px;top: 7px;left: 0px;}
+.meterialform.addItemForm .checkBoxCustomField .checkbox .helper,.meterialform.addItemForm .echeckBoxCustomField .checkbox .helper{border-radius:4px;color: #337ab7;}

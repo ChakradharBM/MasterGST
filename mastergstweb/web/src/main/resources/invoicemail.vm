@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Email</title>
+</head>
+<body>
+<table align="center" width="650" border="0" cellspacing="5" cellpadding="5" style="background-color:#ffffff; color:#282828;font-family:Arial, Helvetica, sans-serif; font-size:14px; padding:0px;margin:0;">
+  <tr>
+    <td class="main-wrap"><table width="100%" border="0" cellspacing="10" cellpadding="5" style="background-color:#ffffff; color:#282828;font-family:Arial, Helvetica, sans-serif; font-size:14px; padding:0px;margin:0;">
+          <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>Dear  #if($invDetails.get("customerName") != "")
+			$invDetails.get("customerName")
+		  #end,</td>
+        </tr>
+        <tr>
+          <td><span lang="EN-US"><p>$invDetails.get("mailMessage")</p></span></td>
+        </tr>
+        #if($invDetails.get("irnNo") != "")
+        	<tr><td><label>IRN No :</label> <span lang="EN-US">$invDetails.get("irnNo")</span></td></tr>
+        #end
+        <tr><td><label>$invDetails.get("invNumberText") :</label> <span lang="EN-US">$invDetails.get("invoiceno")</span></td></tr>
+        <tr><td><label>$invDetails.get("invDateText") :</label> <span lang="EN-US">$invDetails.get("invoicedate")</span></td></tr>
+        <tr><td><span lang="EN-US" style="font-weight:bold;">Item Details :</span></td></tr>
+        #foreach ($invId in $invsummary.keySet())
+        <tr>
+			<td>
+			  <table class="bulk-data" width="635" border="0px" cellspacing="0" cellpadding="5" style="background-color: white;padding-left: 10px; ">
+				<tbody>
+					<tr>
+						    #foreach($invSUM in $invsummary.get($invId))
+						    <tr>
+					            <td><b>$invSUM.itemNo</b></td>
+					            
+								<td style="text-align:right;padding-right:0px;"><b><span>&#8377;</span> $invSUM.sTaxableAmt</b></td>
+					         </tr>
+					         <tr>
+					           <td>$invSUM.quantity <span> X </span><span><span>&#8377;</span> $invSUM.sRate</span><span ></span><span style="padding-left:15px">$invSUM.taxrate</span><span> % GST</span></td>
+					          </tr>
+							</tr>
+					    #end
+					</tr>
+				</tbody>
+			  </table>
+		  </td>
+        </tr>
+        <tr>
+				<td class="main-wrap" style="padding: 25px;padding-top: 0px;padding-right: 0px;border-top:1px solid #dddddd; ">
+				<table width="630" border="0px" cellspacing="0" cellpadding="5" style="background-color: white;padding-left: 10px;">
+					<tr>
+					<th class="totals_tab" style="text-align:right;width:75%;padding-top:10px"><span>Sub Total</span></th>&nbsp;&nbsp;<th style="text-align:right;padding-right:0;width:350px;"><span>&#8377;</span> $invDetails.get("taxableVal")</th>
+					</tr>
+					<tr>
+					<th style="text-align:right;width:75%;"><span>IGST</span></th>&nbsp;&nbsp;<th style="text-align:right;padding-right:0;width:350px;"><span>&#8377;</span> $invDetails.get("igstVal")</th>
+					</tr>
+					<tr>
+					<th style="text-align:right;width:75%;"><span>CGST</span></th>&nbsp;&nbsp;<th style="text-align:right;padding-right:0;width:350px;"><span>&#8377;</span> $invDetails.get("cgstVal")</th>
+					</tr>
+					<tr>
+					<th style="text-align:right;width:75%;"><span style="text-align:right;">SGST</span></th>&nbsp;&nbsp;<th style="text-align:right;padding-right:0;width:350px;"><span>&#8377;</span> $invDetails.get("sgstVal")</th>
+					</tr>
+					<tr>
+					<th style="text-align:right;width:75%;"><span style="text-align:right;">Grand Total</span></th>&nbsp;&nbsp;<th style="text-align:right;padding-right:0;width:350px;"><span>&#8377;</span> $invDetails.get("totalVal")</th>
+					</tr>
+				</table>
+				
+        	</td>
+        </tr>
+        #end
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+		#if($signcheck == true || $signcheck == "true")
+         <td><p><span lang="EN-US">Thanks, </span></p>
+              #if($clientDetails.get("clientSignature") != "")
+              #set($sign = $clientDetails.get("clientSignature").replaceAll("\n", "<br />"))
+	            	<p>$sign</p>
+              #else
+               <p><strong><span lang="EN-US">$clientDetails.get("clientName")</span></strong></p>
+	             #if($clientDetails.get("clientEmail") != "")
+	            	<p><span lang="EN-US">Email - <a href="mailto:$clientDetails.get("clientEmail")" target="_blank">$clientDetails.get("clientEmail")</a> </span></p>
+	             #end
+	            #if($clientDetails.get("clientMobileNumber") != "")
+	            	<p><span lang="EN-US">Contact No - +$clientDetails.get("clientMobileNumber")</span></p>
+	            #end
+            #end
+            </td>
+		#end	
+        </tr>
+        <tr><td style="border-top:1px solid #dddddd;text-align:center;"><p><span lang="EN-US">If you receive an email that seems fraudulent, please check with the business owner before paying.</span></p></td></tr>
+         <tr>
+          <td align="center"><img src="https://www.mastergst.com/static/images/master/logo-mastergst.png" alt="Master GST" style="width: 150px;"/></td>
+        </tr>
+        <tr><td style="text-align:center;"><span lang="EN-US">Inc. All Rights Reserved</span><span style="font-size:15px;text-align:center;color:#6b6c72;display:inline-block;margin:10px"><a href="https://www.mastergst.com/privacy.html">Privacy</a> | <a href="https://www.mastergst.com/terms-conditions.html">Terms Of Service</a></span></td></tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

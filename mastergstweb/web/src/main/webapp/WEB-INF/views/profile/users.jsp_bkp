@@ -1,0 +1,571 @@
+<%@include file="/WEB-INF/views/includes/taglib.jsp" %>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<title>MasterGST | Users</title>
+<%@include file="/WEB-INF/views/includes/common_script.jsp" %>
+<link rel="stylesheet" href="${contextPath}/static/mastergst/css/dashboard-cp/dashboard-cp.css" media="all" />
+<link rel="stylesheet" href="${contextPath}/static/mastergst/css/dashboard-ca/dashboard-ca.css" media="all" />
+<link rel="stylesheet" href="${contextPath}/static/mastergst/css/common/select2.min.css" media="all" />
+<script src="${contextPath}/static/mastergst/js/jquery/validator.min.js" type="text/javascript"></script>
+<script src="${contextPath}/static/mastergst/js/jquery/select2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var users = new Array(), currentEmail='';
+	$(document).ready(function() {
+		$('#cpUserNav').addClass('active');
+		$('.nonAspAdmin').addClass('active');
+			var table = $('table.display').DataTable({
+			"dom": '<"toolbar">frtip',
+			"pageLength": 10,
+			"language": {
+				"search": "_INPUT_",
+				"searchPlaceholder": "Search...",
+				"paginate": {
+					"previous": "<img src='${contextPath}/static/mastergst/images/master/td-arw-l.png' />",
+					"next": "<img src='${contextPath}/static/mastergst/images/master/td-arw-r.png' />"
+				}
+			}
+		});
+		  $("div.toolbar").html('<h4>Users</h4><a href="#" class="btn btn-blue-dark permissionSettings-Users-Add"  data-toggle="modal" data-target="#editModal" onclick="populateElement()">Add</a> ');
+		var headertext = [],
+			headers = document.querySelectorAll("table.display th"),
+			tablerows = document.querySelectorAll("table.display th"),
+			tablebody = document.querySelector("table.display tbody");
+		for (var i = 0; i < headers.length; i++) {
+			var current = headers[i];
+			headertext.push(current.textContent.replace(/\r?\n|\r/, ""));
+		}
+		for (var i = 0, row; row = tablebody.rows[i]; i++) {
+			for (var j = 0, col; col = row.cells[j]; j++) {
+				col.setAttribute("data-th", headertext[j]);
+			}
+		}
+		$('#role, #company, #branches, #verticals').select2();
+		var cUserType ='<c:out value="${usertype}"/>';
+		var userEmail = {
+			url: function(phrase) {
+				return "${contextPath}/srchUsers/${usertype}?query="+ phrase + "&format=json";
+			},
+			getValue: "email",
+			list: {
+				onChooseEvent: function() {
+					var custData = $("#profileemail1").getSelectedItemData();
+					if(custData && custData.email) {
+						$('#profileemail1').val(custData.email);
+						$.ajax({
+							url: "${contextPath}/chkemail?email="+$('#profileemail1').val(),
+							async: false,
+							cache: false,
+							dataType:"json",
+							success : function(response, status, request) {
+								if(response) {
+									response.id = request.getResponseHeader('user_id');
+									response.cdate = request.getResponseHeader('cdate');
+									if((request.getResponseHeader('exstngtype') != cUserType) 
+										|| (request.getResponseHeader('parentid') == '')) {
+										populateElement();
+										$("#profilemailempty").show();
+									} else {
+										$("#profilemailempty").hide();
+										showUserData(response);
+									}
+								}
+							}
+						});
+					}
+				}
+			}
+		};
+		$("#profileemail1").easyAutocomplete(userEmail);
+	});
+	function showUserData(user) {
+		$("input[name='id']").remove();
+		$('#uname').val(user.fullname);
+		$('#role').select2().val(user.role).trigger('change');
+		$('#company').select2().val(user.company).trigger('change');
+		<c:if test="${not empty centers}">
+		$('#center').select2().val(user.centers).trigger('change');
+		</c:if>
+		$('#password').val(user.password);
+		$('#confirmPassword').val(user.password);
+		//$('.emailId').val(user.email);
+		$('#mobile').val(user.mobilenumber);
+		if(user.email) {
+			document.getElementById("password").disabled = true;
+			document.getElementById("confirmPassword").disabled = true;
+			document.getElementById("mobile").type='password';
+			document.getElementById("mobile").disabled = true;
+		} else {
+			document.getElementById("password").disabled = false;
+			document.getElementById("confirmPassword").disabled = false;
+			document.getElementById("mobile").type='text';
+			document.getElementById("mobile").disabled = false;
+		}
+		$('#numberofclients').val(user.numberofclients);
+		$('#branches').select2().val(user.branch).trigger('change');
+		$('#verticals').select2().val(user.vertical).trigger('change');
+		if(user.isglobal == 'true') {
+			$("#isglobal").prop("checked", true);
+		} else {
+			$("#isglobal").prop("checked", false);
+		}
+		if(user.disable == 'true') {
+			$("#disable").prop("checked", true);
+		} else {
+			$("#disable").prop("checked", false);
+		}
+		if(user.id){
+			$("form[name='userform']").append('<input type="hidden" name="id" value="'+user.id+'">');
+		}
+		$("input[name='createdDate']").val(user.cdate);
+		$("input[name='createdBy']").val(user.createdBy);
+		$("form[name='userform']").validator('update');
+		currentEmail = user.email;
+	}
+	function test() {
+		document.getElementById("password").disabled = false;
+		document.getElementById("confirmPassword").disabled = false;
+		document.getElementById("mobile").disabled = false;
+	}
+	function populateElement(userId) {
+		$('.with-errors').html('');
+		$('.form-group').removeClass('has-error has-danger');
+		currentEmail = '';
+		$('#uname').val('');
+		$('#role').select2().val('').trigger('change');
+		var cArray=new Array();
+		cArray.push('${client.id}');
+		$('#company').select2().val('').trigger('change');
+		$('#password').val('').prop('readonly', false);
+		$('#confirmPassword').val('').prop('readonly', false);
+		$('.emailId').val('');
+		$('#mobile').val('');
+		$('#numberofclients').val('');
+		$('#branches').select2().val('').trigger('change');
+		$('#verticals').select2().val('').trigger('change');
+		$("#isglobal").prop("checked", false);
+		$("#disable").prop("checked", false);
+		$("input[name='id']").remove();
+		$("input[name='createdDate']").val('');
+		$("input[name='createdBy']").val('');
+		<c:if test="${not empty centers}">
+		$('#center').select2().val('').trigger('change');
+		</c:if>
+		if(userId) {
+			users.forEach(function(user) {
+				if(user.id == userId) {
+					$('#uname').val(user.name);
+					$('#role').select2().val(user.role).trigger('change');
+					$('#company').select2().val(user.company).trigger('change');
+					<c:if test="${not empty centers}">
+					$('#center').select2().val(user.centers).trigger('change');
+					</c:if>
+					$('#password').val(user.password);
+					$('#confirmPassword').val(user.password);
+					$('.emailId').val(user.email);
+					$('#mobile').val(user.mobile);
+					$('#numberofclients').val(user.numberofclients);
+					$('#branches').select2().val(user.branch).trigger('change');
+					$('#verticals').select2().val(user.vertical).trigger('change');
+					if(user.isglobal == 'true') {
+						$("#isglobal").prop("checked", true);
+					} else {
+						$("#isglobal").prop("checked", false);
+					}
+					if(user.disable == 'true') {
+						$("#disable").prop("checked", true);
+					} else {
+						$("#disable").prop("checked", false);
+					}
+					$("form[name='userform']").append('<input type="hidden" name="id" value="'+user.id+'">');
+					$("input[name='createdDate']").val(user.createdDate);
+					$("input[name='createdBy']").val(user.createdBy);
+					currentEmail = user.email;
+				}
+			});
+		}
+		$("form[name='userform']").validator('update');
+	}
+</script>
+</head>
+<body class="body-cls">
+<c:choose>
+	<c:when test='${not empty client && not empty client.id}'>
+		<%@include file="/WEB-INF/views/includes/client_header.jsp" %>
+	</c:when>
+	<c:otherwise>
+		<%@include file="/WEB-INF/views/includes/newclintheader.jsp" %>
+	</c:otherwise>
+	</c:choose>
+<!--- breadcrumb start -->
+<c:choose>
+<c:when test='${not empty client && not empty client.id}'>
+<div class="breadcrumbwrap">
+</c:when>
+<c:otherwise>
+<div class="breadcrumbwrap">
+</c:otherwise>
+</c:choose>
+<div class="container">
+	<div class="row">
+        <div class="col-md-12 col-sm-12">
+				<ol class="breadcrumb">
+					<c:choose>
+					<c:when test='${not empty client && not empty client.id}'>
+						<li class="breadcrumb-item"><a href="#" class="urllink" link="${contextPath}/cdb/<c:out value="${id}"/>/<c:out value="${fullname}"/>/<c:out value="${usertype}"/>"/><c:choose><c:when test="${usertype eq userCA || usertype eq userTaxP || usertype eq userCenter}">Clients</c:when><c:otherwise>Business</c:otherwise></c:choose></a></li>
+						<li class="breadcrumb-item"><a href="#" class="urllink" link="${contextPath}/ccdb/<c:out value="${id}"/>/<c:out value="${fullname}"/>/<c:out value="${usertype}"/>/<c:out value="${client.id}"/>?type=change"><c:choose><c:when test='${fn:length(client.businessname) > 50}'>${fn:substring(client.businessname, 0, 50)}..</c:when><c:otherwise>${client.businessname}</c:otherwise></c:choose></a></li>
+						<li class="breadcrumb-item active">Company Profile</li>
+					</c:when>
+					<c:otherwise>
+					<li class="breadcrumb-item"><c:choose><c:when test="${usertype eq userCenter}"><a href="#" class="urllink" link="${contextPath}/cp_centers/<c:out value="${id}"/>/<c:out value="${fullname}"/>/<c:out value="${usertype}"/>"/>Admin</a></c:when><c:otherwise><a href="#" class="urllink" link="${contextPath}/teamuser/<c:out value="${id}"/>/<c:out value="${fullname}"/>/<c:out value="${usertype}"/>"/>Admin</a></c:otherwise></c:choose></li>
+					<li class="breadcrumb-item active">Users</li>
+					</c:otherwise>
+					</c:choose>
+				</ol>
+				<div class="retresp"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--- breadcrumb end -->
+        <div class="db-ca-wrap">
+            <div class="container">
+                <div class="row">
+                    <!-- left side begin -->
+                    <%@include file="/WEB-INF/views/profile/leftnav.jsp" %>
+                    <!-- left side end -->
+                    <!-- dashboard cp table begin -->
+   <div class="col-md-10 col-sm-12 customtable p-0">
+                        <table id="dbTable1" class="display row-border dataTable meterialform" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>User Name</th>
+                                    <th class="text-center">Company</th>
+                                    <th class="text-center">Role</th>
+                                    <th class="text-center">Email ID</th>
+                                    <th class="text-center">Mobile No</th>
+									<c:if test='${empty centers && (empty client || empty client.id)}'>
+									<th class="text-center">No of Clients</th>
+									<th class="text-center">Clients Added</th>
+									</c:if>
+									<c:if test="${not empty centers}">
+									<th class="text-center">Centers</th>
+                                    </c:if>
+									<th class="text-center">Disabled?</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+								<c:forEach items="${users}" var="user">
+								<script type="text/javascript">
+									var user = new Object();
+									user.id = '<c:out value="${user.id}"/>';
+									user.userid = '<c:out value="${user.userid}"/>';
+									user.fullname = '<c:out value="${user.fullname}"/>';
+									user.clientid = '<c:out value="${user.clientid}"/>';
+									user.name = '<c:out value="${user.name}"/>';
+									user.password = '<c:out value="${user.password}"/>';
+									user.company = new Array();
+									<c:if test='${not empty user.company}'>
+									<c:forEach items="${user.company}" var="company">
+									user.company.push('${company}');
+									</c:forEach>
+									</c:if>
+									user.centers = new Array();
+									<c:if test='${not empty user.centers}'>
+									<c:forEach items="${user.centers}" var="center">
+									user.centers.push('${center}');
+									</c:forEach>
+									</c:if>
+									user.branch = new Array();
+									<c:if test='${not empty user.branch}'>
+									<c:forEach items = "${user.branch}" var="branch">
+									user.branch.push('${branch}');
+									</c:forEach>
+									</c:if>
+									user.vertical = new Array();
+									<c:if test='${not empty user.vertical}'>
+									<c:forEach items = "${user.vertical}" var="vertical">
+									user.vertical.push('${vertical}');
+									</c:forEach>
+									</c:if>
+									user.role = '<c:out value="${user.role}"/>';
+									user.numberofclients = '<c:out value="${user.numberofclients}"/>';
+									user.addedclients = '<c:out value="${user.addedclients}"/>';
+									user.group = '<c:out value="${user.group}"/>';
+									user.email = '<c:out value="${user.email}"/>';
+									user.mobile = '<c:out value="${user.mobile}"/>';
+									user.isglobal = '<c:out value="${user.isglobal}"/>';
+									user.disable = '<c:out value="${user.disable}"/>';
+									user.createdDate = '<fmt:formatDate pattern="yyyy-MM-dd" value="${user.createdDate}" />';
+									user.createdBy = '<c:out value="${user.createdBy}"/>';
+									users.push(user);
+								</script>
+								<tr>
+                                    <td align="left">${user.name}</td>
+                                    <td align="left">
+									<c:set var="contains" value="false" />
+									<c:forEach items="${user.company}" var="company" varStatus="loop">
+									<c:forEach items="${exstClients}" var="client">
+									<c:if test="${client.id eq company}">
+									<c:set var="contains" value="true" />
+									${loop.index+1}) ${client.businessname}<br/>
+									</c:if>
+									</c:forEach>
+									</c:forEach>
+									<c:if test="${contains eq false}">-</c:if>
+									</td>
+                                    <td align="left">
+									<c:set var="contains" value="false" />
+									<c:forEach items="${roles}" var="role">
+									<c:if test="${role.id eq user.role}">
+									<c:set var="contains" value="true" />
+									${role.name}
+									</c:if>
+									</c:forEach>
+									<c:if test="${contains eq false}">-</c:if>
+									</td>
+                                    <td align="right">${user.email}</td>
+                                    <td align="right">${user.mobile}</td>
+									<c:if test='${empty centers && (empty client || empty client.id)}'>
+									<td align="right">${user.numberofclients}</td>
+									<td align="right">${user.addedclients}</td>
+									</c:if>
+									<c:if test="${not empty centers}">
+									<td align="right">
+									<c:set var="contains" value="false" />
+									<c:forEach items="${user.centers}" var="ucenter" varStatus="loop">
+									<c:forEach items="${centers}" var="center">
+									<c:if test="${center.id eq ucenter}">
+									<c:set var="contains" value="true" />
+									${loop.index+1}) ${center.name}<br/>
+									</c:if>
+									</c:forEach>
+									</c:forEach>
+									<c:if test="${contains eq false}">-</c:if>
+									</td>
+                                    </c:if>
+									<td align="left"><c:choose><c:when test="${not empty user.disable && user.disable eq true}">Yes</c:when><c:otherwise>No</c:otherwise></c:choose></td>
+                                    <td class="actionicons"><a class="btn-edt permissionSettings-Users-Edit" href="#" data-toggle="modal" data-target="#editModal" onClick="populateElement('${user.id}')"><i class="fa fa-edit"></i> </a></td>
+                                </tr>
+								</c:forEach>
+                            </tbody>
+                        </table>
+                    </div> 
+  <!-- dashboard cp table end -->
+</div>                    
+                </div>
+            </div>
+        </div>
+    <!-- footer begin here -->
+    <%@include file="/WEB-INF/views/includes/footer.jsp" %>
+    <!-- footer end here -->
+		 <!-- Edit Modal Start -->
+    <div class="modal fade" id="editModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-right" role="document">
+            <div class="modal-content">
+                <div class="modal-body meterialform bs-fancy-checks">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" onClick="test()"> <img src="${contextPath}/static/mastergst/images/master/closeicon-blue.png" alt="Close" /></span>
+                    </button>
+                    <div class="bluehdr">
+                        <h3>Users</h3>
+                    </div>
+                    <!-- row begin -->
+					<form:form method="POST" data-toggle="validator" class="meterialform" name="userform" action="${contextPath}/createprofileuser/${id}/${fullname}/${usertype}/${month}/${year}" modelAttribute="user">
+					<div class="row  p-5">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt astrich">Email</p>
+                            <span class="errormsg" id="createdBy_Msg"></span>
+                            <input type="text" id="profileemail1" class="emailId" name="email" required="required" data-error="Please enter valid email address" placeholder="john@gmail.com" value="" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@(?:[a-zA-Z0-9]+\.[A-Za-z]{2,5})(?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" data-invalidemail="invalidemail" data-invalidemail-error="Email Id already exists" />
+                            <label for="email" class="control-label"></label>
+							<div class="help-block with-errors"></div>
+							 <div id="profilemailempty" style="display:none">
+								<div class="ddbox">
+									<p>Email Id already exists.</p>
+								</div>
+							</div>
+                            <i class="bar"></i> </div>				
+						<div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt astrich">User Name</p>
+                            <span class="errormsg" id="userName_Msg"></span>
+                            <input type="text" id="uname" name="name" data-minlength="3" required="required" data-error="Please enter more than 3 characters" placeholder="Name" value="" onKeyPress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))" />
+                            <label for="input" class="control-label"></label>
+							<div class="help-block with-errors"></div>
+                            <i class="bar"></i> </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt">Role</p>
+                            <span class="errormsg" id="role_Msg"></span>
+							<select id="role" class="mt-1" name="role" value="" >
+								<option value=""> - Select - </option>
+								<c:forEach items="${roles}" var="role">
+								<option value="${role.id}">${role.name}</option>
+								</c:forEach>
+							</select>
+                            <label for="input" class="control-label"></label>
+                            <i class="bar"></i> </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt astrich">Password </p>
+                            <span class="errormsg" id="password_Msg"></span>
+                            <input type="password" id="password" name="password" data-minlength="6" required="required" data-error="Please enter more than 6 characters" placeholder="******" value="" />
+                            <label for="input" class="control-label"></label>
+							<div class="help-block with-errors"></div>
+                            <i class="bar"></i> </div>
+						<div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt astrich">Confirm Password</p>
+                            <span class="errormsg" id="confirmPassword_Msg"></span>
+                            <input type="password" id="confirmPassword" name="confirmPassword" data-minlength="6" required="required" data-match="#password" data-match-error="Passwords doesn't match" placeholder="******" value="" />
+                            <label for="input" class="control-label"></label>
+							<div class="help-block with-errors"></div>
+                            <i class="bar"></i> 
+						</div>
+						<div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt astrich">Mobile</p>
+                            <span class="errormsg" id="date_Msg"></span>
+                            <input type="Tel" name="mobile" id="mobile" required="required" data-minlength="10" maxlength="10" pattern="[0-9]+" data-error="Please enter valid mobile number" placeholder=" " value="" onKeyPress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode == 0))"/>
+                            <label for="input" class="control-label"></label>
+							<div class="help-block with-errors"></div>
+                            <i class="bar"></i> 
+						</div>								
+                        <div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt">Company</p>
+                            <span class="errormsg" id="company_Msg"></span>
+							<select id="company" class="mt-1" name="company" onChange="selectCompanyName(this)" multiple value="" >
+								<c:forEach items="${clients}" var="client">
+								<option value="${client.id}">${client.businessname}</option>
+								</c:forEach>
+							</select>
+                            <label for="input" class="control-label"></label>
+                            <i class="bar"></i> </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt">Branch</p>
+                            <span class="errormsg" id="branch_Msg"></span>
+							<select id="branches" class="mt-1" class="userbranch" name="branch" multiple value="" >
+							</select>
+                            <label for="input" class="control-label"></label>
+                            <i class="bar"></i> 
+						</div>
+						<div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt">Vertical</p>
+                            <span class="errormsg" id="branch_Msg"></span>
+							<select id="verticals" class="mt-1" class="uservertical" name="vertical" multiple value="" >
+							</select>
+                            <label for="input" class="control-label"></label>
+                            <i class="bar"></i> 
+						</div>
+						<c:if test="${not empty centers}">
+						<div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt">Centers</p>
+                            <span class="errormsg" id="center_Msg"></span>
+							<select id="center" class="mt-1" name="centers" multiple value="" >
+								<c:forEach items="${centers}" var="center">
+								<option value="${center.id}">${center.name}</option>
+								</c:forEach>
+							</select>
+                            <label for="input" class="control-label"></label>
+                            <i class="bar"></i> </div>
+						</c:if>
+						<c:if test='${empty client || empty client.id}'>
+						<div class="form-group col-md-6 col-sm-12">
+                            <p class="lable-txt">No Of Clients</p>
+                            <span class="errormsg" id="date_Msg"></span>
+                            <input type="text" name="numberofclients" pattern="[0-9]+" id="numberofclients" placeholder="150" value="" onKeyPress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode == 0))" />
+                            <label for="input" class="control-label"></label>
+							<div class="help-block with-errors"></div>
+                            <i class="bar"></i> </div>
+						<c:if test="${empty centers}">
+						<div class="form-group col-md-6 col-sm-12">
+						</div>
+						</c:if>
+						</c:if>
+						<div style="display:inline-flex; margin-top:45px">
+						<c:if test='${not empty client && not empty client.id}'>
+						<div class="form-group" style="padding: 0px!important; margin-left: 17px; margin-right: 24px;">
+							<input class="form-check-input" type="checkbox" id="isglobal" name="isglobal" value="true" />
+							<label for="isglobal"><span class="ui"></span>
+							</label> <span class="labletxt">Global User</span>
+                        </div>
+						</c:if>
+						<div class="form-group" style="padding:0px!important">
+							<input class="form-check-input" type="checkbox" id="disable" name="disable" value="true" />
+							<label for="disable"><span class="ui"></span>
+							</label> <span class="labletxt">Disable</span>
+                        </div>
+						</div>
+						<div class="bdr-b col-12" style="display:block">&nbsp;</div>
+                        <div class="col-12 text-center mt-3" style="display:block">
+							<input type="hidden" name="userid" value="<c:out value="${id}"/>">
+						    <input type="hidden" name="fullname" value="<c:out value="${fullname}"/>">
+							<c:if test='${not empty client && not empty client.id}'>
+							<input type="hidden" name="clientid" value="<c:out value="${client.id}"/>">	
+							</c:if>
+							<input type="hidden" name="createdDate" value='<fmt:formatDate pattern="yyyy-MM-dd" value="${user.createdDate}" />'>
+							<input type="hidden" name="createdBy" value="${user.createdBy}">
+							<input type="submit" class="btn btn-blue-dark" value="Save" onClick="updateSpinner(this)"/>
+							<a href="#" class="btn btn-blue-dark ml-2" data-dismiss="modal" aria-label="Close" onClick="test()">Cancel</a>						
+						</div>
+                    </div>
+					</form:form>
+                    <!-- row end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Modal End -->
+	<c:choose>
+	<c:when test='${not empty client && not empty client.id}'>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			$('#nav-client').addClass('active');
+			$('#cp_center').css("display","none");
+			$('#cp_Allcenter').css("display","none");
+			$('#cp_centerFiling').css("display","none");
+			$('#cp_centerClinet').css("display","none");
+        });
+    </script>
+	</c:when>
+	<c:otherwise>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			$('#cp_center').css("display","block");
+			$('#cp_Allcenter').css("display","block");
+			$('#cp_centerFiling').css("display","block");
+			$('#cp_centerClinet').css("display","block");
+			$('#nav-team').addClass('active');
+        });
+    </script>
+	</c:otherwise>
+	</c:choose>
+	<script>
+	function selectCompanyName(select){
+		var clientList = new Array();
+		var clientids = $(select).val();
+		 var str = clientids+ '';
+		if (str.indexOf(",") != -1) {
+			var clntids = str.split(",");
+			for(var i=0; i<clntids.length; i++){
+				clientList.push(clntids[i]);
+			}
+		}else{
+			clientList.push(clientids);
+		}
+		$('#branches,#verticals').children('option').remove();
+		$.ajax({
+			url: "${contextPath}/clientsData?clientIds="+clientList,
+			async: false,
+			cache: false,
+			success : function(response) {
+				response.forEach(function(branche){
+				branche.branches.forEach(function(branch) {
+					$("#branches").append($("<option></option>").attr("value",branch.name).text(branch.name)); 		
+				});
+				branche.verticals.forEach(function(vertical) {
+					$("#verticals").append($("<option></option>").attr("value",vertical.name).text(vertical.name)); 
+				});
+				});
+			}
+		});
+	}
+	</script>
+</body>
+</html>

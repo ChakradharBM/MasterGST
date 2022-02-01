@@ -1,0 +1,17 @@
+.page-banner{ background:url(../../images/partners/pagebanner.jpg) 0 0 no-repeat; width:100%; height:427px; position:relative}
+.page-banner-txt{ padding:12% 50px 0; text-align:center}
+.page-banner-txt h2{ font-size:60px;}
+.page-banner-txt p{ font-size:24px; font-style:italic; }
+.page-banner-txt .btn.btn-blue{ color:#314999; font-weight:600}
+.partners-wrap{ padding:40px 0 20px;}
+.partners-wrap .hdrtitle{ font-size:36px;}
+.partner-grid{ margin:20px 0px}
+.partner-grid-img-details{ height:400px; margin-bottom:30px; overflow:hidden; width:100%}
+.partner-grid-img-details img{ max-width:100%; height:100%}
+.partner-grid-img{ height:250px; overflow:hidden} 
+.partner-grid-img img{ max-width:100%; height:100%}
+.partner-grid-txt{ padding:15px 0;}
+.partner-grid-txt h3{ color:#282828; font-size:32px;}
+.partner-grid-txt h3 a{color:#282828 }
+.partner-grid-txt p{ color:#282828; font-size:20px;display:none}
+.partner-grid-txt .enrollnow{ color:#38529b; font-size:16px; font-weight:bold; text-transform:uppercase}

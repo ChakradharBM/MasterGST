@@ -1,0 +1,35 @@
+table.simple-tree-table .tree-icon{display:inline-block;width:10px;line-height:10px;margin-right: 10px;border: 1.5px solid #5769bb;text-align:center;cursor:pointer}
+table.simple-tree-table tr.tree-opened .tree-icon:after{content:"\f068";font-family: FontAwesome;font-weight: 100;font-size: 8px;}
+table.simple-tree-table tr.tree-closed .tree-icon:after{content:"\f067"; font-family: FontAwesome;font-weight: 100;font-size: 8px;vertical-align: bottom;}
+table.simple-tree-table tr.tree-empty .tree-icon{border:none!important;}
+table.dataTable.row-border tbody td{border-top:none!important;}
+.db-ca-wrap table.dataTable.row-border tbody tr td:first-child ,table.simple-tree-table tfoot tr th{color:black!important;}
+table.simple-tree-table tfoot{background: #ffcccc!important;}
+table.simple-tree-table tbody{line-height: 0.8;}
+.db-ca-wrap table#collapsed tbody tr td:last-child{border-left: 1px solid lightgray!important;}
+.db-ca-wrap table#collapsed1 tbody tr td:last-child,.db-ca-wrap table.dataTable.pandlTab tbody tr td:last-child{border-left: 1px solid lightgray!important;}
+table.simple-tree-table tfoot tr th{border-right: 1px solid lightgray!important;border-left: 1px solid lightgray!important;}
+table.simple-tree-table tbody td{vertical-align:bottom;}
+.db-ca-wrap table.trailTab tfoot tr th:last-child,.db-ca-wrap table.trailTab tbody tr td:nth-child(1),.db-ca-wrap table.trailTab tbody tr td:nth-child(2),.db-ca-wrap table.trailTab tbody tr td:nth-child(3),.db-ca-wrap table.trailTab tbody tr td:nth-child(4),.db-ca-wrap table.trailTab tbody tr td:nth-child(5){border-left: 1px solid lightgray!important;border-right: 1px solid lightgray!important;}
+.datepicker-orient-left{top: 180px!important;}
+table#collapsed thead tr th,table#collapsed1 thead tr th{font-size: 13px;font-weight: 500;}
+
+#treegrid , #columntabletreegrid , .jqx-widget-header , #contenttabletreegrid ,#tabletreegrid {width:100%!important;z-index:1}
+.jqx-grid-column-header { width: 50%!important;right: 0!important;left:unset!important}
+.jqx-grid-column-header:first-child {right:unset!important;left:0px!important}
+.jqx-grid-column-header div div{text-align: center!important;}
+#tabletreegrid tbody tr td:last-child{text-align: right!important;border-left: 1.5px solid #d1d1d1!important;}
+
+
+.jqx-tree-grid-collapse-button:after{content:"\f067";font-family: FontAwesome;font-weight: 100;font-size: 10px;vertical-align: bottom;padding: 3px 4px;border: 1.5px solid #5769bb;border-radius: 6px;margin-right: 10px;}
+.jqx-tree-grid-expand-button:after , .minus-icon:after{content:"\f068";font-family: FontAwesome;font-weight: 100;font-size: 8px;padding: 3px 4px;border: 1.5px solid #5769bb;border-radius: 6px;margin-right: 10px;}
+#dropdownlistArrownumberFormats div{background-image: url(../../images/reports-img/icon-down-blue.png);background-repeat: no-repeat;background-position: center;float:right;margin-right: 4px;}
+/* .jqx-fill-state-pressed , .jqx-fill-state-normal{    background: #ffffff;} */
+#numberFormats{display: inline-block;padding-top: 2px;background: #ffffff;}
+#listBoxnumberFormats{top:28.5%!important}
+.treemainhead{font-size:15px;font-weight:600}
+/*.treechildhead{font-size:13px;font-style:italic;font-weight:600}*/
+.tree-opened .treechildhead{font-size:13px;font-style:italic;font-weight:600}
+.tree-empty .treechildhead{font-size:13px;font-style:italic;}
+.tree-opened .childhead{font-size:13px;font-style:italic;font-weight:600}
+.tree-empty .childhead{font-size:13px;font-style:italic;}

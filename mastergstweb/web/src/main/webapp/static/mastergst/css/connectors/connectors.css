@@ -1,0 +1,14 @@
+.db-ca-wrap { min-height:550px; }
+.connectors-wrap { }
+.connectors-wrap h2 { display:block; font-weight:300 }
+.connectors-wrap h6 { display:block; color:#777; font-size:20px; font-weight:300 }
+.connecters-logos, .connecters-logos ul{ margin:20px 0; padding:0; float:left;}
+.connecters-logos ul li{ display:inline-block; margin:0 20px 20px 0; border-radius:5px; background-color:#fff; list-style:none}
+.connecters-logos ul li a{ display:inline-block;padding:10px;}
+.rightside-wrap { margin-bottom: 20px; }
+.rightside-wrap h5 { font-size: 15px; margin-bottom: 15px; }
+.rightside-wrap ul { background-color: #fff; padding: 10px; margin: 0 0 15px; -webkit-box-shadow: 0 0 2px 2px #eff3f6; box-shadow: 0 0 2px 2px #eff3f6; float: left; width: 100%; }
+.rightside-wrap ul li { float:left;margin: 7px 0; list-style: none; font-size: 14px; width:100% }
+.rightside-wrap ul li .sm-img { background-color: #e6eaeb; border-radius: 50%; margin-right: 10px; float: left; height: 30px; width: 30px; overflow:hidden; vertical-align:middle }
+.rightside-wrap ul li a{ vertical-align:middle}
+.rightside-wrap ul li .sm-img img{height: 30px; width: 30px;}

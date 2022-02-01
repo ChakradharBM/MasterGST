@@ -1,0 +1,238 @@
+{'commonledger': [ 
+	{	
+		'ledgerName': 'Land',
+		'grpsubgrpName':'Land',
+		'ledgerpath':'Assets/Fixed Assets/Land'
+	},
+	{	
+		'ledgerName': 'Buildings',
+		'grpsubgrpName':'Buildings',
+		'ledgerpath':'Assets/Fixed Assets/Buildings'
+	},
+	{	
+		'ledgerName': 'Plant and Equipment',
+		'grpsubgrpName':'Plant and Equipment',
+		'ledgerpath':'Assets/Fixed Assets/Plant and Equipment'
+	},
+	{	
+		'ledgerName': 'Furniture and Fixtures',
+		'grpsubgrpName':'Furniture and Fixtures',
+		'ledgerpath':'Assets/Fixed Assets/Furniture and Fixtures'
+	},
+	{	
+		'ledgerName': 'Vehicles',
+		'grpsubgrpName':'Vehicles',
+		'ledgerpath':'Assets/Fixed Assets/Vehicles'
+	},
+	{	
+		'ledgerName': 'Office Equipment',
+		'grpsubgrpName':'Office Equipment',
+		'ledgerpath':'Assets/Fixed Assets/Office Equipment'
+	},
+	{	
+		'ledgerName': 'Other Assets',
+		'grpsubgrpName':'Other Assets',
+		'ledgerpath':'Assets/Fixed Assets/Other Assets'
+	},
+	{	
+		'ledgerName': 'Deferred Tax Assets (net)',
+		'grpsubgrpName':'Deferred Tax Assets (net)',
+		'ledgerpath':'Assets/Deferred Tax Assets (net)/Deferred Tax Assets (net)'
+	},
+	{	
+		'ledgerName': 'Rent Deposit',
+		'grpsubgrpName':'Deposits',
+		'ledgerpath':'Assets/Long term Loans & Advances/Deposits'
+	},
+	{	
+		'ledgerName': 'Electricity Deposit',
+		'grpsubgrpName':'Deposits',
+		'ledgerpath':'Assets/Long term Loans & Advances/Deposits'
+	},
+	{	
+		'ledgerName': 'Cash',
+		'grpsubgrpName':'Cash in hand',
+		'ledgerpath':'Assets/Current Assets/Cash in hand'
+	},
+	{	
+		'ledgerName': 'Profit & Loss',
+		'grpsubgrpName':'Reserve & Surplus',
+		'ledgerpath':'Liabilities/Capital Fund/Reserve & Surplus'
+	},
+	{	
+		'ledgerName': 'Deferred tax liabilities (Net)',
+		'grpsubgrpName':'Deferred tax liabilities (Net)',
+		'ledgerpath':'Liabilities/Long terms liabilities/Deferred tax liabilities (Net)'
+	},
+	{	
+		'ledgerName': 'Sales',
+		'grpsubgrpName':'Revenue from operations',
+		'ledgerpath':'Income/Direct Income/Revenue from operations'
+	},
+	{	
+		'ledgerName': 'Interest',
+		'grpsubgrpName':'Other Income',
+		'ledgerpath':'Income/Indirect income/Other Income'
+	},
+	{	
+		'ledgerName': 'Forex Gain',
+		'grpsubgrpName':'Other Income',
+		'ledgerpath':'Income/Indirect income/Other Income'
+	},
+	{	
+		'ledgerName': 'Salaries',
+		'grpsubgrpName':'Employee Cost',
+		'ledgerpath':'Expenditure/Indirect Expenses/Employee Cost'
+	},
+	{	
+		'ledgerName': 'Staffwelfare',
+		'grpsubgrpName':'Employee Cost',
+		'ledgerpath':'Expenditure/Indirect Expenses/Employee Cost'
+	},
+	{	
+		'ledgerName': 'Insurance',
+		'grpsubgrpName':'Employee Cost',
+		'ledgerpath':'Expenditure/Indirect Expenses/Employee Cost'
+	},
+	{	
+		'ledgerName': 'PF',
+		'grpsubgrpName':'Statutory contributions',
+		'ledgerpath':'Expenditure/Indirect Expenses/Employee Cost/Statutory contributions'
+	},
+	{	
+		'ledgerName': 'ESI',
+		'grpsubgrpName':'Statutory contributions',
+		'ledgerpath':'Expenditure/Indirect Expenses/Employee Cost/Statutory contributions'
+	},
+	{	
+		'ledgerName': 'Gratuity',
+		'grpsubgrpName':'Statutory contributions',
+		'ledgerpath':'Expenditure/Indirect Expenses/Employee Cost/Statutory contributions'
+	},
+	{	
+		'ledgerName': 'Statutory Bonus',
+		'grpsubgrpName':'Statutory contributions',
+		'ledgerpath':'Expenditure/Indirect Expenses/Employee Cost/Statutory contributions'
+	},
+	{	
+		'ledgerName': 'Interest on Loan',
+		'grpsubgrpName':'Borrowing and Finance cost',
+		'ledgerpath':'Expenditure/Indirect Expenses/Borrowing and Finance cost'
+	},
+	{	
+		'ledgerName': 'Rates & Taxes',
+		'grpsubgrpName':'Rates & Taxes',
+		'ledgerpath':'Expenditure/Indirect Expenses/Rates & Taxes'
+	},
+	{	
+		'ledgerName': 'Office rent',
+		'grpsubgrpName':'Rent',
+		'ledgerpath':'Expenditure/Indirect Expenses/Rent'
+	},
+	{	
+		'ledgerName': 'Repairs & Maintenance',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Power & Fuel',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Travelling & Conveyance expenses',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Telephone & Internet',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Business Promotion',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Office Maintenance',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Fee & Filling Charges',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Lodging & Boarding',
+		'grpsubgrpName':'Adminstration Expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Adminstration Expenses'
+	},
+	{	
+		'ledgerName': 'Other expenses',
+		'grpsubgrpName':'Other expenses',
+		'ledgerpath':'Expenditure/Indirect Expenses/Other expenses'
+	},
+	{	
+		'ledgerName': 'SGST Payable',
+		'grpsubgrpName':'Output Tax',
+		'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes - Liabilities/Output Tax'
+	},
+	{	
+		'ledgerName': 'CGST Payable',
+		'grpsubgrpName':'Output Tax',
+		'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes - Liabilities/Output Tax'
+	},
+	{	
+		'ledgerName': 'IGST Payable',
+		'grpsubgrpName':'Output Tax',
+		'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes - Liabilities/Output Tax'
+	},
+	{	
+		'ledgerName': 'SGST Payable RCM',
+		'grpsubgrpName':'Output Tax',
+		'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes - Liabilities/Output Tax'
+	},
+	{	
+		'ledgerName': 'CGST Payable RCM',
+		'grpsubgrpName':'Output Tax',
+		'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes - Liabilities/Output Tax'
+	},
+	{	
+		'ledgerName': 'IGST Payable RCM',
+		'grpsubgrpName':'Output Tax',
+		'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes - Liabilities/Output Tax'
+	},
+	{	
+		'ledgerName': 'IGST Receivable RCM',
+		'grpsubgrpName':'Input Crerdit',
+		'ledgerpath':'Assets/Current Assets/Duties & Taxes - Assets/Input Crerdit'
+	},
+	{	
+		'ledgerName': 'SGST Receivable RCM',
+		'grpsubgrpName':'Input Crerdit',
+		'ledgerpath':'Assets/Current Assets/Duties & Taxes - Assets/Input Crerdit'
+	},
+	{	
+		'ledgerName': 'CGST Receivable RCM',
+		'grpsubgrpName':'Input Crerdit',
+		'ledgerpath':'Assets/Current Assets/Duties & Taxes - Assets/Input Crerdit'
+	},
+	{	
+		'ledgerName': 'IGST Receivable',
+		'grpsubgrpName':'Input Crerdit',
+		'ledgerpath':'Assets/Current Assets/Duties & Taxes - Assets/Input Crerdit'
+	},
+	{	
+		'ledgerName': 'SGST Receivable',
+		'grpsubgrpName':'Input Crerdit',
+		'ledgerpath':'Assets/Current Assets/Duties & Taxes - Assets/Input Crerdit'
+	},
+	{	
+		'ledgerName': 'CGST Receivable',
+		'grpsubgrpName':'Input Crerdit',
+		'ledgerpath':'Assets/Current Assets/Duties & Taxes - Assets/Input Crerdit'
+	}
+	
+]}

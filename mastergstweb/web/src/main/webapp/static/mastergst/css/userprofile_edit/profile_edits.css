@@ -1,0 +1,19 @@
+#profileViewModal .modal-dialog{max-width:700px!important; width:700px!important}
+.footer-fixed-bottom{position: absolute; bottom: 0; border-top: 2px solid #ddd; width: 100%; padding-top:1!important}
+#profileViewModal #profile_save_btn{display:none}
+#profileViewModal .coln-txt{float:right}
+#profileViewModal .form-control {display: block; width: 100%; height: 34px;padding: 6px 12px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc!important; border-radius: 4px; webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#profileViewModal  .meterialform .form-group{margin-bottom:10px!important;margin-top:20px!important}
+#profileViewModal .errormsg{position:absolute; top:-16px;right:18px}
+.profilelist .btn-blue{background-color:#8ee3fe!important}
+.profilelist .btn-blue:hover{background-color:#36436f!important}
+input[type=text].rupee {
+    background-image: url(http://i.imgur.com/Fd7NROx.png);
+    padding: 5px;
+    padding-left: 20px;
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    background-position: 1px 6px;
+}

@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+  <worksheet name="Invoices">
+  	<loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+            <cellcheck offset="0">Invoice No*</cellcheck>
+			<cellcheck offset="1">Invoice Date*</cellcheck>
+			<cellcheck offset="2">GSTIN/UIN</cellcheck>
+			<cellcheck offset="3">Customer Name</cellcheck>
+			<cellcheck offset="4">Place Of Supply*</cellcheck>
+			<cellcheck offset="5">Invoice Type*</cellcheck>
+			<cellcheck offset="6">Reverse Charge*</cellcheck>
+			<cellcheck offset="7">Ledger Name</cellcheck>
+			<cellcheck offset="8">E-Commerce GSTIN</cellcheck>
+			<cellcheck offset="9">Billing Address</cellcheck>
+			<cellcheck offset="10">Shipment Address</cellcheck>
+			<cellcheck offset="11">Same as Billing Address</cellcheck>
+			<cellcheck offset="12">Rate inclusive of Tax</cellcheck>
+			<cellcheck offset="13">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="14">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="15">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_4</cellcheck>
+			<cellcheck offset="17">Bank Name</cellcheck>
+			<cellcheck offset="18">Account Number</cellcheck>
+			<cellcheck offset="19">Account Name</cellcheck>
+			<cellcheck offset="20">Branch Name</cellcheck>
+			<cellcheck offset="21">IFSC Code</cellcheck>
+			<cellcheck offset="22">Terms</cellcheck>
+			<cellcheck offset="23">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="24">Customer Notes</cellcheck>
+			<cellcheck offset="25">Item/Product/Service</cellcheck>
+			<cellcheck offset="26">Item Custom Field_1</cellcheck>
+			<cellcheck offset="27">Item Custom Field_2</cellcheck>
+			<cellcheck offset="28">Item Custom Field_3</cellcheck>
+			<cellcheck offset="29">Item Custom Field_4</cellcheck>
+			<cellcheck offset="30">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="31">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="32">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="33">Quantity*</cellcheck>
+			<cellcheck offset="34">Item Rate*</cellcheck>
+			<cellcheck offset="35">Discount</cellcheck>
+			<cellcheck offset="36">Exempted</cellcheck>
+			<cellcheck offset="37">Total Taxable Value*</cellcheck>
+			<cellcheck offset="38">Section</cellcheck>
+			<cellcheck offset="39">TCS Percentage</cellcheck>
+			<cellcheck offset="40">IGST Rate*</cellcheck>
+			<cellcheck offset="41">IGST Amount*</cellcheck>
+			<cellcheck offset="42">CGST Rate*</cellcheck>
+			<cellcheck offset="43">CGST Amount*</cellcheck>
+			<cellcheck offset="44">SGST Rate*</cellcheck>
+			<cellcheck offset="45">SGST Amount*</cellcheck>
+			<cellcheck offset="46">CESS Rate</cellcheck>
+			<cellcheck offset="47">CESS Amount</cellcheck>
+			<cellcheck offset="48">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="invoiceList" var="invoice" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">invoice.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="1">invoice.strDate</mapping>
+		<mapping row="2" col="2" nullAllowed="true">invoice.b2b[0].ctin</mapping>
+		<mapping row="2" col="3">invoice.billedtoname</mapping>
+		<mapping row="2" col="4" nullAllowed="true">invoice.statename</mapping>
+		<mapping row="2" col="5" nullAllowed="true">invoice.b2b[0].inv[0].invTyp</mapping>
+		<mapping row="2" col="6" nullAllowed="true">invoice.revchargetype</mapping>
+		<mapping row="2" col="7" nullAllowed="true">invoice.items[0].ledgerName</mapping>
+		<mapping row="2" col="8" nullAllowed="true">invoice.b2b[0].inv[0].etin</mapping>
+		<mapping row="2" col="9" nullAllowed="true">invoice.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="10" nullAllowed="true">invoice.consigneeaddress</mapping>
+		<mapping row="2" col="11" nullAllowed="true">invoice.samebilladdress</mapping>
+		<mapping row="2" col="12" nullAllowed="true">invoice.includetax</mapping>
+		<mapping row="2" col="13" nullAllowed="true">invoice.customField1</mapping>
+		<mapping row="2" col="14" nullAllowed="true">invoice.customField2</mapping>
+		<mapping row="2" col="15" nullAllowed="true">invoice.customField3</mapping>
+		<mapping row="2" col="16" nullAllowed="true">invoice.customField4</mapping>
+		<mapping row="2" col="17" nullAllowed="true">invoice.bankDetails.bankname</mapping>
+		<mapping row="2" col="18" nullAllowed="true">invoice.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="19" nullAllowed="true">invoice.bankDetails.accountName</mapping>
+		<mapping row="2" col="20" nullAllowed="true">invoice.bankDetails.branchname</mapping>
+		<mapping row="2" col="21" nullAllowed="true">invoice.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="22" nullAllowed="true">invoice.termDays</mapping>
+		<mapping row="2" col="23" nullAllowed="true">invoice.duedate_div</mapping>
+		<mapping row="2" col="24" nullAllowed="true">invoice.notes</mapping>
+		<mapping row="2" col="25" nullAllowed="true">invoice.items[0].itemno</mapping>
+		<mapping row="2" col="26" nullAllowed="true">invoice.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="27" nullAllowed="true">invoice.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="28" nullAllowed="true">invoice.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="29" nullAllowed="true">invoice.items[0].itemCustomField4</mapping>
+				
+		<mapping row="2" col="30">invoice.items[0].category</mapping>
+		<mapping row="2" col="31" nullAllowed="true">invoice.items[0].hsn</mapping>
+		<mapping row="2" col="32" nullAllowed="true">invoice.items[0].uqc</mapping>
+		<mapping row="2" col="33">invoice.items[0].quantity</mapping>
+		<mapping row="2" col="34">invoice.items[0].rateperitem</mapping>
+		<mapping row="2" col="35" nullAllowed="true">invoice.items[0].discount</mapping>
+		<mapping row="2" col="36" nullAllowed="true">invoice.items[0].exmepted</mapping>
+		<mapping row="2" col="37">invoice.items[0].taxablevalue</mapping>
+		<mapping row="2" col="38">invoice.section</mapping>
+		<mapping row="2" col="39">invoice.tcstdspercentage</mapping>
+		<mapping row="2" col="40" nullAllowed="true">invoice.items[0].igstrate</mapping>
+		<mapping row="2" col="41" nullAllowed="true">invoice.items[0].igstamount</mapping>
+		<mapping row="2" col="42" nullAllowed="true">invoice.items[0].cgstrate</mapping>
+		<mapping row="2" col="43" nullAllowed="true">invoice.items[0].cgstamount</mapping>
+		<mapping row="2" col="44" nullAllowed="true">invoice.items[0].sgstrate</mapping>
+		<mapping row="2" col="45" nullAllowed="true">invoice.items[0].sgstamount</mapping>
+		<mapping row="2" col="46">invoice.items[0].cessrate</mapping>
+		<mapping row="2" col="47">invoice.items[0].cessamount</mapping>
+		<mapping row="2" col="48">invoice.items[0].total</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="b2ba">
+  	<loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Original Invoice No*</cellcheck>
+			<cellcheck offset="1">Original Invoice Date*</cellcheck>
+            <cellcheck offset="2">Invoice No*</cellcheck>
+			<cellcheck offset="3">Invoice Date*</cellcheck>
+			<cellcheck offset="4">GSTIN/UIN</cellcheck>
+			<cellcheck offset="5">Customer Name</cellcheck>
+			<cellcheck offset="6">Place Of Supply*</cellcheck>
+			<cellcheck offset="7">Invoice Type*</cellcheck>
+			<cellcheck offset="8">Reverse Charge*</cellcheck>
+			<cellcheck offset="9">Ledger Name</cellcheck>
+			<cellcheck offset="10">E-Commerce GSTIN</cellcheck>
+			
+			<cellcheck offset="11">Billing Address</cellcheck>
+			<cellcheck offset="12">Shipment Address</cellcheck>
+			<cellcheck offset="13">Same as Billing Address</cellcheck>
+			
+			<cellcheck offset="14">Rate inclusive of Tax</cellcheck>
+			
+			<cellcheck offset="15">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="17">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="18">Invoice Custom Field_4</cellcheck>
+		
+			<cellcheck offset="19">Bank Name</cellcheck>
+			<cellcheck offset="20">Account Number</cellcheck>
+			<cellcheck offset="21">Account Name</cellcheck>
+			<cellcheck offset="22">Branch Name</cellcheck>
+			<cellcheck offset="23">IFSC Code</cellcheck>
+			<cellcheck offset="24">Terms</cellcheck>
+			<cellcheck offset="25">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="26">Customer Notes</cellcheck>
+	
+			<cellcheck offset="27">Item/Product/Service</cellcheck>
+			<cellcheck offset="28">Item Custom Field_1</cellcheck>
+			<cellcheck offset="29">Item Custom Field_2</cellcheck>
+			<cellcheck offset="30">Item Custom Field_3</cellcheck>
+			<cellcheck offset="31">Item Custom Field_4</cellcheck>
+		
+			<cellcheck offset="32">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="33">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="34">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="35">Quantity*</cellcheck>
+			<cellcheck offset="36">Item Rate*</cellcheck>
+			<cellcheck offset="37">Discount</cellcheck>
+			<cellcheck offset="38">Exempted</cellcheck>
+			<cellcheck offset="39">Total Taxable Value*</cellcheck>
+			<cellcheck offset="40">Section</cellcheck>
+			<cellcheck offset="41">TCS Percentage</cellcheck>
+			<cellcheck offset="42">IGST Rate*</cellcheck>
+			<cellcheck offset="43">IGST Amount*</cellcheck>
+			<cellcheck offset="44">CGST Rate*</cellcheck>
+			<cellcheck offset="45">CGST Amount*</cellcheck>
+			<cellcheck offset="46">SGST Rate*</cellcheck>
+			<cellcheck offset="47">SGST Amount*</cellcheck>
+			<cellcheck offset="48">CESS Rate</cellcheck>
+			<cellcheck offset="49">CESS Amount</cellcheck>
+			<cellcheck offset="50">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="b2baList" var="invoice" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+	  	<mapping row="2" col="0">invoice.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="1">invoice.strOdate</mapping>
+		<mapping row="2" col="2">invoice.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="3">invoice.strDate</mapping>
+		<mapping row="2" col="4" nullAllowed="true">invoice.b2b[0].ctin</mapping>
+		<mapping row="2" col="5">invoice.billedtoname</mapping>
+		<mapping row="2" col="6" nullAllowed="true">invoice.statename</mapping>
+		<mapping row="2" col="7" nullAllowed="true">invoice.b2b[0].inv[0].invTyp</mapping>
+		<mapping row="2" col="8" nullAllowed="true">invoice.revchargetype</mapping>
+		<mapping row="2" col="9" nullAllowed="true">invoice.items[0].ledgerName</mapping>
+		<mapping row="2" col="10" nullAllowed="true">invoice.b2b[0].inv[0].etin</mapping>
+		
+		<mapping row="2" col="11" nullAllowed="true">invoice.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="12" nullAllowed="true">invoice.consigneeaddress</mapping>
+		<mapping row="2" col="13" nullAllowed="true">invoice.samebilladdress</mapping>
+		<mapping row="2" col="14" nullAllowed="true">invoice.includetax</mapping>
+		<mapping row="2" col="15" nullAllowed="true">invoice.customField1</mapping>
+		<mapping row="2" col="16" nullAllowed="true">invoice.customField2</mapping>
+		<mapping row="2" col="17" nullAllowed="true">invoice.customField3</mapping>
+		<mapping row="2" col="18" nullAllowed="true">invoice.customField4</mapping>
+		<mapping row="2" col="19" nullAllowed="true">invoice.bankDetails.bankname</mapping>
+		<mapping row="2" col="20" nullAllowed="true">invoice.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="21" nullAllowed="true">invoice.bankDetails.accountName</mapping>
+		<mapping row="2" col="22" nullAllowed="true">invoice.bankDetails.branchname</mapping>
+		<mapping row="2" col="23" nullAllowed="true">invoice.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="24" nullAllowed="true">invoice.termDays</mapping>
+		<mapping row="2" col="25" nullAllowed="true">invoice.duedate_div</mapping>
+		<mapping row="2" col="26" nullAllowed="true">invoice.notes</mapping>
+		<mapping row="2" col="27" nullAllowed="true">invoice.items[0].itemno</mapping>
+		<mapping row="2" col="28" nullAllowed="true">invoice.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="29" nullAllowed="true">invoice.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="30" nullAllowed="true">invoice.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="31" nullAllowed="true">invoice.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="32">invoice.items[0].category</mapping>
+		<mapping row="2" col="33" nullAllowed="true">invoice.items[0].hsn</mapping>
+		<mapping row="2" col="34" nullAllowed="true">invoice.items[0].uqc</mapping>
+		<mapping row="2" col="35">invoice.items[0].quantity</mapping>
+		<mapping row="2" col="36">invoice.items[0].rateperitem</mapping>
+		<mapping row="2" col="37" nullAllowed="true">invoice.items[0].discount</mapping>
+		<mapping row="2" col="38" nullAllowed="true">invoice.items[0].exmepted</mapping>
+		<mapping row="2" col="39">invoice.items[0].taxablevalue</mapping>
+		<mapping row="2" col="40">invoice.section</mapping>
+		<mapping row="2" col="41">invoice.tcstdspercentage</mapping>
+		<mapping row="2" col="42" nullAllowed="true">invoice.items[0].igstrate</mapping>
+		<mapping row="2" col="43" nullAllowed="true">invoice.items[0].igstamount</mapping>
+		<mapping row="2" col="44" nullAllowed="true">invoice.items[0].cgstrate</mapping>
+		<mapping row="2" col="45" nullAllowed="true">invoice.items[0].cgstamount</mapping>
+		<mapping row="2" col="46" nullAllowed="true">invoice.items[0].sgstrate</mapping>
+		<mapping row="2" col="47" nullAllowed="true">invoice.items[0].sgstamount</mapping>
+		<mapping row="2" col="48">invoice.items[0].cessrate</mapping>
+		<mapping row="2" col="49">invoice.items[0].cessamount</mapping>
+		<mapping row="2" col="50">invoice.items[0].total</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="b2cla">
+  	<loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Original Invoice No*</cellcheck>
+			<cellcheck offset="1">Original Invoice Date*</cellcheck>
+            <cellcheck offset="2">Invoice No*</cellcheck>
+			<cellcheck offset="3">Invoice Date*</cellcheck>
+			<cellcheck offset="4">GSTIN/UIN</cellcheck>
+			<cellcheck offset="5">Customer Name</cellcheck>
+			<cellcheck offset="6">Place Of Supply*</cellcheck>
+			<cellcheck offset="7">Invoice Type*</cellcheck>
+			<cellcheck offset="8">Reverse Charge*</cellcheck>
+			<cellcheck offset="9">Ledger Name</cellcheck>
+			<cellcheck offset="10">E-Commerce GSTIN</cellcheck>
+			 			
+			<cellcheck offset="11">Billing Address</cellcheck>
+			<cellcheck offset="12">Shipment Address</cellcheck>
+			<cellcheck offset="13">Same as Billing Address</cellcheck>
+			
+			<cellcheck offset="14">Rate inclusive of Tax</cellcheck>
+			
+			<cellcheck offset="15">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="17">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="18">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="19">Bank Name</cellcheck>
+			<cellcheck offset="20">Account Number</cellcheck>
+			<cellcheck offset="21">Account Name</cellcheck>
+			<cellcheck offset="22">Branch Name</cellcheck>
+			<cellcheck offset="23">IFSC Code</cellcheck>
+			<cellcheck offset="24">Terms</cellcheck>
+			<cellcheck offset="25">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="26">Customer Notes</cellcheck>
+			
+			<cellcheck offset="27">Item/Product/Service</cellcheck>
+			<cellcheck offset="28">Item Custom Field_1</cellcheck>
+			<cellcheck offset="29">Item Custom Field_2</cellcheck>
+			<cellcheck offset="30">Item Custom Field_3</cellcheck>
+			<cellcheck offset="31">Item Custom Field_4</cellcheck>
+			
+			<cellcheck offset="32">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="33">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="34">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="35">Quantity*</cellcheck>
+			<cellcheck offset="36">Item Rate*</cellcheck>
+			<cellcheck offset="37">Discount</cellcheck>
+			<cellcheck offset="38">Exempted</cellcheck>
+			<cellcheck offset="39">Total Taxable Value*</cellcheck>
+			<cellcheck offset="40">Section</cellcheck>
+			<cellcheck offset="41">TCS Percentage</cellcheck>
+			<cellcheck offset="42">IGST Rate*</cellcheck>
+			<cellcheck offset="43">IGST Amount*</cellcheck>
+			<cellcheck offset="44">CGST Rate*</cellcheck>
+			<cellcheck offset="45">CGST Amount*</cellcheck>
+			<cellcheck offset="46">SGST Rate*</cellcheck>
+			<cellcheck offset="47">SGST Amount*</cellcheck>
+			<cellcheck offset="48">CESS Rate</cellcheck>
+			<cellcheck offset="49">CESS Amount</cellcheck>
+			<cellcheck offset="50">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="b2claList" var="invoice" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+	  	<mapping row="2" col="0">invoice.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="1">invoice.strOdate</mapping>
+		<mapping row="2" col="2">invoice.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="3">invoice.strDate</mapping>
+		<mapping row="2" col="4" nullAllowed="true">invoice.b2b[0].ctin</mapping>
+		<mapping row="2" col="5">invoice.billedtoname</mapping>
+		<mapping row="2" col="6" nullAllowed="true">invoice.statename</mapping>
+		<mapping row="2" col="7" nullAllowed="true">invoice.b2b[0].inv[0].invTyp</mapping>
+		<mapping row="2" col="8" nullAllowed="true">invoice.revchargetype</mapping>
+		<mapping row="2" col="9" nullAllowed="true">invoice.items[0].ledgerName</mapping>
+		<mapping row="2" col="10" nullAllowed="true">invoice.b2b[0].inv[0].etin</mapping>
+		
+		<mapping row="2" col="11" nullAllowed="true">invoice.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="12" nullAllowed="true">invoice.consigneeaddress</mapping>
+		<mapping row="2" col="13" nullAllowed="true">invoice.samebilladdress</mapping>
+		<mapping row="2" col="14" nullAllowed="true">invoice.includetax</mapping>
+		<mapping row="2" col="15" nullAllowed="true">invoice.customField1</mapping>
+		<mapping row="2" col="16" nullAllowed="true">invoice.customField2</mapping>
+		<mapping row="2" col="17" nullAllowed="true">invoice.customField3</mapping>
+		<mapping row="2" col="18" nullAllowed="true">invoice.customField4</mapping>
+		<mapping row="2" col="19" nullAllowed="true">invoice.bankDetails.bankname</mapping>
+		<mapping row="2" col="20" nullAllowed="true">invoice.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="21" nullAllowed="true">invoice.bankDetails.accountName</mapping>
+		<mapping row="2" col="22" nullAllowed="true">invoice.bankDetails.branchname</mapping>
+		<mapping row="2" col="23" nullAllowed="true">invoice.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="24" nullAllowed="true">invoice.termDays</mapping>
+		<mapping row="2" col="25" nullAllowed="true">invoice.duedate_div</mapping>
+		<mapping row="2" col="26" nullAllowed="true">invoice.notes</mapping>
+		<mapping row="2" col="27" nullAllowed="true">invoice.items[0].itemno</mapping>
+		<mapping row="2" col="28" nullAllowed="true">invoice.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="29" nullAllowed="true">invoice.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="30" nullAllowed="true">invoice.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="31" nullAllowed="true">invoice.items[0].itemCustomField4</mapping>
+				
+		<mapping row="2" col="32">invoice.items[0].category</mapping>
+		<mapping row="2" col="33" nullAllowed="true">invoice.items[0].hsn</mapping>
+		<mapping row="2" col="34" nullAllowed="true">invoice.items[0].uqc</mapping>
+		<mapping row="2" col="35">invoice.items[0].quantity</mapping>
+		<mapping row="2" col="36">invoice.items[0].rateperitem</mapping>
+		<mapping row="2" col="37" nullAllowed="true">invoice.items[0].discount</mapping>
+		<mapping row="2" col="38" nullAllowed="true">invoice.items[0].exmepted</mapping>
+		<mapping row="2" col="39">invoice.items[0].taxablevalue</mapping>
+		<mapping row="2" col="40">invoice.section</mapping>
+		<mapping row="2" col="41">invoice.tcstdspercentage</mapping>
+		<mapping row="2" col="42" nullAllowed="true">invoice.items[0].igstrate</mapping>
+		<mapping row="2" col="43" nullAllowed="true">invoice.items[0].igstamount</mapping>
+		<mapping row="2" col="44" nullAllowed="true">invoice.items[0].cgstrate</mapping>
+		<mapping row="2" col="45" nullAllowed="true">invoice.items[0].cgstamount</mapping>
+		<mapping row="2" col="46" nullAllowed="true">invoice.items[0].sgstrate</mapping>
+		<mapping row="2" col="47" nullAllowed="true">invoice.items[0].sgstamount</mapping>
+		<mapping row="2" col="48">invoice.items[0].cessrate</mapping>
+		<mapping row="2" col="49">invoice.items[0].cessamount</mapping>
+		<mapping row="2" col="50">invoice.items[0].total</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="b2csa">
+  	<loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Original Invoice No*</cellcheck>
+			<cellcheck offset="1">Original Invoice Date*</cellcheck>
+            <cellcheck offset="2">Invoice No*</cellcheck>
+			<cellcheck offset="3">Invoice Date*</cellcheck>
+			<cellcheck offset="4">GSTIN/UIN</cellcheck>
+			<cellcheck offset="5">Customer Name</cellcheck>
+			<cellcheck offset="6">Place Of Supply*</cellcheck>
+			<cellcheck offset="7">Invoice Type*</cellcheck>
+			<cellcheck offset="8">Reverse Charge*</cellcheck>
+			<cellcheck offset="9">Ledger Name</cellcheck>
+			<cellcheck offset="10">E-Commerce GSTIN</cellcheck>
+			 		
+			<cellcheck offset="11">Billing Address</cellcheck>
+			<cellcheck offset="12">Shipment Address</cellcheck>
+			<cellcheck offset="13">Same as Billing Address</cellcheck>
+		
+			<cellcheck offset="14">Rate inclusive of Tax</cellcheck>
+		
+			<cellcheck offset="15">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="17">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="18">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="19">Bank Name</cellcheck>
+			<cellcheck offset="20">Account Number</cellcheck>
+			<cellcheck offset="21">Account Name</cellcheck>
+			<cellcheck offset="22">Branch Name</cellcheck>
+			<cellcheck offset="23">IFSC Code</cellcheck>
+			<cellcheck offset="24">Terms</cellcheck>
+			<cellcheck offset="25">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="26">Customer Notes</cellcheck>
+			
+			<cellcheck offset="27">Item/Product/Service</cellcheck>
+			<cellcheck offset="28">Item Custom Field_1</cellcheck>
+			<cellcheck offset="29">Item Custom Field_2</cellcheck>
+			<cellcheck offset="30">Item Custom Field_3</cellcheck>
+			<cellcheck offset="31">Item Custom Field_4</cellcheck>
+			
+			<cellcheck offset="32">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="33">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="34">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="35">Quantity*</cellcheck>
+			<cellcheck offset="36">Item Rate*</cellcheck>
+			<cellcheck offset="37">Discount</cellcheck>
+			<cellcheck offset="38">Exempted</cellcheck>
+			<cellcheck offset="39">Total Taxable Value*</cellcheck>
+			<cellcheck offset="40">Section</cellcheck>
+			<cellcheck offset="41">TCS Percentage</cellcheck>
+			<cellcheck offset="42">IGST Rate*</cellcheck>
+			<cellcheck offset="43">IGST Amount*</cellcheck>
+			<cellcheck offset="44">CGST Rate*</cellcheck>
+			<cellcheck offset="45">CGST Amount*</cellcheck>
+			<cellcheck offset="46">SGST Rate*</cellcheck>
+			<cellcheck offset="47">SGST Amount*</cellcheck>
+			<cellcheck offset="48">CESS Rate</cellcheck>
+			<cellcheck offset="49">CESS Amount</cellcheck>
+			<cellcheck offset="50">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="b2csaList" var="invoice" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+	  	<mapping row="2" col="0">invoice.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="1">invoice.strOdate</mapping>
+		<mapping row="2" col="2">invoice.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="3">invoice.strDate</mapping>
+		<mapping row="2" col="4" nullAllowed="true">invoice.b2b[0].ctin</mapping>
+		<mapping row="2" col="5">invoice.billedtoname</mapping>
+		<mapping row="2" col="6" nullAllowed="true">invoice.statename</mapping>
+		<mapping row="2" col="7" nullAllowed="true">invoice.b2b[0].inv[0].invTyp</mapping>
+		<mapping row="2" col="8" nullAllowed="true">invoice.revchargetype</mapping>
+		<mapping row="2" col="9" nullAllowed="true">invoice.items[0].ledgerName</mapping>
+		<mapping row="2" col="10" nullAllowed="true">invoice.b2b[0].inv[0].etin</mapping>
+		
+		<mapping row="2" col="11" nullAllowed="true">invoice.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="12" nullAllowed="true">invoice.consigneeaddress</mapping>
+		<mapping row="2" col="13" nullAllowed="true">invoice.samebilladdress</mapping>
+		<mapping row="2" col="14" nullAllowed="true">invoice.includetax</mapping>
+		<mapping row="2" col="15" nullAllowed="true">invoice.customField1</mapping>
+		<mapping row="2" col="16" nullAllowed="true">invoice.customField2</mapping>
+		<mapping row="2" col="17" nullAllowed="true">invoice.customField3</mapping>
+		<mapping row="2" col="18" nullAllowed="true">invoice.customField4</mapping>
+		<mapping row="2" col="19" nullAllowed="true">invoice.bankDetails.bankname</mapping>
+		<mapping row="2" col="20" nullAllowed="true">invoice.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="21" nullAllowed="true">invoice.bankDetails.accountName</mapping>
+		<mapping row="2" col="22" nullAllowed="true">invoice.bankDetails.branchname</mapping>
+		<mapping row="2" col="23" nullAllowed="true">invoice.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="24" nullAllowed="true">invoice.termDays</mapping>
+		<mapping row="2" col="25" nullAllowed="true">invoice.duedate_div</mapping>
+		<mapping row="2" col="26" nullAllowed="true">invoice.notes</mapping>
+		<mapping row="2" col="27" nullAllowed="true">invoice.items[0].itemno</mapping>
+		<mapping row="2" col="28" nullAllowed="true">invoice.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="29" nullAllowed="true">invoice.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="30" nullAllowed="true">invoice.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="31" nullAllowed="true">invoice.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="32">invoice.items[0].category</mapping>
+		<mapping row="2" col="33" nullAllowed="true">invoice.items[0].hsn</mapping>
+		<mapping row="2" col="34" nullAllowed="true">invoice.items[0].uqc</mapping>
+		<mapping row="2" col="35">invoice.items[0].quantity</mapping>
+		<mapping row="2" col="36">invoice.items[0].rateperitem</mapping>
+		<mapping row="2" col="37" nullAllowed="true">invoice.items[0].discount</mapping>
+		<mapping row="2" col="38" nullAllowed="true">invoice.items[0].exmepted</mapping>
+		<mapping row="2" col="39">invoice.items[0].taxablevalue</mapping>
+		<mapping row="2" col="40">invoice.section</mapping>
+		<mapping row="2" col="41">invoice.tcstdspercentage</mapping>
+		<mapping row="2" col="42" nullAllowed="true">invoice.items[0].igstrate</mapping>
+		<mapping row="2" col="43" nullAllowed="true">invoice.items[0].igstamount</mapping>
+		<mapping row="2" col="44" nullAllowed="true">invoice.items[0].cgstrate</mapping>
+		<mapping row="2" col="45" nullAllowed="true">invoice.items[0].cgstamount</mapping>
+		<mapping row="2" col="46" nullAllowed="true">invoice.items[0].sgstrate</mapping>
+		<mapping row="2" col="47" nullAllowed="true">invoice.items[0].sgstamount</mapping>
+		<mapping row="2" col="48">invoice.items[0].cessrate</mapping>
+		<mapping row="2" col="49">invoice.items[0].cessamount</mapping>
+		<mapping row="2" col="50">invoice.items[0].total</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="AdvanceReceipt">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+            <cellcheck offset="0">Advance Receipt No*</cellcheck>
+			<cellcheck offset="1">Advance Receipt Date*</cellcheck>
+			<cellcheck offset="2">Place Of Supply*</cellcheck>
+			<cellcheck offset="3">GSTIN/UIN</cellcheck>
+			<cellcheck offset="4">Advance Received*</cellcheck>
+			<cellcheck offset="5">Reverse Charge*</cellcheck>
+			<cellcheck offset="6">Ledger Name</cellcheck>
+			
+			<cellcheck offset="7">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="8">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="9">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="10">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="11">Bank Name</cellcheck>
+			<cellcheck offset="12">Account Number</cellcheck>
+			<cellcheck offset="13">Account Name</cellcheck>
+			<cellcheck offset="14">Branch Name</cellcheck>
+			<cellcheck offset="15">IFSC Code</cellcheck>
+			<cellcheck offset="16">Customer Notes</cellcheck>
+			
+			<cellcheck offset="17">Item/Product/Service</cellcheck>
+			<cellcheck offset="18">Item Custom Field_1</cellcheck>
+			<cellcheck offset="19">Item Custom Field_2</cellcheck>
+			<cellcheck offset="20">Item Custom Field_3</cellcheck>
+			<cellcheck offset="21">Item Custom Field_4</cellcheck>
+			<cellcheck offset="22">Category (Goods/Services)*</cellcheck>
+			<cellcheck offset="23">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="24">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="25">Quantity*</cellcheck>
+			<cellcheck offset="26">Item Rate*</cellcheck>
+			<cellcheck offset="27">Total Taxable Value*</cellcheck>
+			<cellcheck offset="28">Section</cellcheck>
+			<cellcheck offset="29">TCS Percentage</cellcheck>
+			<cellcheck offset="30">IGST Rate*</cellcheck>
+			<cellcheck offset="31">IGST Amount*</cellcheck>
+			<cellcheck offset="32">CGST Rate*</cellcheck>
+			<cellcheck offset="33">CGST Amount*</cellcheck>
+			<cellcheck offset="34">SGST Rate*</cellcheck>
+			<cellcheck offset="35">SGST Amount*</cellcheck>
+			<cellcheck offset="36">CESS Rate</cellcheck>
+			<cellcheck offset="37">CESS Amount</cellcheck>
+			<cellcheck offset="38">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="advReceiptList" var="advReceipt" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		
+		<mapping row="2" col="0">advReceipt.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="1">advReceipt.strDate</mapping>
+		<mapping row="2" col="2" nullAllowed="true">advReceipt.statename</mapping>
+		<mapping row="2" col="3" nullAllowed="true">advReceipt.b2b[0].ctin</mapping>
+		<mapping row="2" col="4">advReceipt.items[0].advreceived</mapping>
+		<mapping row="2" col="5">advReceipt.revchargetype</mapping>
+		<mapping row="2" col="6">advReceipt.items[0].ledgerName</mapping>
+		
+		<mapping row="2" col="7" nullAllowed="true">advReceipt.customField1</mapping>
+		<mapping row="2" col="8" nullAllowed="true">advReceipt.customField2</mapping>
+		<mapping row="2" col="9" nullAllowed="true">advReceipt.customField3</mapping>
+		<mapping row="2" col="10" nullAllowed="true">advReceipt.customField4</mapping>
+		<mapping row="2" col="11" nullAllowed="true">advReceipt.bankDetails.bankname</mapping>
+		<mapping row="2" col="12" nullAllowed="true">advReceipt.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="13" nullAllowed="true">advReceipt.bankDetails.accountName</mapping>
+		<mapping row="2" col="14" nullAllowed="true">advReceipt.bankDetails.branchname</mapping>
+		<mapping row="2" col="15" nullAllowed="true">advReceipt.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="16" nullAllowed="true">advReceipt.notes</mapping>
+		<mapping row="2" col="17" nullAllowed="true">advReceipt.items[0].itemno</mapping>
+		<mapping row="2" col="18" nullAllowed="true">advReceipt.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="19" nullAllowed="true">advReceipt.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="20" nullAllowed="true">advReceipt.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="21" nullAllowed="true">advReceipt.pt.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="22">advReceipt.items[0].category</mapping>
+		<mapping row="2" col="23" nullAllowed="true">advReceipt.items[0].hsn</mapping>
+		<mapping row="2" col="24" nullAllowed="true">advReceipt.items[0].uqc</mapping>
+		<mapping row="2" col="25">advReceipt.items[0].quantity</mapping>
+		<mapping row="2" col="26">advReceipt.items[0].rateperitem</mapping>
+		<mapping row="2" col="27">advReceipt.items[0].taxablevalue</mapping>
+		<mapping row="2" col="28">advReceipt.section</mapping>
+		<mapping row="2" col="29">advReceipt.tcstdspercentage</mapping>
+		<mapping row="2" col="30" nullAllowed="true">advReceipt.items[0].igstrate</mapping>
+		<mapping row="2" col="31" nullAllowed="true">advReceipt.items[0].igstamount</mapping>
+		<mapping row="2" col="32" nullAllowed="true">advReceipt.items[0].cgstrate</mapping>
+		<mapping row="2" col="33" nullAllowed="true">advReceipt.items[0].cgstamount</mapping>
+		<mapping row="2" col="34" nullAllowed="true">advReceipt.items[0].sgstrate</mapping>
+		<mapping row="2" col="35" nullAllowed="true">advReceipt.items[0].sgstamount</mapping>
+		<mapping row="2" col="36">advReceipt.items[0].cessrate</mapping>
+		<mapping row="2" col="37">advReceipt.items[0].cessamount</mapping>
+		<mapping row="2" col="38">advReceipt.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="ata">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Original Advance Receipt No*</cellcheck>
+			<cellcheck offset="1">Original Advance Receipt Date*</cellcheck>
+            <cellcheck offset="2">Advance Receipt No*</cellcheck>
+			<cellcheck offset="3">Advance Receipt Date*</cellcheck>
+			<cellcheck offset="4">Place Of Supply*</cellcheck>
+			<cellcheck offset="5">GSTIN/UIN</cellcheck>
+			<cellcheck offset="6">Advance Received*</cellcheck>
+			<cellcheck offset="7">Reverse Charge*</cellcheck>
+			<cellcheck offset="8">Ledger Name</cellcheck>
+			
+			<cellcheck offset="9">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="10">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="11">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="12">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="13">Bank Name</cellcheck>
+			<cellcheck offset="14">Account Number</cellcheck>
+			<cellcheck offset="15">Account Name</cellcheck>
+			<cellcheck offset="16">Branch Name</cellcheck>
+			<cellcheck offset="17">IFSC Code</cellcheck>
+			<cellcheck offset="18">Customer Notes</cellcheck>
+			
+			<cellcheck offset="19">Item/Product/Service</cellcheck>
+			<cellcheck offset="20">Item Custom Field_1</cellcheck>
+			<cellcheck offset="21">Item Custom Field_2</cellcheck>
+			<cellcheck offset="22">Item Custom Field_3</cellcheck>
+			<cellcheck offset="23">Item Custom Field_4</cellcheck>
+	
+			<cellcheck offset="24">Category (Goods/Services)*</cellcheck>
+			<cellcheck offset="25">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="26">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="27">Quantity*</cellcheck>
+			<cellcheck offset="28">Item Rate*</cellcheck>
+			<cellcheck offset="29">Total Taxable Value*</cellcheck>
+			<cellcheck offset="30">Section</cellcheck>
+			<cellcheck offset="31">TCS Percentage</cellcheck>
+			<cellcheck offset="32">IGST Rate*</cellcheck>
+			<cellcheck offset="33">IGST Amount*</cellcheck>
+			<cellcheck offset="34">CGST Rate*</cellcheck>
+			<cellcheck offset="35">CGST Amount*</cellcheck>
+			<cellcheck offset="36">SGST Rate*</cellcheck>
+			<cellcheck offset="37">SGST Amount*</cellcheck>
+			<cellcheck offset="38">CESS Rate</cellcheck>
+			<cellcheck offset="39">CESS Amount</cellcheck>
+			<cellcheck offset="40">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="ataList" var="advReceipt" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+	  	<mapping row="2" col="0">advReceipt.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="1">advReceipt.strOdate</mapping>
+		<mapping row="2" col="2">advReceipt.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="3">advReceipt.strDate</mapping>
+		<mapping row="2" col="4" nullAllowed="true">advReceipt.statename</mapping>
+		<mapping row="2" col="5" nullAllowed="true">advReceipt.b2b[0].ctin</mapping>
+		<mapping row="2" col="6">advReceipt.items[0].advreceived</mapping>
+		<mapping row="2" col="7">advReceipt.revchargetype</mapping>
+		<mapping row="2" col="8">advReceipt.items[0].ledgerName</mapping>
+		
+		<mapping row="2" col="9" nullAllowed="true">advReceipt.customField1</mapping>
+		<mapping row="2" col="10" nullAllowed="true">advReceipt.customField2</mapping>
+		<mapping row="2" col="11" nullAllowed="true">advReceipt.customField3</mapping>
+		<mapping row="2" col="12" nullAllowed="true">advReceipt.customField4</mapping>
+		<mapping row="2" col="13" nullAllowed="true">advReceipt.bankDetails.bankname</mapping>
+		<mapping row="2" col="14" nullAllowed="true">advReceipt.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="15" nullAllowed="true">advReceipt.bankDetails.accountName</mapping>
+		<mapping row="2" col="16" nullAllowed="true">advReceipt.bankDetails.branchname</mapping>
+		<mapping row="2" col="17" nullAllowed="true">advReceipt.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="18" nullAllowed="true">advReceipt.notes</mapping>
+		<mapping row="2" col="19" nullAllowed="true">advReceipt.items[0].itemno</mapping>
+		<mapping row="2" col="20" nullAllowed="true">advReceipt.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="21" nullAllowed="true">advReceipt.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="22" nullAllowed="true">advReceipt.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="23" nullAllowed="true">advReceipt.items[0].itemCustomField4</mapping>
+	
+		<mapping row="2" col="24">advReceipt.items[0].category</mapping>
+		<mapping row="2" col="25" nullAllowed="true">advReceipt.items[0].hsn</mapping>
+		<mapping row="2" col="26" nullAllowed="true">advReceipt.items[0].uqc</mapping>
+		<mapping row="2" col="27">advReceipt.items[0].quantity</mapping>
+		<mapping row="2" col="28">advReceipt.items[0].rateperitem</mapping>
+		<mapping row="2" col="29">advReceipt.items[0].taxablevalue</mapping>
+		<mapping row="2" col="30">advReceipt.section</mapping>
+		<mapping row="2" col="31">advReceipt.tcstdspercentage</mapping>
+		<mapping row="2" col="32" nullAllowed="true">advReceipt.items[0].igstrate</mapping>
+		<mapping row="2" col="33" nullAllowed="true">advReceipt.items[0].igstamount</mapping>
+		<mapping row="2" col="34" nullAllowed="true">advReceipt.items[0].cgstrate</mapping>
+		<mapping row="2" col="35" nullAllowed="true">advReceipt.items[0].cgstamount</mapping>
+		<mapping row="2" col="36" nullAllowed="true">advReceipt.items[0].sgstrate</mapping>
+		<mapping row="2" col="37" nullAllowed="true">advReceipt.items[0].sgstamount</mapping>
+		<mapping row="2" col="38">advReceipt.items[0].cessrate</mapping>
+		<mapping row="2" col="39">advReceipt.items[0].cessamount</mapping>
+		<mapping row="2" col="40">advReceipt.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  
+  <worksheet name="Exports">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Invoice No*</cellcheck>
+			<cellcheck offset="1">Invoice Date*</cellcheck>
+			<cellcheck offset="2">Place Of Supply*</cellcheck>
+			<cellcheck offset="3">Export Type*</cellcheck>
+			<cellcheck offset="4">Port Code</cellcheck>
+			<cellcheck offset="5">Shipping Bill No</cellcheck>
+			<cellcheck offset="6">Shipping Bill Date</cellcheck>
+			<cellcheck offset="7">Ledger Name</cellcheck>
+			 		
+			<cellcheck offset="8">Billing Address</cellcheck>
+			<cellcheck offset="9">Shipment Address</cellcheck>
+			<cellcheck offset="10">Same as Billing Address</cellcheck>
+			
+			<cellcheck offset="11">Rate inclusive of Tax</cellcheck>
+			
+			<cellcheck offset="12">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="13">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="14">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="15">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="16">Bank Name</cellcheck>
+			<cellcheck offset="17">Account Number</cellcheck>
+			<cellcheck offset="18">Account Name</cellcheck>
+			<cellcheck offset="19">Branch Name</cellcheck>
+			<cellcheck offset="20">IFSC Code</cellcheck>
+			<cellcheck offset="21">Terms</cellcheck>
+			<cellcheck offset="22">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="23">Customer Notes</cellcheck>
+			
+			<cellcheck offset="24">Item/Product/Service</cellcheck>
+			<cellcheck offset="25">Item Custom Field_1</cellcheck>
+			<cellcheck offset="26">Item Custom Field_2</cellcheck>
+			<cellcheck offset="27">Item Custom Field_3</cellcheck>
+			<cellcheck offset="28">Item Custom Field_4</cellcheck>
+			
+			<cellcheck offset="29">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="30">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="31">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="32">Quantity*</cellcheck>
+			<cellcheck offset="33">Item Rate*</cellcheck>
+			<cellcheck offset="34">Discount</cellcheck>
+			<cellcheck offset="35">Exempted</cellcheck>
+			<cellcheck offset="36">Total Taxable Value*</cellcheck>
+			<cellcheck offset="37">Section</cellcheck>
+			<cellcheck offset="38">TCS Percentage</cellcheck>
+			<cellcheck offset="39">IGST Rate*</cellcheck>
+			<cellcheck offset="40">IGST Amount*</cellcheck>
+			<cellcheck offset="41">CGST Rate*</cellcheck>
+			<cellcheck offset="42">CGST Amount*</cellcheck>
+			<cellcheck offset="43">SGST Rate*</cellcheck>
+			<cellcheck offset="44">SGST Amount*</cellcheck>
+			<cellcheck offset="45">CESS Rate</cellcheck>
+			<cellcheck offset="46">CESS Amount</cellcheck>
+			<cellcheck offset="47">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="exportList" var="export" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">export.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="1">export.strDate</mapping>
+		<mapping row="2" col="2">export.statename</mapping>
+		<mapping row="2" col="3">export.exp[0].expTyp</mapping>
+		<mapping row="2" col="4">export.exp[0].inv[0].sbpcode</mapping>
+		<mapping row="2" col="5">export.exp[0].inv[0].sbnum</mapping>
+		<mapping row="2" col="6">export.exp[0].inv[0].sbdt</mapping>
+		<mapping row="2" col="7">export.items[0].ledgerName</mapping>
+		
+		<mapping row="2" col="8" nullAllowed="true">export.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="9" nullAllowed="true">export.consigneeaddress</mapping>
+		<mapping row="2" col="10" nullAllowed="true">export.samebilladdress</mapping>
+		<mapping row="2" col="11" nullAllowed="true">export.includetax</mapping>
+		<mapping row="2" col="12" nullAllowed="true">export.customField1</mapping>
+		<mapping row="2" col="13" nullAllowed="true">export.customField2</mapping>
+		<mapping row="2" col="14" nullAllowed="true">export.customField3</mapping>
+		<mapping row="2" col="15" nullAllowed="true">export.customField4</mapping>
+		<mapping row="2" col="16" nullAllowed="true">export.bankDetails.bankname</mapping>
+		<mapping row="2" col="17" nullAllowed="true">export.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="18" nullAllowed="true">export.bankDetails.accountName</mapping>
+		<mapping row="2" col="19" nullAllowed="true">export.bankDetails.branchname</mapping>
+		<mapping row="2" col="20" nullAllowed="true">export.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="21" nullAllowed="true">export.termDays</mapping>
+		<mapping row="2" col="22" nullAllowed="true">export.duedate_div</mapping>
+		<mapping row="2" col="23" nullAllowed="true">export.notes</mapping>
+		<mapping row="2" col="24" nullAllowed="true">export.items[0].itemno</mapping>
+		<mapping row="2" col="25" nullAllowed="true">export.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="26" nullAllowed="true">export.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="27" nullAllowed="true">export.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="28" nullAllowed="true">export.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="29">export.items[0].category</mapping>
+		<mapping row="2" col="30" nullAllowed="true">export.items[0].hsn</mapping>
+		<mapping row="2" col="31" nullAllowed="true">export.items[0].uqc</mapping>
+		<mapping row="2" col="32">export.items[0].quantity</mapping>
+		<mapping row="2" col="33">export.items[0].rateperitem</mapping>
+		<mapping row="2" col="34" nullAllowed="true">export.items[0].discount</mapping>
+		<mapping row="2" col="35" nullAllowed="true">export.items[0].exmepted</mapping>
+		<mapping row="2" col="36">export.items[0].taxablevalue</mapping>
+		<mapping row="2" col="37">export.section</mapping>
+		<mapping row="2" col="38">export.tcstdspercentage</mapping>
+		<mapping row="2" col="39" nullAllowed="true">export.items[0].igstrate</mapping>
+		<mapping row="2" col="40" nullAllowed="true">export.items[0].igstamount</mapping>
+		<mapping row="2" col="41" nullAllowed="true">export.items[0].cgstrate</mapping>
+		<mapping row="2" col="42" nullAllowed="true">export.items[0].cgstamount</mapping>
+		<mapping row="2" col="43" nullAllowed="true">export.items[0].sgstrate</mapping>
+		<mapping row="2" col="44" nullAllowed="true">export.items[0].sgstamount</mapping>
+		<mapping row="2" col="45">export.items[0].cessrate</mapping>
+		<mapping row="2" col="46">export.items[0].cessamount</mapping>
+		<mapping row="2" col="47">export.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="expa">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Original Invoice No*</cellcheck>
+			<cellcheck offset="1">Original Invoice Date*</cellcheck>
+			<cellcheck offset="2">Invoice No*</cellcheck>
+			<cellcheck offset="3">Invoice Date*</cellcheck>
+			<cellcheck offset="4">Place Of Supply*</cellcheck>
+			<cellcheck offset="5">Export Type*</cellcheck>
+			<cellcheck offset="6">Port Code</cellcheck>
+			<cellcheck offset="7">Shipping Bill No</cellcheck>
+			<cellcheck offset="8">Shipping Bill Date</cellcheck>
+			<cellcheck offset="9">Ledger Name</cellcheck>
+			 		
+			<cellcheck offset="10">Billing Address</cellcheck>
+			<cellcheck offset="11">Shipment Address</cellcheck>
+			<cellcheck offset="12">Same as Billing Address</cellcheck>
+			
+			<cellcheck offset="13">Rate inclusive of Tax</cellcheck>
+			
+			<cellcheck offset="14">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="15">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="17">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="18">Bank Name</cellcheck>
+			<cellcheck offset="19">Account Number</cellcheck>
+			<cellcheck offset="20">Account Name</cellcheck>
+			<cellcheck offset="21">Branch Name</cellcheck>
+			<cellcheck offset="22">IFSC Code</cellcheck>
+			<cellcheck offset="23">Terms</cellcheck>
+			<cellcheck offset="24">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="25">Customer Notes</cellcheck>
+		
+			<cellcheck offset="26">Item/Product/Service</cellcheck>
+			<cellcheck offset="27">Item Custom Field_1</cellcheck>
+			<cellcheck offset="28">Item Custom Field_2</cellcheck>
+			<cellcheck offset="29">Item Custom Field_3</cellcheck>
+			<cellcheck offset="30">Item Custom Field_4</cellcheck>
+			
+			<cellcheck offset="31">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="32">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="33">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="34">Quantity*</cellcheck>
+			<cellcheck offset="35">Item Rate*</cellcheck>
+			<cellcheck offset="36">Discount</cellcheck>
+			<cellcheck offset="37">Exempted</cellcheck>
+			<cellcheck offset="38">Total Taxable Value*</cellcheck>
+			<cellcheck offset="39">Section</cellcheck>
+			<cellcheck offset="40">TCS Percentage</cellcheck>
+			<cellcheck offset="41">IGST Rate*</cellcheck>
+			<cellcheck offset="42">IGST Amount*</cellcheck>
+			<cellcheck offset="43">CGST Rate*</cellcheck>
+			<cellcheck offset="44">CGST Amount*</cellcheck>
+			<cellcheck offset="45">SGST Rate*</cellcheck>
+			<cellcheck offset="46">SGST Amount*</cellcheck>
+			<cellcheck offset="47">CESS Rate</cellcheck>
+			<cellcheck offset="48">CESS Amount</cellcheck>
+			<cellcheck offset="49">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="expaList" var="export" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+	  	<mapping row="2" col="0">export.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="1">export.strOdate</mapping>
+		<mapping row="2" col="2">export.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="3">export.strDate</mapping>
+		<mapping row="2" col="4">export.statename</mapping>
+		<mapping row="2" col="5">export.exp[0].expTyp</mapping>
+		<mapping row="2" col="6">export.exp[0].inv[0].sbpcode</mapping>
+		<mapping row="2" col="7">export.exp[0].inv[0].sbnum</mapping>
+		<mapping row="2" col="8">export.exp[0].inv[0].sbdt</mapping>
+		<mapping row="2" col="9">export.items[0].ledgerName</mapping>
+		
+		<mapping row="2" col="10" nullAllowed="true">export.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="11" nullAllowed="true">export.consigneeaddress</mapping>
+		<mapping row="2" col="12" nullAllowed="true">export.samebilladdress</mapping>
+		<mapping row="2" col="13" nullAllowed="true">export.includetax</mapping>
+		<mapping row="2" col="14" nullAllowed="true">export.customField1</mapping>
+		<mapping row="2" col="15" nullAllowed="true">export.customField2</mapping>
+		<mapping row="2" col="16" nullAllowed="true">export.customField3</mapping>
+		<mapping row="2" col="17" nullAllowed="true">export.customField4</mapping>
+		<mapping row="2" col="18" nullAllowed="true">export.bankDetails.bankname</mapping>
+		<mapping row="2" col="19" nullAllowed="true">export.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="20" nullAllowed="true">export.bankDetails.accountName</mapping>
+		<mapping row="2" col="21" nullAllowed="true">export.bankDetails.branchname</mapping>
+		<mapping row="2" col="22" nullAllowed="true">export.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="23" nullAllowed="true">export.termDays</mapping>
+		<mapping row="2" col="24" nullAllowed="true">export.duedate_div</mapping>
+		<mapping row="2" col="25" nullAllowed="true">export.notes</mapping>
+		<mapping row="2" col="26" nullAllowed="true">export.items[0].itemno</mapping>
+		<mapping row="2" col="27" nullAllowed="true">export.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="28" nullAllowed="true">export.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="29" nullAllowed="true">export.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="30" nullAllowed="true">export.items[0].itemCustomField4</mapping>
+	
+		<mapping row="2" col="31">export.items[0].category</mapping>
+		<mapping row="2" col="32" nullAllowed="true">export.items[0].hsn</mapping>
+		<mapping row="2" col="33" nullAllowed="true">export.items[0].uqc</mapping>
+		<mapping row="2" col="34">export.items[0].quantity</mapping>
+		<mapping row="2" col="35">export.items[0].rateperitem</mapping>
+		<mapping row="2" col="36" nullAllowed="true">export.items[0].discount</mapping>
+		<mapping row="2" col="37" nullAllowed="true">export.items[0].exmepted</mapping>
+		<mapping row="2" col="38">export.items[0].taxablevalue</mapping>
+		<mapping row="2" col="39">export.section</mapping>
+		<mapping row="2" col="40">export.tcstdspercentage</mapping>
+		<mapping row="2" col="41" nullAllowed="true">export.items[0].igstrate</mapping>
+		<mapping row="2" col="42" nullAllowed="true">export.items[0].igstamount</mapping>
+		<mapping row="2" col="43" nullAllowed="true">export.items[0].cgstrate</mapping>
+		<mapping row="2" col="44" nullAllowed="true">export.items[0].cgstamount</mapping>
+		<mapping row="2" col="45" nullAllowed="true">export.items[0].sgstrate</mapping>
+		<mapping row="2" col="46" nullAllowed="true">export.items[0].sgstamount</mapping>
+		<mapping row="2" col="47">export.items[0].cessrate</mapping>
+		<mapping row="2" col="48">export.items[0].cessamount</mapping>
+		<mapping row="2" col="49">export.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="Credit_Debit_Notes">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+            <cellcheck offset="0">Document Type*</cellcheck>
+			<cellcheck offset="1">Credit/Debit Note.No*</cellcheck>
+			<cellcheck offset="2">Credit/Debit Note Date*</cellcheck>
+			<cellcheck offset="3">Place Of Supply*</cellcheck>
+			<cellcheck offset="4">GSTIN/UIN*</cellcheck>
+			<cellcheck offset="5">Original Invoice No*</cellcheck>
+			<cellcheck offset="6">Original Invoice Date*</cellcheck>
+			<cellcheck offset="7">Ledger Name</cellcheck>
+			<cellcheck offset="8">Is PreGST?*</cellcheck>
+			 
+			<cellcheck offset="9">Billing Address</cellcheck>
+			<cellcheck offset="10">Shipment Address</cellcheck>
+			<cellcheck offset="11">Same as Billing Address</cellcheck>
+			
+			<cellcheck offset="12">Rate inclusive of Tax</cellcheck>
+			
+			<cellcheck offset="13">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="14">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="15">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="17">Bank Name</cellcheck>
+			<cellcheck offset="18">Account Number</cellcheck>
+			<cellcheck offset="19">Account Name</cellcheck>
+			<cellcheck offset="20">Branch Name</cellcheck>
+			<cellcheck offset="21">IFSC Code</cellcheck>
+			<cellcheck offset="22">Terms</cellcheck>
+			<cellcheck offset="23">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="24">Customer Notes</cellcheck>
+			
+			<cellcheck offset="25">Item/Product/Service</cellcheck>
+			<cellcheck offset="26">Item Custom Field_1</cellcheck>
+			<cellcheck offset="27">Item Custom Field_2</cellcheck>
+			<cellcheck offset="28">Item Custom Field_3</cellcheck>
+			<cellcheck offset="29">Item Custom Field_4</cellcheck>
+			
+			<cellcheck offset="30">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="31">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="32">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="33">Quantity*</cellcheck>
+			<cellcheck offset="34">Item Rate*</cellcheck>
+			<cellcheck offset="35">Exempted</cellcheck>
+			<cellcheck offset="36">Total Taxable Value*</cellcheck>
+			<cellcheck offset="37">Section</cellcheck>
+			<cellcheck offset="38">TCS Percentage</cellcheck>
+			<cellcheck offset="39">IGST Rate*</cellcheck>
+			<cellcheck offset="40">IGST Amount*</cellcheck>
+			<cellcheck offset="41">CGST Rate*</cellcheck>
+			<cellcheck offset="42">CGST Amount*</cellcheck>
+			<cellcheck offset="43">SGST Rate*</cellcheck>
+			<cellcheck offset="44">SGST Amount*</cellcheck>
+			<cellcheck offset="45">CESS Rate</cellcheck>
+			<cellcheck offset="46">CESS Amount</cellcheck>
+			<cellcheck offset="47">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="creditList" var="credit" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">credit.cdnr[0].nt[0].ntty</mapping>
+		<mapping row="2" col="1">credit.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="2">credit.strDate</mapping>
+		<mapping row="2" col="3" nullAllowed="true">credit.statename</mapping>
+		<mapping row="2" col="4">credit.b2b[0].ctin</mapping>
+		<mapping row="2" col="5">credit.cdnr[0].nt[0].inum</mapping>
+		<mapping row="2" col="6">credit.cdnr[0].nt[0].idt</mapping>
+		<mapping row="2" col="7">credit.items[0].ledgerName</mapping>
+		<mapping row="2" col="8">credit.cdnr[0].nt[0].pGst</mapping>
+		
+		<mapping row="2" col="9" nullAllowed="true">credit.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="10" nullAllowed="true">credit.consigneeaddress</mapping>
+		<mapping row="2" col="11" nullAllowed="true">credit.samebilladdress</mapping>
+		<mapping row="2" col="12" nullAllowed="true">credit.includetax</mapping>
+		<mapping row="2" col="13" nullAllowed="true">credit.customField1</mapping>
+		<mapping row="2" col="14" nullAllowed="true">credit.customField2</mapping>
+		<mapping row="2" col="15" nullAllowed="true">credit.customField3</mapping>
+		<mapping row="2" col="16" nullAllowed="true">credit.customField4</mapping>
+		<mapping row="2" col="17" nullAllowed="true">credit.bankDetails.bankname</mapping>
+		<mapping row="2" col="18" nullAllowed="true">credit.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="19" nullAllowed="true">credit.bankDetails.accountName</mapping>
+		<mapping row="2" col="20" nullAllowed="true">credit.bankDetails.branchname</mapping>
+		<mapping row="2" col="21" nullAllowed="true">credit.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="22" nullAllowed="true">credit.termDays</mapping>
+		<mapping row="2" col="23" nullAllowed="true">credit.duedate_div</mapping>
+		<mapping row="2" col="24" nullAllowed="true">credit.notes</mapping>
+		<mapping row="2" col="25" nullAllowed="true">credit.items[0].itemno</mapping>
+		<mapping row="2" col="26" nullAllowed="true">credit.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="27" nullAllowed="true">credit.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="28" nullAllowed="true">credit.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="29" nullAllowed="true">credit.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="30">credit.items[0].category</mapping>
+		<mapping row="2" col="31" nullAllowed="true">credit.items[0].hsn</mapping>
+		<mapping row="2" col="32" nullAllowed="true">credit.items[0].uqc</mapping>
+		<mapping row="2" col="33">credit.items[0].quantity</mapping>
+		<mapping row="2" col="34">credit.items[0].rateperitem</mapping>
+		<mapping row="2" col="35" nullAllowed="true">credit.items[0].exmepted</mapping>
+		<mapping row="2" col="36">credit.items[0].taxablevalue</mapping>
+		<mapping row="2" col="37">credit.section</mapping>
+		<mapping row="2" col="38">credit.tcstdspercentage</mapping>
+		<mapping row="2" col="39" nullAllowed="true">credit.items[0].igstrate</mapping>
+		<mapping row="2" col="40" nullAllowed="true">credit.items[0].igstamount</mapping>
+		<mapping row="2" col="41" nullAllowed="true">credit.items[0].cgstrate</mapping>
+		<mapping row="2" col="42" nullAllowed="true">credit.items[0].cgstamount</mapping>
+		<mapping row="2" col="43" nullAllowed="true">credit.items[0].sgstrate</mapping>
+		<mapping row="2" col="44" nullAllowed="true">credit.items[0].sgstamount</mapping>
+		<mapping row="2" col="45">credit.items[0].cessrate</mapping>
+		<mapping row="2" col="46">credit.items[0].cessamount</mapping>
+		<mapping row="2" col="47">credit.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="cdnra">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+            <cellcheck offset="0">Document Type*</cellcheck>
+			<cellcheck offset="1">Credit/Debit Note.No*</cellcheck>
+			<cellcheck offset="2">Credit/Debit Note Date*</cellcheck>
+			<cellcheck offset="3">Place Of Supply*</cellcheck>
+			<cellcheck offset="4">GSTIN/UIN*</cellcheck>
+			<cellcheck offset="5">Original Invoice No*</cellcheck>
+			<cellcheck offset="6">Original Invoice Date*</cellcheck>
+			<cellcheck offset="7">Ledger Name</cellcheck>
+			<cellcheck offset="8">Is PreGST?*</cellcheck>
+			 	
+			<cellcheck offset="9">Billing Address</cellcheck>
+			<cellcheck offset="10">Shipment Address</cellcheck>
+			<cellcheck offset="11">Same as Billing Address</cellcheck>
+			
+			<cellcheck offset="12">Rate inclusive of Tax</cellcheck>
+			
+			<cellcheck offset="13">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="14">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="15">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="17">Bank Name</cellcheck>
+			<cellcheck offset="18">Account Number</cellcheck>
+			<cellcheck offset="19">Account Name</cellcheck>
+			<cellcheck offset="20">Branch Name</cellcheck>
+			<cellcheck offset="21">IFSC Code</cellcheck>
+			<cellcheck offset="22">Terms</cellcheck>
+			<cellcheck offset="23">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="24">Customer Notes</cellcheck>
+			
+			<cellcheck offset="25">Item/Product/Service</cellcheck>
+			<cellcheck offset="26">Item Custom Field_1</cellcheck>
+			<cellcheck offset="27">Item Custom Field_2</cellcheck>
+			<cellcheck offset="28">Item Custom Field_3</cellcheck>
+			<cellcheck offset="29">Item Custom Field_4</cellcheck>
+			
+			<cellcheck offset="30">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="31">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="32">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="33">Quantity*</cellcheck>
+			<cellcheck offset="34">Item Rate*</cellcheck>
+			<cellcheck offset="35">Exempted</cellcheck>
+			<cellcheck offset="36">Total Taxable Value*</cellcheck>
+			<cellcheck offset="37">Section</cellcheck>
+			<cellcheck offset="38">TCS Percentage</cellcheck>
+			<cellcheck offset="39">IGST Rate*</cellcheck>
+			<cellcheck offset="40">IGST Amount*</cellcheck>
+			<cellcheck offset="41">CGST Rate*</cellcheck>
+			<cellcheck offset="42">CGST Amount*</cellcheck>
+			<cellcheck offset="43">SGST Rate*</cellcheck>
+			<cellcheck offset="44">SGST Amount*</cellcheck>
+			<cellcheck offset="45">CESS Rate</cellcheck>
+			<cellcheck offset="46">CESS Amount</cellcheck>
+			<cellcheck offset="47">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="cdnraList" var="credit" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">credit.cdnr[0].nt[0].ntty</mapping>
+		<mapping row="2" col="1">credit.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="2">credit.strDate</mapping>
+		<mapping row="2" col="3" nullAllowed="true">credit.statename</mapping>
+		<mapping row="2" col="4">credit.b2b[0].ctin</mapping>
+		<mapping row="2" col="5">credit.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="6">credit.strOdate</mapping>
+		<mapping row="2" col="7">credit.items[0].ledgerName</mapping>
+		<mapping row="2" col="8">credit.cdnr[0].nt[0].pGst</mapping>
+		
+		<mapping row="2" col="9" nullAllowed="true">credit.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="10" nullAllowed="true">credit.consigneeaddress</mapping>
+		<mapping row="2" col="11" nullAllowed="true">credit.samebilladdress</mapping>
+		<mapping row="2" col="12" nullAllowed="true">credit.includetax</mapping>
+		<mapping row="2" col="13" nullAllowed="true">credit.customField1</mapping>
+		<mapping row="2" col="14" nullAllowed="true">credit.customField2</mapping>
+		<mapping row="2" col="15" nullAllowed="true">credit.customField3</mapping>
+		<mapping row="2" col="16" nullAllowed="true">credit.customField4</mapping>
+		<mapping row="2" col="17" nullAllowed="true">credit.bankDetails.bankname</mapping>
+		<mapping row="2" col="18" nullAllowed="true">credit.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="19" nullAllowed="true">credit.bankDetails.accountName</mapping>
+		<mapping row="2" col="20" nullAllowed="true">credit.bankDetails.branchname</mapping>
+		<mapping row="2" col="21" nullAllowed="true">credit.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="22" nullAllowed="true">credit.termDays</mapping>
+		<mapping row="2" col="23" nullAllowed="true">credit.duedate_div</mapping>
+		<mapping row="2" col="24" nullAllowed="true">credit.notes</mapping>
+		<mapping row="2" col="25" nullAllowed="true">credit.items[0].itemno</mapping>
+		<mapping row="2" col="26" nullAllowed="true">credit.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="27" nullAllowed="true">credit.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="28" nullAllowed="true">credit.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="29" nullAllowed="true">credit.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="30">credit.items[0].category</mapping>
+		<mapping row="2" col="31" nullAllowed="true">credit.items[0].hsn</mapping>
+		<mapping row="2" col="32" nullAllowed="true">credit.items[0].uqc</mapping>
+		<mapping row="2" col="33">credit.items[0].quantity</mapping>
+		<mapping row="2" col="34">credit.items[0].rateperitem</mapping>
+		<mapping row="2" col="35" nullAllowed="true">credit.items[0].exmepted</mapping>
+		<mapping row="2" col="36">credit.items[0].taxablevalue</mapping>
+		<mapping row="2" col="37">credit.section</mapping>
+		<mapping row="2" col="38">credit.tcstdspercentage</mapping>
+		<mapping row="2" col="39" nullAllowed="true">credit.items[0].igstrate</mapping>
+		<mapping row="2" col="40" nullAllowed="true">credit.items[0].igstamount</mapping>
+		<mapping row="2" col="41" nullAllowed="true">credit.items[0].cgstrate</mapping>
+		<mapping row="2" col="42" nullAllowed="true">credit.items[0].cgstamount</mapping>
+		<mapping row="2" col="43" nullAllowed="true">credit.items[0].sgstrate</mapping>
+		<mapping row="2" col="44" nullAllowed="true">credit.items[0].sgstamount</mapping>
+		<mapping row="2" col="45">credit.items[0].cessrate</mapping>
+		<mapping row="2" col="46">credit.items[0].cessamount</mapping>
+		<mapping row="2" col="47">credit.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="AdvanceAdjusted">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+            <cellcheck offset="0">Invoice No*</cellcheck>
+			<cellcheck offset="1">Invoice Date*</cellcheck>
+			<cellcheck offset="2">Original Invoice No*</cellcheck>
+			<cellcheck offset="3">Reverse Charge*</cellcheck>
+			<cellcheck offset="4">Ledger Name</cellcheck>
+			
+			<cellcheck offset="5">Rate inclusive of Tax</cellcheck>
+			<cellcheck offset="6">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="7">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="8">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="9">Invoice Custom Field_4</cellcheck>
+			<cellcheck offset="10">Customer Notes</cellcheck>		
+			
+			<cellcheck offset="11">Adv.Rept.No*</cellcheck>
+			<cellcheck offset="12">Adv.Rec.Date*</cellcheck>
+			<cellcheck offset="13">Place of Supply*</cellcheck>
+			<cellcheck offset="14">Adv.Rec.Amount*</cellcheck>
+			<cellcheck offset="15">Adv.Available for Adjustment*</cellcheck>
+			<cellcheck offset="16">Adv. to be Adjusted*</cellcheck>
+			<cellcheck offset="17">Section</cellcheck>
+			<cellcheck offset="18">TCS Percentage</cellcheck>
+			<cellcheck offset="19">IGST Rate*</cellcheck>
+			<cellcheck offset="20">IGST Amount*</cellcheck>
+			<cellcheck offset="21">CGST Rate*</cellcheck>
+			<cellcheck offset="22">CGST Amount*</cellcheck>
+			<cellcheck offset="23">SGST Rate*</cellcheck>
+			<cellcheck offset="24">SGST Amount*</cellcheck>
+			<cellcheck offset="25">CESS Rate</cellcheck>
+			<cellcheck offset="26">CESS Amount</cellcheck>
+			<cellcheck offset="27">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="advAdjustedList" var="advAdjusted" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">advAdjusted.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="1" nullAllowed="true">advAdjusted.strDate</mapping>
+		<mapping row="2" col="2">advAdjusted.advOriginalInvoiceNumber</mapping>
+		<mapping row="2" col="3">advAdjusted.revchargetype</mapping>
+		<mapping row="2" col="4">advAdjusted.items[0].ledgerName</mapping>
+		
+		<mapping row="2" col="5" nullAllowed="true">invoice.includetax</mapping>
+		<mapping row="2" col="6" nullAllowed="true">invoice.customField1</mapping>
+		<mapping row="2" col="7" nullAllowed="true">invoice.customField2</mapping>
+		<mapping row="2" col="8" nullAllowed="true">invoice.customField3</mapping>
+		<mapping row="2" col="9" nullAllowed="true">invoice.customField4</mapping>
+		<mapping row="2" col="10" nullAllowed="true">invoice.notes</mapping>
+		
+		<mapping row="2" col="11">advAdjusted.items[0].advReceiptNo</mapping>
+		
+		<mapping row="2" col="12" nullAllowed="true">advAdjusted.items[0].advReceiptDate</mapping>
+		<mapping row="2" col="13" nullAllowed="true">advAdjusted.items[0].advStateName</mapping>
+		<mapping row="2" col="14">advAdjusted.items[0].advReceivedAmount</mapping>
+		<mapping row="2" col="15">advAdjusted.items[0].advAdjustableAmount</mapping>
+		<mapping row="2" col="16">advAdjusted.items[0].advadjustedAmount</mapping>
+		<mapping row="2" col="17">advAdjusted.section</mapping>
+		<mapping row="2" col="18">advAdjusted.tcstdspercentage</mapping>
+		<mapping row="2" col="19" nullAllowed="true">advAdjusted.items[0].igstrate</mapping>
+		<mapping row="2" col="20" nullAllowed="true">advAdjusted.items[0].igstamount</mapping>
+		<mapping row="2" col="21" nullAllowed="true">advAdjusted.items[0].cgstrate</mapping>
+		<mapping row="2" col="22" nullAllowed="true">advAdjusted.items[0].cgstamount</mapping>
+		<mapping row="2" col="23" nullAllowed="true">advAdjusted.items[0].sgstrate</mapping>
+		<mapping row="2" col="24" nullAllowed="true">advAdjusted.items[0].sgstamount</mapping>
+		<mapping row="2" col="25">advAdjusted.items[0].cessrate</mapping>
+		<mapping row="2" col="26">advAdjusted.items[0].cessamount</mapping>
+		<mapping row="2" col="27">advAdjusted.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="txpa">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Original Invoice No*</cellcheck>
+			<cellcheck offset="1">Original Invoice Date*</cellcheck>
+		 	<cellcheck offset="2">Invoice No*</cellcheck>
+			<cellcheck offset="3">Invoice Date*</cellcheck>
+			<cellcheck offset="4">Original Invoice No*</cellcheck>
+			<cellcheck offset="5">Reverse Charge*</cellcheck>
+			<cellcheck offset="6">Ledger Name</cellcheck>
+			
+			<cellcheck offset="7">Rate inclusive of Tax</cellcheck>
+			<cellcheck offset="8">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="9">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="10">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="11">Invoice Custom Field_4</cellcheck>
+			<cellcheck offset="12">Customer Notes</cellcheck>
+			
+			<cellcheck offset="13">Adv.Rept.No*</cellcheck>
+			<cellcheck offset="14">Adv.Rec.Date*</cellcheck>
+			<cellcheck offset="15">Place of Supply*</cellcheck>
+			<cellcheck offset="16">Adv.Rec.Amount*</cellcheck>
+			<cellcheck offset="17">Adv.Available for Adjustment*</cellcheck>
+			<cellcheck offset="18">Adv. to be Adjusted*</cellcheck>
+			<cellcheck offset="19">Section</cellcheck>
+			<cellcheck offset="20">TCS Percentage</cellcheck>
+			<cellcheck offset="21">IGST Rate*</cellcheck>
+			<cellcheck offset="22">IGST Amount*</cellcheck>
+			<cellcheck offset="23">CGST Rate*</cellcheck>
+			<cellcheck offset="24">CGST Amount*</cellcheck>
+			<cellcheck offset="25">SGST Rate*</cellcheck>
+			<cellcheck offset="26">SGST Amount*</cellcheck>
+			<cellcheck offset="27">CESS Rate</cellcheck>
+			<cellcheck offset="28">CESS Amount</cellcheck>
+			<cellcheck offset="29">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="txpaList" var="advAdjusted" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+	  	<mapping row="2" col="0">advAdjusted.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="1" nullAllowed="true">advAdjusted.strOdate</mapping>
+		<mapping row="2" col="2">advAdjusted.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="3" nullAllowed="true">advAdjusted.strDate</mapping>
+		<mapping row="2" col="4">advAdjusted.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="5">advAdjusted.revchargetype</mapping>
+		<mapping row="2" col="6">advAdjusted.items[0].ledgerName</mapping>
+		
+		<mapping row="2" col="7" nullAllowed="true">invoice.includetax</mapping>
+		<mapping row="2" col="8" nullAllowed="true">invoice.customField1</mapping>
+		<mapping row="2" col="9" nullAllowed="true">invoice.customField2</mapping>
+		<mapping row="2" col="10" nullAllowed="true">invoice.customField3</mapping>
+		<mapping row="2" col="11" nullAllowed="true">invoice.customField4</mapping>
+		<mapping row="2" col="12" nullAllowed="true">invoice.notes</mapping>
+		
+		<mapping row="2" col="13">advAdjusted.items[0].advReceiptNo</mapping>
+		<mapping row="2" col="14" nullAllowed="true">advAdjusted.items[0].advReceiptDate</mapping>
+		<mapping row="2" col="15" nullAllowed="true">advAdjusted.items[0].advStateName</mapping>
+		<mapping row="2" col="16">advAdjusted.items[0].advReceivedAmount</mapping>
+		<mapping row="2" col="17">advAdjusted.items[0].advAdjustableAmount</mapping>
+		<mapping row="2" col="18">advAdjusted.items[0].advadjustedAmount</mapping>
+		<mapping row="2" col="19">advAdjusted.section</mapping>
+		<mapping row="2" col="20">advAdjusted.tcstdspercentage</mapping>
+		<mapping row="2" col="21" nullAllowed="true">advAdjusted.items[0].igstrate</mapping>
+		<mapping row="2" col="22" nullAllowed="true">advAdjusted.items[0].igstamount</mapping>
+		<mapping row="2" col="23" nullAllowed="true">advAdjusted.items[0].cgstrate</mapping>
+		<mapping row="2" col="24" nullAllowed="true">advAdjusted.items[0].cgstamount</mapping>
+		<mapping row="2" col="25" nullAllowed="true">advAdjusted.items[0].sgstrate</mapping>
+		<mapping row="2" col="26" nullAllowed="true">advAdjusted.items[0].sgstamount</mapping>
+		<mapping row="2" col="27">advAdjusted.items[0].cessrate</mapping>
+		<mapping row="2" col="28">advAdjusted.items[0].cessamount</mapping>
+		<mapping row="2" col="29">advAdjusted.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="Credit_Debit_Note_Unregistered">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+            <cellcheck offset="0">Document Type*</cellcheck>
+			<cellcheck offset="1">Credit/Debit Note.No*</cellcheck>
+			<cellcheck offset="2">Credit/Debit Note Date*</cellcheck>
+			<cellcheck offset="3">Place Of Supply*</cellcheck>
+			<cellcheck offset="4">Original Invoice No*</cellcheck>
+			<cellcheck offset="5">Original Invoice Date*</cellcheck>
+			<cellcheck offset="6">Ledger Name</cellcheck>
+			<cellcheck offset="7">Is PreGST?*</cellcheck>
+			<cellcheck offset="8">Type*</cellcheck>
+						
+			<cellcheck offset="9">Billing Address</cellcheck>
+			<cellcheck offset="10">Shipment Address</cellcheck>
+			<cellcheck offset="11">Same as Billing Address</cellcheck>
+			
+			<cellcheck offset="12">Rate inclusive of Tax</cellcheck>
+			
+			<cellcheck offset="13">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="14">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="15">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="16">Invoice Custom Field_4</cellcheck>
+			
+			<cellcheck offset="17">Bank Name</cellcheck>
+			<cellcheck offset="18">Account Number</cellcheck>
+			<cellcheck offset="19">Account Name</cellcheck>
+			<cellcheck offset="20">Branch Name</cellcheck>
+			<cellcheck offset="21">IFSC Code</cellcheck>
+			<cellcheck offset="22">Terms</cellcheck>
+			<cellcheck offset="23">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="24">Customer Notes</cellcheck>
+			
+			<cellcheck offset="25">Item/Product/Service</cellcheck>
+			<cellcheck offset="26">Item Custom Field_1</cellcheck>
+			<cellcheck offset="27">Item Custom Field_2</cellcheck>
+			<cellcheck offset="28">Item Custom Field_3</cellcheck>
+			<cellcheck offset="29">Item Custom Field_4</cellcheck>
+			
+			<cellcheck offset="30">Category(Goods/Services)*</cellcheck>
+			<cellcheck offset="31">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="32">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="33">Quantity*</cellcheck>
+			<cellcheck offset="34">Item Rate*</cellcheck>
+			<cellcheck offset="35">Exempted</cellcheck>
+			<cellcheck offset="36">Total Taxable Value*</cellcheck>
+			<cellcheck offset="37">Section</cellcheck>
+			<cellcheck offset="38">TCS Percentage</cellcheck>
+			<cellcheck offset="39">IGST Rate*</cellcheck>
+			<cellcheck offset="40">IGST Amount*</cellcheck>
+			<cellcheck offset="41">CGST Rate*</cellcheck>
+			<cellcheck offset="42">CGST Amount*</cellcheck>
+			<cellcheck offset="43">SGST Rate*</cellcheck>
+			<cellcheck offset="44">SGST Amount*</cellcheck>
+			<cellcheck offset="45">CESS Rate</cellcheck>
+			<cellcheck offset="46">CESS Amount</cellcheck>
+			<cellcheck offset="47">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="cdnurList" var="cdnurInv" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">cdnurInv.cdnur[0].ntty</mapping>
+		<mapping row="2" col="1">cdnurInv.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="2">cdnurInv.strDate</mapping>
+		<mapping row="2" col="3">cdnurInv.statename</mapping>
+		<mapping row="2" col="4">cdnurInv.cdnur[0].inum</mapping>
+		<mapping row="2" col="5">cdnurInv.cdnur[0].idt</mapping>
+		<mapping row="2" col="6">cdnurInv.items[0].ledgerName</mapping>
+		<mapping row="2" col="7" nullAllowed="true">cdnurInv.cdnur[0].pGst</mapping>
+		<mapping row="2" col="8">cdnurInv.cdnur[0].typ</mapping>
+		
+		<mapping row="2" col="9" nullAllowed="true">cdnurInv.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="10" nullAllowed="true">cdnurInv.consigneeaddress</mapping>
+		<mapping row="2" col="11" nullAllowed="true">cdnurInv.samebilladdress</mapping>
+		<mapping row="2" col="12" nullAllowed="true">cdnurInv.includetax</mapping>
+		<mapping row="2" col="13" nullAllowed="true">cdnurInv.customField1</mapping>
+		<mapping row="2" col="14" nullAllowed="true">cdnurInv.customField2</mapping>
+		<mapping row="2" col="15" nullAllowed="true">cdnurInv.customField3</mapping>
+		<mapping row="2" col="16" nullAllowed="true">cdnurInv.customField4</mapping>
+		<mapping row="2" col="17" nullAllowed="true">cdnurInv.bankDetails.bankname</mapping>
+		<mapping row="2" col="18" nullAllowed="true">cdnurInv.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="19" nullAllowed="true">cdnurInv.bankDetails.accountName</mapping>
+		<mapping row="2" col="20" nullAllowed="true">cdnurInv.bankDetails.branchname</mapping>
+		<mapping row="2" col="21" nullAllowed="true">cdnurInv.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="22" nullAllowed="true">cdnurInv.termDays</mapping>
+		<mapping row="2" col="23" nullAllowed="true">cdnurInv.duedate_div</mapping>
+		<mapping row="2" col="24" nullAllowed="true">cdnurInv.notes</mapping>
+		<mapping row="2" col="25" nullAllowed="true">cdnurInv.items[0].itemno</mapping>
+		<mapping row="2" col="26" nullAllowed="true">cdnurInv.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="27" nullAllowed="true">cdnurInv.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="28" nullAllowed="true">cdnurInv.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="29" nullAllowed="true">cdnurInv.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="30">cdnurInv.items[0].category</mapping>
+		<mapping row="2" col="31" nullAllowed="true">cdnurInv.items[0].hsn</mapping>
+		<mapping row="2" col="32" nullAllowed="true">cdnurInv.items[0].uqc</mapping>
+		<mapping row="2" col="33">cdnurInv.items[0].quantity</mapping>
+		<mapping row="2" col="34">cdnurInv.items[0].rateperitem</mapping>
+		<mapping row="2" col="35" nullAllowed="true">cdnurInv.items[0].exmepted</mapping>
+		<mapping row="2" col="36">cdnurInv.items[0].taxablevalue</mapping>
+		<mapping row="2" col="37">cdnurInv.section</mapping>
+		<mapping row="2" col="38">cdnurInv.tcstdspercentage</mapping>
+		<mapping row="2" col="39" nullAllowed="true">cdnurInv.items[0].igstrate</mapping>
+		<mapping row="2" col="40" nullAllowed="true">cdnurInv.items[0].igstamount</mapping>
+		<mapping row="2" col="41" nullAllowed="true">cdnurInv.items[0].cgstrate</mapping>
+		<mapping row="2" col="42" nullAllowed="true">cdnurInv.items[0].cgstamount</mapping>
+		<mapping row="2" col="43" nullAllowed="true">cdnurInv.items[0].sgstrate</mapping>
+		<mapping row="2" col="44" nullAllowed="true">cdnurInv.items[0].sgstamount</mapping>
+		<mapping row="2" col="45">cdnurInv.items[0].cessrate</mapping>
+		<mapping row="2" col="46">cdnurInv.items[0].cessamount</mapping>
+		<mapping row="2" col="47">cdnurInv.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="cdnura">
+	  <loop startRow="0" endRow="0">
+	  		<loopbreakcondition>
+		  		<rowcheck offset="0">
+		  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+		  		</rowcheck>
+	  		</loopbreakcondition>
+	  	</loop>
+		<loop startRow="1" endRow="1">
+			<loopbreakcondition>
+			<rowcheck offset="1">
+	            <cellcheck offset="0">Document Type*</cellcheck>
+				<cellcheck offset="1">Credit/Debit Note.No*</cellcheck>
+				<cellcheck offset="2">Credit/Debit Note Date*</cellcheck>
+				<cellcheck offset="3">Place Of Supply*</cellcheck>
+				<cellcheck offset="4">Original Invoice No*</cellcheck>
+				<cellcheck offset="5">Original Invoice Date*</cellcheck>
+				<cellcheck offset="6">Ledger Name</cellcheck>
+				<cellcheck offset="7">Is PreGST?*</cellcheck>
+				<cellcheck offset="8">Type*</cellcheck>
+				 			
+				<cellcheck offset="9">Billing Address</cellcheck>
+				<cellcheck offset="10">Shipment Address</cellcheck>
+				<cellcheck offset="11">Same as Billing Address</cellcheck>
+				
+				<cellcheck offset="12">Rate inclusive of Tax</cellcheck>
+				
+				<cellcheck offset="13">Invoice Custom Field_1</cellcheck>
+				<cellcheck offset="14">Invoice Custom Field_2</cellcheck>
+				<cellcheck offset="15">Invoice Custom Field_3</cellcheck>
+				<cellcheck offset="16">Invoice Custom Field_4</cellcheck>
+				
+				<cellcheck offset="17">Bank Name</cellcheck>
+				<cellcheck offset="18">Account Number</cellcheck>
+				<cellcheck offset="19">Account Name</cellcheck>
+				<cellcheck offset="20">Branch Name</cellcheck>
+				<cellcheck offset="21">IFSC Code</cellcheck>
+				<cellcheck offset="22">Terms</cellcheck>
+				<cellcheck offset="23">Due Date(DD/MM/YYYY)</cellcheck>
+				<cellcheck offset="24">Customer Notes</cellcheck>
+				
+				<cellcheck offset="25">Item/Product/Service</cellcheck>
+				<cellcheck offset="26">Item Custom Field_1</cellcheck>
+				<cellcheck offset="27">Item Custom Field_2</cellcheck>
+				<cellcheck offset="28">Item Custom Field_3</cellcheck>
+				<cellcheck offset="29">Item Custom Field_4</cellcheck>
+				
+				<cellcheck offset="30">Category(Goods/Services)*</cellcheck>
+				<cellcheck offset="31">HSN / SAC Code*</cellcheck>
+				<cellcheck offset="32">Unique Quantity Code*</cellcheck>
+				<cellcheck offset="33">Quantity*</cellcheck>
+				<cellcheck offset="34">Item Rate*</cellcheck>
+				<cellcheck offset="35">Exempted</cellcheck>
+				<cellcheck offset="36">Total Taxable Value*</cellcheck>
+				<cellcheck offset="37">Section</cellcheck>
+				<cellcheck offset="38">TCS Percentage</cellcheck>
+				<cellcheck offset="39">IGST Rate*</cellcheck>
+				<cellcheck offset="40">IGST Amount*</cellcheck>
+				<cellcheck offset="41">CGST Rate*</cellcheck>
+				<cellcheck offset="42">CGST Amount*</cellcheck>
+				<cellcheck offset="43">SGST Rate*</cellcheck>
+				<cellcheck offset="44">SGST Amount*</cellcheck>
+				<cellcheck offset="45">CESS Rate</cellcheck>
+				<cellcheck offset="46">CESS Amount</cellcheck>
+				<cellcheck offset="47">Total Invoice Value*</cellcheck>
+	        </rowcheck>
+			</loopbreakcondition>
+		</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="cdnuraList" var="cdnurInv" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">cdnurInv.cdnur[0].ntty</mapping>
+		<mapping row="2" col="1">cdnurInv.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="2">cdnurInv.strDate</mapping>
+		<mapping row="2" col="3">cdnurInv.statename</mapping>
+		<mapping row="2" col="4">cdnurInv.b2b[0].inv[0].oinum</mapping>
+		<mapping row="2" col="5">cdnurInv.strOdate</mapping>
+		<mapping row="2" col="6">cdnurInv.items[0].ledgerName</mapping>
+		<mapping row="2" col="7" nullAllowed="true">cdnurInv.cdnur[0].pGst</mapping>
+		<mapping row="2" col="8">cdnurInv.cdnur[0].typ</mapping>
+		
+		<mapping row="2" col="9" nullAllowed="true">cdnurInv.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="10" nullAllowed="true">cdnurInv.consigneeaddress</mapping>
+		<mapping row="2" col="11" nullAllowed="true">cdnurInv.samebilladdress</mapping>
+		<mapping row="2" col="12" nullAllowed="true">cdnurInv.includetax</mapping>
+		<mapping row="2" col="13" nullAllowed="true">cdnurInv.customField1</mapping>
+		<mapping row="2" col="14" nullAllowed="true">cdnurInv.customField2</mapping>
+		<mapping row="2" col="15" nullAllowed="true">cdnurInv.customField3</mapping>
+		<mapping row="2" col="16" nullAllowed="true">cdnurInv.customField4</mapping>
+		<mapping row="2" col="17" nullAllowed="true">cdnurInv.bankDetails.bankname</mapping>
+		<mapping row="2" col="18" nullAllowed="true">cdnurInv.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="19" nullAllowed="true">cdnurInv.bankDetails.accountName</mapping>
+		<mapping row="2" col="20" nullAllowed="true">cdnurInv.bankDetails.branchname</mapping>
+		<mapping row="2" col="21" nullAllowed="true">cdnurInv.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="22" nullAllowed="true">cdnurInv.termDays</mapping>
+		<mapping row="2" col="23" nullAllowed="true">cdnurInv.duedate_div</mapping>
+		<mapping row="2" col="24" nullAllowed="true">cdnurInv.notes</mapping>
+		<mapping row="2" col="25" nullAllowed="true">cdnurInv.items[0].itemno</mapping>
+		<mapping row="2" col="26" nullAllowed="true">cdnurInv.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="27" nullAllowed="true">cdnurInv.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="28" nullAllowed="true">cdnurInv.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="29" nullAllowed="true">cdnurInv.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="30">cdnurInv.items[0].category</mapping>
+		<mapping row="2" col="31" nullAllowed="true">cdnurInv.items[0].hsn</mapping>
+		<mapping row="2" col="32" nullAllowed="true">cdnurInv.items[0].uqc</mapping>
+		<mapping row="2" col="33">cdnurInv.items[0].quantity</mapping>
+		<mapping row="2" col="34">cdnurInv.items[0].rateperitem</mapping>
+		<mapping row="2" col="35" nullAllowed="true">cdnurInv.items[0].exmepted</mapping>
+		<mapping row="2" col="36">cdnurInv.items[0].taxablevalue</mapping>
+		<mapping row="2" col="37">cdnurInv.section</mapping>
+		<mapping row="2" col="38">cdnurInv.tcstdspercentage</mapping>
+		<mapping row="2" col="39" nullAllowed="true">cdnurInv.items[0].igstrate</mapping>
+		<mapping row="2" col="40" nullAllowed="true">cdnurInv.items[0].igstamount</mapping>
+		<mapping row="2" col="41" nullAllowed="true">cdnurInv.items[0].cgstrate</mapping>
+		<mapping row="2" col="42" nullAllowed="true">cdnurInv.items[0].cgstamount</mapping>
+		<mapping row="2" col="43" nullAllowed="true">cdnurInv.items[0].sgstrate</mapping>
+		<mapping row="2" col="44" nullAllowed="true">cdnurInv.items[0].sgstamount</mapping>
+		<mapping row="2" col="45">cdnurInv.items[0].cessrate</mapping>
+		<mapping row="2" col="46">cdnurInv.items[0].cessamount</mapping>
+		<mapping row="2" col="47">cdnurInv.items[0].total</mapping>		
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="Nil_Exempted_Non-GST">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Bill Number*</cellcheck>
+            <cellcheck offset="1">Bill Date*</cellcheck>
+            <cellcheck offset="2">GSTIN/UIN</cellcheck>
+            <cellcheck offset="3">Place Of Supply*</cellcheck>
+			<cellcheck offset="4">Ledger Name</cellcheck>
+			<cellcheck offset="5">Billing Address</cellcheck>
+			<cellcheck offset="6">Shipment Address</cellcheck>
+			<cellcheck offset="7">Same as Billing Address</cellcheck>
+				
+			<cellcheck offset="8">Invoice Custom Field_1</cellcheck>
+			<cellcheck offset="9">Invoice Custom Field_2</cellcheck>
+			<cellcheck offset="10">Invoice Custom Field_3</cellcheck>
+			<cellcheck offset="11">Invoice Custom Field_4</cellcheck>
+				
+			<cellcheck offset="12">Bank Name</cellcheck>
+			<cellcheck offset="13">Account Number</cellcheck>
+			<cellcheck offset="14">Account Name</cellcheck>
+			<cellcheck offset="15">Branch Name</cellcheck>
+			<cellcheck offset="16">IFSC Code</cellcheck>
+			<cellcheck offset="17">Terms</cellcheck>
+			<cellcheck offset="18">Due Date(DD/MM/YYYY)</cellcheck>
+			<cellcheck offset="19">Customer Notes</cellcheck>
+			
+			<cellcheck offset="20">Item/Product/Service</cellcheck>
+			<cellcheck offset="21">Item Custom Field_1</cellcheck>
+			<cellcheck offset="22">Item Custom Field_2</cellcheck>
+			<cellcheck offset="23">Item Custom Field_3</cellcheck>
+			<cellcheck offset="24">Item Custom Field_4</cellcheck>
+            <cellcheck offset="25">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="26">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="27">Quantity*</cellcheck>
+			<cellcheck offset="28">Item Rate*</cellcheck>
+			<cellcheck offset="29">Exempted</cellcheck>
+			<cellcheck offset="30">Total Taxable Value*</cellcheck>
+			<cellcheck offset="31">Section</cellcheck>
+			<cellcheck offset="32">TCS Percentage</cellcheck>
+			<cellcheck offset="33">Supply Type*</cellcheck>
+			<cellcheck offset="34">Total Invoice Value*</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1" />
+	<loop startRow="2" endRow="2" items="nilList" var="nInv" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+	  	<mapping row="2" col="0">nInv.b2b[0].inv[0].inum</mapping>
+		<mapping row="2" col="1">nInv.strDate</mapping>
+		<mapping row="2" col="2">nInv.b2b[0].ctin</mapping>
+		<mapping row="2" col="3">nInv.statename</mapping>
+		<mapping row="2" col="4">nInv.items[0].ledgerName</mapping>
+		
+		<mapping row="2" col="5" nullAllowed="true">nInv.b2b[0].inv[0].address</mapping>
+		<mapping row="2" col="6" nullAllowed="true">nInv.consigneeaddress</mapping>
+		<mapping row="2" col="7" nullAllowed="true">nInv.samebilladdress</mapping>
+		
+		<mapping row="2" col="8" nullAllowed="true">nInv.customField1</mapping>
+		<mapping row="2" col="9" nullAllowed="true">nInv.customField2</mapping>
+		<mapping row="2" col="10" nullAllowed="true">nInv.customField3</mapping>
+		<mapping row="2" col="11" nullAllowed="true">nInv.customField4</mapping>
+		<mapping row="2" col="12" nullAllowed="true">nInv.bankDetails.bankname</mapping>
+		<mapping row="2" col="13" nullAllowed="true">nInv.bankDetails.accountnumber</mapping>
+		<mapping row="2" col="14" nullAllowed="true">nInv.bankDetails.accountName</mapping>
+		<mapping row="2" col="15" nullAllowed="true">nInv.bankDetails.branchname</mapping>
+		<mapping row="2" col="16" nullAllowed="true">nInv.bankDetails.ifsccode</mapping>
+		<mapping row="2" col="17" nullAllowed="true">nInv.termDays</mapping>
+		<mapping row="2" col="18" nullAllowed="true">nInv.duedate_div</mapping>
+		<mapping row="2" col="19" nullAllowed="true">nInv.notes</mapping>
+		<mapping row="2" col="20" nullAllowed="true">nInv.items[0].itemno</mapping>
+		<mapping row="2" col="21" nullAllowed="true">nInv.items[0].itemCustomField1</mapping>
+		<mapping row="2" col="22" nullAllowed="true">nInv.items[0].itemCustomField2</mapping>
+		<mapping row="2" col="23" nullAllowed="true">nInv.items[0].itemCustomField3</mapping>
+		<mapping row="2" col="24" nullAllowed="true">nInv.items[0].itemCustomField4</mapping>
+		
+		<mapping row="2" col="25" nullAllowed="true">nInv.items[0].hsn</mapping>
+		<mapping row="2" col="26" nullAllowed="true">nInv.items[0].uqc</mapping>
+		<mapping row="2" col="27">nInv.items[0].quantity</mapping>
+		<mapping row="2" col="28">nInv.items[0].rateperitem</mapping>
+		<mapping row="2" col="29">nInv.items[0].exmepted</mapping>
+		<mapping row="2" col="30">nInv.items[0].taxablevalue</mapping>
+		<mapping row="2" col="31">nInv.section</mapping>
+		<mapping row="2" col="32">nInv.tcstdspercentage</mapping>
+		<mapping row="2" col="33">nInv.items[0].type</mapping>	
+		<mapping row="2" col="34">nInv.items[0].total</mapping>			
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="hsn">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">HSN</cellcheck>
+			<cellcheck offset="1">Description</cellcheck>
+			<cellcheck offset="2">UQC</cellcheck>
+			<cellcheck offset="3">Total Quantity</cellcheck>
+			<cellcheck offset="4">Total Value</cellcheck>
+			<cellcheck offset="5">Rate</cellcheck>
+			<cellcheck offset="6">Taxable Value</cellcheck>
+			<cellcheck offset="7">Integrated Tax Amount</cellcheck>
+			<cellcheck offset="8">Central Tax Amount</cellcheck>
+			<cellcheck offset="9">State/UT Tax Amount</cellcheck>
+			<cellcheck offset="10">Cess Amount</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1"/>
+	<loop startRow="2" endRow="2" items="hsnSummaryList" var="hsn" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">hsn.items[0].hsn</mapping>
+		<mapping row="2" col="1">hsn.items[0].desc</mapping>
+		<mapping row="2" col="2">hsn.items[0].uqc</mapping>
+		<mapping row="2" col="3">hsn.items[0].quantity</mapping>
+		<mapping row="2" col="4">hsn.items[0].total</mapping>
+		<mapping row="2" col="5">hsn.items[0].rate</mapping>
+		<mapping row="2" col="6">hsn.items[0].taxablevalue</mapping>
+		<mapping row="2" col="7">hsn.items[0].igstamount</mapping>
+		<mapping row="2" col="8">hsn.items[0].cgstamount</mapping>
+		<mapping row="2" col="9">hsn.items[0].sgstamount</mapping>
+		<mapping row="2" col="10">hsn.items[0].cessamount</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="docs">
+  <loop startRow="0" endRow="0">
+  		<loopbreakcondition>
+	  		<rowcheck offset="0">
+	  			<cellcheck offset="0">* Indicates mandatory</cellcheck>
+	  		</rowcheck>
+  		</loopbreakcondition>
+  	</loop>
+	<loop startRow="1" endRow="1">
+		<loopbreakcondition>
+		<rowcheck offset="1">
+			<cellcheck offset="0">Nature of Document</cellcheck>
+			<cellcheck offset="1">Sr. No. From</cellcheck>
+			<cellcheck offset="2">Sr. No. To</cellcheck>
+			<cellcheck offset="3">Total Number</cellcheck>
+			<cellcheck offset="4">Cancelled</cellcheck>
+        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="1" endRow="1"/>
+	<loop startRow="2" endRow="2" items="docSummaryList" var="docsissu" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="2" endRow="2">
+		<mapping row="2" col="0">docsissu.docuploads.docDet[0].docnumstring</mapping>
+		<mapping row="2" col="1">docsissu.docuploads.docDet[0].docs[0].from</mapping>
+		<mapping row="2" col="2">docsissu.docuploads.docDet[0].docs[0].to</mapping>
+		<mapping row="2" col="3">docsissu.docuploads.docDet[0].docs[0].totnum</mapping>
+		<mapping row="2" col="4">docsissu.docuploads.docDet[0].docs[0].cancel</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+</workbook>

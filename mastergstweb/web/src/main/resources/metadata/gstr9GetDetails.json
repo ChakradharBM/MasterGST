@@ -1,0 +1,655 @@
+{
+"data": {
+  "gstin": "05BJKPK5619P1CN",
+  "fp": "032018",
+  "table4": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "b2c": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "b2b": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "exp": {
+      "txval": 1000,
+      "iamt": 20,
+      "csamt": 20
+    },
+    "sez": {
+      "txval": 1000,
+      "iamt": 20,
+      "csamt": 20
+    },
+    "deemed": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "at": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "rchrg": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "cr_nt": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "dr_nt": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "amd_pos": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "amd_neg": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "sub_totalAG": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "sub_totalIL": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "sup_adv": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    }
+  },
+  "table5": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "zero_rtd": {
+      "txval": 1000
+    },
+    "sez": {
+      "txval": 1000
+    },
+    "rchrg": {
+      "txval": 1000
+    },
+    "exmt": {
+      "txval": 1000
+    },
+    "nil": {
+      "txval": 1000
+    },
+    "non_gst": {
+      "txval": 1000
+    },
+    "cr_nt": {
+      "txval": 1000
+    },
+    "dr_nt": {
+      "txval": 1000
+    },
+    "amd_pos": {
+      "txval": 1000
+    },
+    "amd_neg": {
+      "txval": 1000
+    },
+    "sub_totalAF": {
+      "txval": 1000
+    },
+    "sub_totalHK": {
+      "txval": 1000
+    },
+    "tover_tax_np": {
+      "txval": 1000
+    },
+    "total_tover": {
+      "txval": 1000,
+      "csamt": 50,
+      "samt": 30,
+      "camt": 30,
+      "iamt": 41
+    }
+  },
+  "table6": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "itc_3b": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "supp_non_rchrg": [
+      {
+        "itc_typ": "ip",
+        "iamt": 20,
+        "camt": 20,
+        "samt": 20,
+        "csamt": 20
+      }
+    ],
+    "supp_rchrg_unreg": [
+      {
+        "itc_typ": "ip",
+        "iamt": 20,
+        "camt": 20,
+        "samt": 20,
+        "csamt": 20
+      }
+    ],
+    "supp_rchrg_reg": [
+      {
+        "itc_typ": "ip",
+        "iamt": 20,
+        "camt": 20,
+        "samt": 20,
+        "csamt": 20
+      }
+    ],
+    "iog": [
+      {
+        "itc_typ": "ip",
+        "iamt": 20,
+        "csamt": 20
+      }
+    ],
+    "ios": {
+      "iamt": 20,
+      "csamt": 20
+    },
+    "isd": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "itc_clmd": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "tran1": {
+      "camt": 20,
+      "samt": 20
+    },
+    "tran2": {
+      "camt": 20,
+      "samt": 20
+    },
+    "other": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "sub_totalBH": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "difference": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "sub_totalKM": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "total_itc_availed": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    }
+  },
+  "table7": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "rule37": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "rule39": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "rule42": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "rule43": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "sec17": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "revsl_tran1": {
+      "camt": 20,
+      "samt": 20
+    },
+    "revsl_tran2": {
+      "camt": 20,
+      "samt": 20
+    },
+    "other": [
+      {
+        "desc": "other1",
+        "iamt": 20,
+        "camt": 20,
+        "samt": 20,
+        "csamt": 20
+      }
+    ],
+    "tot_itc_revd": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "net_itc_aval": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    }
+  },
+  "table8": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "itc_2a": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "itc_tot": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "itc_inwd_supp": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "itc_nt_availd": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "itc_nt_eleg": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "iog_taxpaid": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "iog_itc_availd": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "iog_itc_ntavaild": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "differenceABC": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "differenceGH": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "tot_itc_lapsed": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    }
+  },
+  "table9": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "iamt": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000,
+      "tax_paid_itc_iamt": 20,
+      "tax_paid_itc_camt": 20,
+      "tax_paid_itc_samt": 20
+    },
+    "camt": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000,
+      "tax_paid_itc_iamt": 20,
+      "tax_paid_itc_camt": 20
+    },
+    "samt": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000,
+      "tax_paid_itc_iamt": 20,
+      "tax_paid_itc_samt": 20
+    },
+    "csamt": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000,
+      "tax_paid_itc_csamt": 20
+    },
+    "intr": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000
+    },
+    "fee": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000
+    },
+    "pen": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000
+    },
+    "other": {
+      "txpyble": 1000,
+      "txpaid_cash": 1000
+    }
+  },
+  "table10": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "dbn_amd": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "cdn_amd": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "itc_rvsl": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "itc_availd": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "total_turnover": {
+      "txval": 20,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    }
+  },
+  "table14": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "iamt": {
+      "txpyble": 1000,
+      "txpaid": 1000
+    },
+    "camt": {
+      "txpyble": 1000,
+      "txpaid": 1000
+    },
+    "samt": {
+      "txpyble": 1000,
+      "txpaid": 1000
+    },
+    "csamt": {
+      "txpyble": 1000,
+      "txpaid": 1000
+    },
+    "intr": {
+      "txpyble": 1000,
+      "txpaid": 1000
+    }
+  },
+  "table15": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "rfd_clmd": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "rfd_sanc": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "rfd_rejt": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "rfd_pend": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "tax_dmnd": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20,
+      "intr": 20,
+      "fee": 20,
+      "pen": 20
+    },
+    "tax_paid": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20,
+      "intr": 20,
+      "fee": 20,
+      "pen": 20
+    },
+    "dmnd_pend": {
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20,
+      "intr": 20,
+      "fee": 20,
+      "pen": 20
+    }
+  },
+  "table16": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "comp_supp": {
+      "txval": 1000
+    },
+    "deemed_supp": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    },
+    "not_returned": {
+      "txval": 1000,
+      "iamt": 20,
+      "camt": 20,
+      "samt": 20,
+      "csamt": 20
+    }
+  },
+  "table17": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "items": [
+      {
+        "hsn_sc": "646473",
+        "uqc": "BAG",
+        "desc": "afdasfcvasd",
+        "isconcesstional": "N",
+        "qty": 24241,
+        "txval": 1000,
+        "rt": 5,
+        "iamt": 10,
+        "camt": 20,
+        "samt": 20,
+        "csamt": 20
+      }
+    ]
+  },
+  "table18": {
+    "chksum": "qwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyuiqwertyui",
+    "items": [
+      {
+        "hsn_sc": "646473",
+        "uqc": "BAG",
+        "desc": "afdasfcvasd",
+        "isconcesstional": "N",
+        "qty": 24241,
+        "txval": 1000,
+        "rt": 5,
+        "iamt": 10,
+        "camt": 20,
+        "samt": 20,
+        "csamt": 20
+      }
+    ]
+  },
+  "tax_pay": [
+    {
+      "sgst": {
+        "tx": 0,
+        "intr": 0,
+        "pen": 0,
+        "fee": 0,
+        "oth": 0,
+        "tot": 0
+      },
+      "cgst": {
+        "tx": 0,
+        "intr": 0,
+        "pen": 0,
+        "fee": 0,
+        "oth": 0,
+        "tot": 0
+      },
+      "liab_id": 8855,
+      "trancd": 30002,
+      "trandate": "12-02-2018"
+    }
+  ],
+  "tax_paid": {
+    "pd_by_cash": [
+      {
+        "sgst": {
+          "tx": 0,
+          "intr": 0,
+          "pen": 0,
+          "fee": 0,
+          "oth": 0,
+          "tot": 0
+        },
+        "cgst": {
+          "tx": 0,
+          "intr": 0,
+          "pen": 0,
+          "fee": 0,
+          "oth": 0,
+          "tot": 0
+        },
+        "liab_id": 8855,
+        "debit_id": "DC1202180000007",
+        "trancd": 30002,
+        "trandate": "12-02-2018"
+      }
+    ]
+  }
+},
+"status_cd": "1",
+"status_desc": "GSTR request succeeds",
+"header": {
+"state_cd": "36",
+"txn": "65022b3d3a91464ba171bd6a84b6a394",
+"gst_username": "bvmit_2017",
+"client_secret": "3b504660fe144825ad6503fc057a398c",
+"client_id": "l7xx34699ff5c1044fbd8b85c4158a506621",
+"ip_address": "183.83.171.186",
+"ret_period": "032018",
+"gstin": "36AAGCB1286Q1Z5"
+}
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   
+  <Configuration name="mastergst-config" monitorInterval="2">
+		<Properties>
+			<Property name="LOG_DIR">mastergst_logs/logs</Property>
+			<Property name="ARCHIVE">mastergst_logs/archive</Property>
+			<Property name="PATTERN">%-5level %d [%t] %c:%M(%L): %m%n</Property>
+			<Property name="LOGFILENAME">mastergst-web.log</Property>
+			<Property name="ERRORLOGFILENAME">mastergst-web-errors.log</Property>
+		</Properties>
+   
+      <Appenders>
+        <RollingFile name="fileWriter"
+                     fileName="${LOG_DIR}/${LOGFILENAME}"
+                     filePattern="${ARCHIVE}${LOGFILENAME}.%d{yyyy-MM-dd-hh-mm}.gz">
+			         <PatternLayout pattern="${PATTERN}"/>
+	        <Policies>
+				   	<SizeBasedTriggeringPolicy size="2 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="24" />
+			<ThresholdFilter level="INFO"/>
+		</RollingFile>
+        <RollingFile name="fileWriterError"
+                     fileName="${LOG_DIR}/${ERRORLOGFILENAME}"
+                     filePattern="${ARCHIVE}${ERRORLOGFILENAME}.%d{yyyy-MM-dd-hh-mm}.gz">
+			         <PatternLayout pattern="${PATTERN}"/>
+	        <Policies>
+				   	<SizeBasedTriggeringPolicy size="1 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="24" />
+			<ThresholdFilter level="ERROR"/>
+		</RollingFile>
+      </Appenders>
+
+	  <Loggers>
+
+<!-- 	    <AsyncRoot level="DEBUG"/> -->
+        <Logger name="com.mastergst" level="INFO" includeLocation="true">
+          <AppenderRef ref="fileWriter" level="INFO"/>
+          <AppenderRef ref="fileWriterError" level="ERROR"/>
+        </Logger>	
+      </Loggers>
+  </Configuration>

@@ -1,0 +1,175 @@
+{'groups': [
+	{'name': 'Land','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Land','readonly':false,
+		'subgroup':[{}]
+	}, 
+	
+	{'name': 'Buildings','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Buildings','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Plant and Equipment','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Plant and Equipment','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Furniture and Fixtures','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Furniture and Fixtures','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Vehicles','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Vehicles','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Office equipment','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Office equipment','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Other Assets','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Other Assets','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Capital work-in-progress','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Capital work-in-progress','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Intangible assets under development','headname':'Fixed Assets',
+	'path':'Assets/Fixed Assets/Intangible assets under development','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Deferred tax assets (net)','headname':'Deferred Tax Assets (net)',
+	'path':'Assets/Deferred Tax Assets (net)/Deferred tax assets (net)','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Security Deposits','headname':'Long term Loans & Advances(Asset)',
+	'path':'Assets/Long term Loans & Advances/Security Deposits(Asset)','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Inventories','headname':'Current Assets',
+	'path':'Assets/Current Assets/Inventories','readonly':false,
+		'subgroup':[
+			{
+				'subgroupname':'Raw material',
+				'subgrouppath':'Assets/Current Assets/Inventories/Raw material','readonly':false
+			},
+			{
+				'subgroupname':'Work-in-progress',
+				'subgrouppath':'Assets/Current Assets/Inventories/Work-in-progress','readonly':false
+			},
+			{
+				'subgroupname':'Finished goods',
+				'subgrouppath':'Assets/Current Assets/Inventories/Finished Goods','readonly':false
+			}
+		]
+	},
+	{'name': 'Sundry Debtors','headname':'Current Assets',
+	'path':'Assets/Current Assets/Sundry Debtors','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Short-term Loans & Advances (Asset)','headname':'Current Assets',
+	'path':'Assets/Current Assets/Short-term Loans & Advances (Asset)','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Cash in hand','headname':'Current Assets',
+		'path':'Assets/Current Assets/Cash in hand','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Bank accounts','headname':'Current Assets',
+		'path':'Assets/Current Assets/Bank accounts','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Other current assets','headname':'Current Assets',
+		'path':'Assets/Current Assets/Other current assets','readonly':false,
+		'subgroup':[
+			{
+				'subgroupname':'Prepaid Expense',
+				'subgrouppath':'Assets/Current Assets/Other current assets/Prepaid Expense','readonly':false
+			}
+		]
+	},
+	{'name': 'Duties & Taxes (Assets)','headname':'Current Assets',
+		'path':'Assets/Current Assets/Duties & Taxes (Assets)','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Capital account','headname':'Capital Fund',
+	'path':'Liabilities/Capital Fund/Capital account','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': ' Reserves & Surplus','headname':'Capital Fund',
+	'path':'Liabilities/Capital Fund/ Reserves & Surplus','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Long-term borrowings','headname':'Long-term liabilities',
+	'path':'Liabilities/Long-term liabilities/Long-term borrowings','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Long-term provisions','headname':'Long terms liabilities',
+	'path':'Liabilities/Long term liabilities/Long-term provisions','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Long-term loans & advances (Liability)','headname':'Long terms liabilities',
+	'path':'Liabilities/Long term liabilities/Long-term loans & advances (Liability)','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Deferred tax liabilities (Net)','headname':'Deferred tax liabilities (Net)',
+	'path':'Liabilities/Deferred tax liabilities (Net)/Deferred tax liabilities (Net)','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Short-term borrowings','headname':'Current liabilities',
+	'path':'Liabilities/Current liabilities/Short-term borrowings','readonly':false,
+		'subgroup':[{}]
+	},
+	
+	{'name': 'Sundry Creditors','headname':'Current liabilities',
+	'path':'Liabilities/Current liabilities/Sundry Creditors','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Short-term provisions','headname':'Current liabilities',
+	'path':'Liabilities/Current liabilities/Short-term provisions','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Short-term loans & advances (Liability)','headname':'Current liabilities',
+	'path':'Liabilities/Current liabilities/Short-term loans & advances (Liability)','readonly':false,
+		'subgroup':[{}]
+	}, 
+	{'name': 'Other current liabilities','headname':'Current liabilities',
+	'path':'Liabilities/Current liabilities/Other current Liabilities','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Duties & Taxes (Liability)','headname':'Current liabilities',
+	'path':'Liabilities/Current liabilities/Duties & Taxes (Liability)','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Sales','headname':'Direct Income',
+	'path':'Income/Direct Income/Sales','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Interest income','headname':'Indirect income',
+	'path':'Income/Indirect Income/Interest income','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Other income','headname':'Indirect income',
+	'path':'Income/Indirect Income/Other income','readonly':false,
+		'subgroup':[{}]
+	},
+	{
+		'name': 'Purchases','headname':'Direct expenses',
+		'path':'Expenses/Direct expenses/Purchases','readonly':false,
+		'subgroup':[{}]
+	}, 
+	{'name': 'Employee Cost','headname':'Indirect expenses',
+		'path':'Expenses/Indirect expenses/Employee Cost','readonly':false,
+		'subgroup':[{}]
+	}, 
+	{'name': 'Finance cost','headname':'Indirect expenses',
+		'path':'Expenses/Indirect expenses/Finance cost','readonly':false,
+		'subgroup':[{}]
+	}, 
+	{'name': 'Depreciation & amortisation expense','headname':'Indirect expenses',
+		'path':'Expenses/Indirect expenses/Depreciation & amortisation expense','readonly':false,
+		'subgroup':[{}]
+	},
+	{'name': 'Other expenses','headname':'Indirect expenses',
+		 'path':'Expenses/Indirect expenses/Other expenses','readonly':false,
+		 'subgroup':[{}]
+	}
+]}

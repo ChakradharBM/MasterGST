@@ -1,0 +1,51 @@
+.disabled{cursor:default;pointer-events:none;text-decoration:none;}
+#add_invoice_drop::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);border-radius: 10px;background-color: #ffffff;}
+#add_invoice_drop::-webkit-scrollbar{width: 12px;background-color:#F5F5F5;}
+#add_invoice_drop::-webkit-scrollbar-thumb{border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);	background-color: #F5F5F5;}
+#add_invoice_drop{height:250px; overflow-y:auto;width: 240px!important;margin-top: -5px;}
+#dbFilingTable tbody tr td:first-child {color: #354052!important;}
+.dropdown {position: relative;display: table-cell;}
+.dropdown-content {display: none;position: absolute; min-width: 550px!important;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;width:max-content}
+.dropdown-content a {padding: 12px 16px;text-decoration: none;display: block;}
+.dropdown:hover .dropdown-content {display: block;right: -53px;background-color: white;padding: 8px;font-size:12px}
+.arrow-right {width: 0; height: 0;  border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 9px solid #fff; display: inline-flex; position: absolute; right: 80px; top: -9px;}
+#otpboxwrap .formbox { padding:50px; }#otpboxwrap .formbox .btn-blue-dark { margin-left:10px }.otp_form_input { margin:30px auto 40px; }
+.otp_form_input input[type='text'] { border-radius:0; border: none; border-bottom: 3px solid #4664be; width: 20%; display: inline-block; margin-left: 7px; text-align: center; font-size:50px ; margin-bottom:15px	}
+#invhdr,#dinvhdr,#vinvhdr,#vdinvhdr{margin-top:10px;padding-left:35px}
+#recPurchase,#recgstr2a{margin-top:10px;padding-left:22px}
+#reconModal .modal-dialog,#viewMannualMatchModal .modal-dialog{width:90%; min-width: unset!important; margin: 40px; margin-left: 70px!important; max-width: unset!important;}
+#reconModalbody .modal-body .close,#viewMannualMatchModalbody .modal-body .close{top:4px}
+#reconModalbody .modal-body .production-hdr,#viewMannualMatchModalbody .modal-body .production-hdr{padding: 5px!important;}
+#reconModalbody .modal-body .production-hdr .productionModalTitle,#viewMannualMatchModalbody .modal-body .production-hdr .productionModalTitle{font-weight: 400!important;}
+#mainMatch_table5 thead tr,#mainvMatch_table5 thead tr{background: #4db142; color: #FFF!important;}    
+#mainMatch_table5,#mainvMatch_table5{width: 94%!important;}
+#mainMatch_table5 thead tr th,#mainvMatch_table5 thead tr th{ padding: 4px;}
+.mannualfilter{text-align: center; position: absolute; left: 26%;z-index: 3;}
+.mannualfilter .meterialform .checkbox{display: inline-block;}
+a.btn.btn-blue.reconbtn{color: #404144;;margin-left:10px;font-size: 12px;float: right; position: absolute; padding: 2px 6px 0px; margin-top: 7px;}
+a.btn.btn-blue.yearreconbtn{color: #404144;;margin-left:12%;font-size: 12px;float: right; position: absolute; padding: 2px 6px 0px; margin-top: 7px;}
+#showInvDetailTable thead tr th{background: #4db142!important; color: #FFF!important;}
+#showInvDetailTable thead tr th,#showInvDetailTable1 thead tr th{font-weight: 100;font-size: 13px;}
+#showInvDetailTable tbody tr td{font-size: 14px;}
+#showInvDetailTable1 tbody tr td{font-size:13px;}
+#showMismatchInvModal .modal-dialog{width: 75%;min-width: unset!important;margin: 40px;margin-left: 165px!important;max-width: unset!important;} 
+#showInvDetailTable1_wrapper,#showInvDetailTable_wrapper{width:100%;}
+#showInvDetailTable1_info,#showInvDetailTable_info{display:none;}
+.tool-tip [disabled] {pointer-events: none;}
+.tool-tip {display: inline-block;float:right;}
+#dbFilingTable tfoot tr th,#dbHSNFilingTable tfoot tr th{color:black;text-align:right;}
+#hsnSummary_GSTR1_wrapper div#hsnSummary_GSTR1_length{margin-top: 8px;margin-left: 25px;}
+ .all_table_wrap {width: 100%;overflow-x: auto;}
+ .gstr-info-tabs .gstr2b_lnk{min-width:70px;text-align:center;}
+ .invoiceDateFilter,.paymentDateFilter{padding: 2px 5px!important;font-size: 13px;background-color: #FFFFFF; border: 1px solid #ddd;max-width: 130px;border-radius: 4px;}
+ #invDateDropdown,#pmntDateDropdown{position:absolute;left:0;background-color:white;padding:10px;min-width: 200px!important;right:-86px;border-radius: .25rem;}
+ #start-date,#end-date,#expstartdate,#expenddate{height:31px;display:block;}
+ .sdate_msg,.edate_msg{font-size:12px;color:red;float:right;}
+ .table-filter--buttons{text-align: center;}
+ .date_calender{position: absolute;margin-left: 155px;margin-top: 30px;z-index: 0; color: gray;}
+ .date-txt{font-size:13px;text-transform: uppercase;}
+ #dbTableGSTR1 tbody tr td:nth-last-child(3),#dbTablePurchase_Register tbody tr td:nth-last-child(4){padding-left:0;padding-right:0;}
+ .expencetable thead th{font-weight: 500; font-size: 13px;}
+ table.expencetable .form-control {width: 95%; min-width: auto;padding: 5px 1px; font-family: 'latolight', sans-serif;font-size: 12px;}
+ .categorymodule{border:1px solid lightgray;border-radius: 5px;box-shadow: 0 0 2px 2px #eff3f6;margin-bottom: 10px;}
+ 

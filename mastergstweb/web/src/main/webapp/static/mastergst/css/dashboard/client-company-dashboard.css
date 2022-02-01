@@ -1,0 +1,31 @@
+.syncmodal{padding:15px;margin: 20px auto;}
+.sync_th{font-size:14px;color:#5769bb!important;background-color:white!important;}
+.importmenu{display:none; width:218px!important;top: 28px;}
+.importdrop:hover .importmenu{display:block}
+ div.dataTables_wrapper {width: 100%;margin: 0 auto;}
+.DTFC_LeftBodyLiner,.DTFC_RightBodyLiner{overflow: hidden!important;width: auto!important;}
+.DTFC_LeftHeadWrapper{overflow: hidden!important;}
+.db-ca-wrap table.dataTable.no-footer{min-width:103px!important}
+.DTFC_LeftBodyWrapper{min-width: 103px!important;}
+.customtable .dataTables_wrapper thead th, .customtable.dataTables_wrapper thead td{min-width: 116px;}
+.dataTables_scrollBody{border-bottom:none!important}
+.owl-stage-outer{width:100%}
+.filing-status-table #reportTable tbody tr td:not(:first-child){padding:6px}
+body.modal-open {overflow: hidden!important;}
+.owl-nav{display:none}
+.DTFC_LeftBodyWrapper{box-shadow: 6px 0 20px 1px rgba(177, 162, 162, 0.3);}
+.DTFC_RightBodyWrapper{box-shadow: -15px 0 20px 1px rgba(177, 162, 162, 0.3);}
+.tooltip.bs-tether-element-attached-left .tooltip-inner, .tooltip.bs-tether-element-attached-right .tooltip-inner {background-color:white;color:black;box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.1);}
+ .tooltip.bs-tether-element-attached-left .tooltip-inner::before, .tooltip.tooltip-right .tooltip-inner::before, .tooltip.tooltip-left .tooltip-inner::before, .tooltip.bs-tether-element-attached-right .tooltip-inner::before{border-right-color: white!important;border-left-color: white!important;}
+.dropdown {position: relative;display: table-cell;}
+.dropdown-content {display: none;position: absolute; min-width: 190px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+.dropdown-content a {padding: 12px 16px;text-decoration: none;display: block;}
+.dropdown:hover .dropdown-content {display: block;left: 80%;background-color: white;top: 9px;padding: 8px;}
+.dropdown-content .arrow-right{ border-right:7px solid white; }
+.arrow-right {width: 0; height: 0;border-top: 10px solid transparent;border-bottom: 10px solid transparent;display: inline-flex;position: absolute;left: -7px;top: 5px;}
+.arrow-left {width: 0; height: 0;border-top: 7px solid transparent;border-bottom: 7px solid transparent;border-left: 7px solid white;display: inline-flex;position: absolute;right: -7px;top: 5px;}
+.cashledger_row{border: 1px solid lightgray;background-color:white;min-height:100px;box-shadow: 0 0 2px 2px #eff3f6;margin-left: 2px;margin-right: 2px;border-radius: 10px;margin-bottom: 36px!important;}
+.cashledger_summary_totals , .creditledger_summary_totals {background-color: white;}
+.cashledger_summary_totals .normaltable-col.hdr , .creditledger_summary_totals .normaltable-col.hdr {width: 3%;}
+.ledgerDate{padding: 1px;font-weight: bold; color: #5cb85c;}
+.excel_btn#downloadLink img{width:22px}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mastergstweb">
+        <wb-resource deploy-path="/" source-path="/web/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/configuration/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/usermanagement/runtime/response/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/core/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/login/runtime/controller/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/login/runtime/domain/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/login/runtime/repository/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/login/runtime/service/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/usermanagement/runtime/controller/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/usermanagement/runtime/domain/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/usermanagement/runtime/repository/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/usermanagement/runtime/service/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/web/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/mgst-storage/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/mgst-storage/src/main/resources"/>
+        <property name="context-root" value="mastergstweb"/>
+        <property name="java-output-path" value="/mastergstweb/configuration/target/classes"/>
+    </wb-module>
+</project-modules>

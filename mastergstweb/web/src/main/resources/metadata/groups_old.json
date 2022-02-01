@@ -1,0 +1,262 @@
+{'groups': [ 
+	{'name': 'Land','headname':'Assets',
+	'path':'Assets/Fixed Assets/Land',
+		'subgroup':[{}]
+	}, 
+	
+	{'name': 'Buildings','headname':'Assets',
+	'path':'Assets/Fixed Assets/Buildings',
+		'subgroup':[{}]
+	},
+	{'name': 'Plant and Equipment','headname':'Assets',
+	'path':'Assets/Fixed Assets/Plant and Equipment',
+		'subgroup':[{}]
+	},
+	{'name': 'Furniture and Fixtures','headname':'Assets',
+	'path':'Assets/Fixed Assets/Furniture and Fixtures',
+		'subgroup':[{}]
+	},
+	{'name': 'Vehicles','headname':'Assets',
+	'path':'Assets/Fixed Assets/Vehicles',
+		'subgroup':[{}]
+	},
+	{'name': 'Office equipment','headname':'Assets',
+	'path':'Assets/Fixed Assets/Office equipment',
+		'subgroup':[{}]
+	},
+	{'name': 'Other Assets','headname':'Assets',
+	'path':'Assets/Fixed Assets/Other Assets',
+		'subgroup':[{}]
+	},
+	{'name': 'Capital work-in-progress','headname':'Assets',
+	'path':'Assets/Capital Work In Progress/Capital work-in-progress',
+		'subgroup':[{}]
+	},
+	{'name': 'Intangible assets under development','headname':'Assets',
+	'path':'Assets/Capital Work In Progress/Intangible assets under development',
+		'subgroup':[{}]
+	},
+	{'name': 'Investment in Orginsation','headname':'Assets',
+	'path':'Assets/Investments/Investment in Orginsation',
+		'subgroup':[{}]
+	},
+	{'name': 'Investment in properties','headname':'Assets',
+	'path':'Assets/Investments/Investment in properties',
+		'subgroup':[{}]
+	},
+	{'name': 'Investment Others','headname':'Assets',
+	'path':'Assets/Investments/Investment Others',
+		'subgroup':[{}]
+	},
+	{'name': 'Deferred tax assets (net)','headname':'Assets',
+	'path':'Assets/Deferred Tax Assets (net)/Deferred tax assets (net)',
+		'subgroup':[{}]
+	},
+	{'name': 'Deposits','headname':'Assets',
+	'path':'Assets/Long term Loans & Advances/Deposits',
+		'subgroup':[{}]
+	},
+	{'name': 'Loans given','headname':'Assets',
+	'path':'Assets/Long term Loans & Advances/Loans given',
+		'subgroup':[{}]
+	},
+	{'name': 'Advance given','headname':'Assets',
+	'path':'Assets/Long term Loans & Advances/Advance given',
+		'subgroup':[{}]
+	},
+	
+	{'name': 'Inventories','headname':'Assets',
+	'path':'Assets/Current Assets/Inventories',
+		'subgroup':[
+		{
+		'subgroupname':'Stock in trade',
+		'subgrouppath':'Assets/Current Assets/Inventories/Stock in trade',
+		},
+		{
+		'subgroupname':'Work In Progress',
+		'subgrouppath':'Assets/Current Assets/Inventories/Work In Progress',
+		},
+		{
+		'subgroupname':'Finished Goods',
+		'subgrouppath':'Assets/Current Assets/Inventories/Finished Goods',
+		}
+		]
+	},
+	{'name': 'Sundry Debtors','headname':'Assets',
+	'path':'Assets/Current Assets/Sundry Debtors',
+		'subgroup':[{}]
+	},
+	{'name': 'Loan & Advance given','headname':'Assets',
+	'path':'Assets/Current Assets/Loan & Advance given',
+		'subgroup':[{}]
+	},
+	{'name': 'Cash in hand','headname':'Assets',
+	'path':'Assets/Current Assets/Cash in hand',
+		'subgroup':[{}]
+	},
+	
+	{'name': 'Bank','headname':'Assets',
+	'path':'Assets/Current Assets/Bank',
+		'subgroup':[
+		{'subgroupname':'Bank OD A/C',
+		'subgrouppath':'Assets/Current Assets/Bank/Bank OD A/C',
+		},
+		{'subgroupname':'Bank CC A/C',
+		'subgrouppath':'Assets/Current Assets/Bank/Bank CC A/C',
+		}
+		]
+	},
+	{'name': 'Prepaid Expense','headname':'Assets',
+	'path':'Assets/Current Assets/Prepaid Expense',
+		'subgroup':[{}]
+	},
+	{'name': 'Bills Receiavable','headname':'Assets',
+	'path':'Assets/Current Assets/Bills Receiavable',
+		'subgroup':[{}]
+	},
+	
+	{'name': 'Other current Assets','headname':'Assets',
+	'path':'Assets/Current Assets/Other current Assets',
+		'subgroup':[{}]
+	},
+	{'name': 'Duties & Taxes - Assets','headname':'Assets',
+	'path':'Assets/Current Assets/Duties & Taxes - Assets',
+		'subgroup':[
+		{
+		'subgroupname':'Input Crerdit',
+		'subgrouppath':'Assets/Current Assets/Duties & Taxes - Assets/Input Crerdit'
+		},
+		{
+		'subgroupname':'TDS Receivables',
+		'subgrouppath':'Assets/Current Assets/Duties & Taxes - Assets/TDS Receivables'
+		}
+		]
+	},
+	
+	{'name': 'Capital account','headname':'Liabilities',
+	'path':'Liabilities/Capital Fund/Capital account',
+		'subgroup':[{}]
+	},
+	{'name': 'Reserve & Surplus','headname':'Liabilities',
+	'path':'Liabilities/Capital Fund/Reserve & Surplus',
+		'subgroup':[{}]
+	},
+	{'name': 'Long-term borrowings','headname':'Liabilities',
+	'path':'Liabilities/Long terms liabilities/Long-term borrowings',
+		'subgroup':[{}]
+	},
+	{'name': 'Long-term provisions','headname':'Liabilities',
+	'path':'Liabilities/Long terms liabilities/Long-term provisions',
+		'subgroup':[{}]
+	},
+	{'name': 'Deferred tax liabilities (Net)','headname':'Liabilities',
+	'path':'Liabilities/Long terms liabilities/Deferred tax liabilities (Net)',
+		'subgroup':[{}]
+	},
+	{'name': 'Short-term borrowings','headname':'Liabilities',
+	'path':'Liabilities/Current Liabilities/Short-term borrowings',
+		'subgroup':[{}]
+	},
+	{'name': 'Bills Payable','headname':'Liabilities',
+	'path':'Liabilities/Current Liabilities/Bills Payable',
+		'subgroup':[{}]
+	},
+	{'name': 'Sundry Creditors','headname':'Liabilities',
+	'path':'Liabilities/Current Liabilities/Sundry Creditors',
+		'subgroup':[{}]
+	},
+	 {'name': 'Short-term provisions','headname':'Liabilities',
+	'path':'Liabilities/Current Liabilities/Short-term provisions',
+		'subgroup':[{}]
+	},
+	{'name': 'Short term Loans & Advance Received','headname':'Liabilities',
+	'path':'Liabilities/Current Liabilities/Short term Loans & Advance Received',
+		'subgroup':[{}]
+	}, 
+	 {'name': 'Other current liabilities','headname':'Liabilities',
+	'path':'Liabilities/Current Liabilities/Other current liabilities',
+		'subgroup':[{}]
+	},
+	{'name': 'Duties & Taxes - Liabilities','headname':'Liabilities',
+	'path':'Liabilities/Current Liabilities/Duties & Taxes - Liabilities',
+		'subgroup':[{
+		'subgroupname':'Output Tax',
+		'subgrouppath':'Liabilities/Current Liabilities/Duties & Taxes - Liabilities/Output Tax',
+		}]
+	},
+	 {'name': 'Revenue from operations','headname':'Income',
+	'path':'Income/Direct Income/Revenue from operations',
+		'subgroup':[{}]
+	}, 
+	{'name': 'Income from investment','headname':'Income',
+	'path':'Income/Indirect Income/Income from investment',
+		'subgroup':[{}]
+	},
+	{'name': 'Other income','headname':'Income',
+	'path':'Income/Indirect Income/Other income',
+		'subgroup':[{}]
+	},
+	{'name': 'Cost of materials consumed','headname':'Expenditure',
+	'path':'Expenditure/Direct Expenditure/Cost of materials consumed',
+		'subgroup':[{}]
+	},
+	
+	{
+	'name': 'Purchases of Stock-in-Trade','headname':'Expenditure',
+	'path':'Expenditure/Direct Expenditure/Purchases of Stock-in-Trade',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Employee Cost','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Employee Cost',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Borrowing and Finace cost','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Borrowing and Finace cost',
+	'subgroup':[{}]
+	}, 
+	 {'name': 'Adminstration Expenses','headname':'Expenditure',
+	 'path':'Expenditure/Indirect Expenses/Adminstration Expenses',
+	 'subgroup':[{}]
+	 }, 
+	{'name': 'Rent Rates & Taxes','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Rent Rates & Taxes',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Repairs & Maintenance','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Rent Rates & Taxes',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Power & Fuel','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Power & Fuel',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Travelling & Conveyance expenses','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Travelling & Conveyance expenses',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Telephone & Internet','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Telephone & Internet',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Business Promotion','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Business Promotion',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Office Maintenance','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Office Maintenance',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Fee & Filling Charges','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Fee & Filling Charges',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Lodging & Boarding','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Lodging & Boarding',
+	'subgroup':[{}]
+	}, 
+	{'name': 'Other expenses','headname':'Expenditure',
+	'path':'Expenditure/Indirect Expenses/Other expenses',
+	'subgroup':[{}]
+	}
+	
+]}

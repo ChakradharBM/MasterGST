@@ -1,0 +1,47 @@
+#filing_option1::after{display:none;}
+#ret-period {margin-bottom: 0; padding: 0px; vertical-align: baseline; font-size: 1rem; text-transform: capitalize;	margin-right: 10px;}
+.ret-type .dropdown-item{padding:8px!important}
+span.finance-year {display: none}
+.datetimetxt .fa {top: 6px !important; right: 4px;}
+.datetimetxt {margin-top: 0px !important}
+#fillingoption::after, #fillingoption1::after {content: none;display: none}
+select {border: none;background-color: unset}
+.datetimetxt.datetime-wrap {display: inline-flex; float: unset;}
+.btn-greendark{font-size:14px}
+.filing_option{margin-left:0px!important}
+.dt-buttons {white;left: 66%;float: left;position: relative;color:white}
+button.dt-button.buttons-excel.buttons-html5, button.dt-button.buttons-print,
+button.dt-button.buttons-pdf.buttons-html5 {background-color: #8ee3fe;	margin-right: 26px;	color: #435a9e !important;font-size: 14px;padding: 5px 10px!important;	border-radius: 4px;	border: 1px;width: 73px;cursor:pointer;}
+.dt-buttons :hover{background-color:#364365!important; color:}
+div#salestable1_length,div#salestable2_length,div#salestable3_length{position: relative;}
+.dataTables_length select{border:1px solid}
+.datepicker-orient-left{top:235px!important}
+#monthProcess {position:absolute;  z-index: 9; font-size: 23px; left: 50%;  color: red; width:30em; height:20px;margin-left: -15em; top:320px}
+#yearProcess,#customProcess {position:absolute;  z-index: 9; font-size: 23px; left: 50%;  color: red; width:30em; height:20px;margin-left: -15em; top:320px}
+
+.reportmenu:hover .dropdown-menu#reportdrop{display:block}
+button#monthlydwnldxls ,#yearlydwnldxls,#customdwnldxls{margin-left: 0px;height: 30px;box-shadow:none;}.arrow-up {width: 0; height: 0; border-left: 9px solid transparent;border-right: 9px solid transparent;border-bottom: 12px solid white; position: absolute;top: -8px;}
+.dropdown {position: relative;display: inline-block;}.dropdown-content.reportPurchase{display: none;margin-top: 20px;position: absolute;background-color: white;min-width: 555px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;color: black;padding: 12px 16px;text-decoration: none;margin-left: -13px; text-transform: capitalize;}.helpbtn.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                
+                .dropdown-content.reportSales {
+                    display: none;
+                    margin-top: 20px;
+                    position: absolute;
+                    background-color: white;
+                    min-width: 500px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    margin-left: -13px;
+                    text-transform: capitalize;
+                }
+                .helpbtn.dropdown:hover .dropdown-content {
+                    display: block;
+                }

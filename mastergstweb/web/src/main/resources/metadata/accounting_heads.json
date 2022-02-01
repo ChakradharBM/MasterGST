@@ -1,0 +1,80 @@
+{
+'accounting_heads': [
+		{	'name': 'Assets','headname':'Assets',
+			'path':'Assets','readonly':true,
+			'heads':[
+				{	'name': 'Fixed Assets','headname':'Assets',
+					'path':'Assets/Fixed Assets','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Investments','headname':'Assets',
+					'path':'Assets/Investments','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Deferred Tax Assets (net)','headname':'Assets',
+					'path':'Assets/Deferred Tax Assets (net)','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Long term Loans & Advances (Asset)','headname':'Assets',
+					'path':'Assets/Long term Loans & Advances (Asset)','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Current Assets','headname':'Assets',
+					'path':'Assets/Current Assets','readonly':true,
+					'heads':[{}]
+				}
+			]
+		},
+		{	'name': 'Liabilities','headname':'Liabilities',
+			'path':'Liabilities','readonly':true,
+			'heads':[
+				{	'name': 'Capital Fund','headname':'Liabilities',
+					'path':'Liabilities/Capital Fund','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Long terms liabilities','headname':'Liabilities',
+					'path':'Liabilities/Long term liabilities','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Deferred tax liabilities (Net)','headname':'Liabilities',
+					'path':'Liabilities/Deferred tax liabilities (Net)','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Current liabilities','headname':'Liabilities',
+					'path':'Liabilities/Current liabilities','readonly':true,
+					'heads':[{}]
+				}
+			]
+		},
+		{	'name': 'Income','headname':'Income',
+			'path':'Income','readonly':true,
+			'heads':[
+				{	'name': 'Direct Income','headname':'Income',
+					'path':'Income/Direct Income','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Indirect income','headname':'Income',
+					'path':'Income/Indirect income','readonly':true,
+					'heads':[{}]
+				}	
+			]
+		},
+		{	'name': 'Expenses','headname':'Expense',
+			'path':'Expense','readonly':true,
+			'heads':[
+				{	'name': 'Direct expenses','headname':'Expenses',
+					'path':'Expenses/Direct expenses','readonly':true,
+					'heads':[{}]
+				},
+				{	'name': 'Indirect expenses','headname':'Expenses',
+					'path':'Expenses/Indirect expenses','readonly':true,
+					'heads':[{}]
+				}
+			]
+		},
+		{	'name': 'Suspense Ac','headname':'Suspense Ac',
+			'path':'Suspense Ac','readonly':true,
+			'heads':[{}]
+		}
+	]
+}

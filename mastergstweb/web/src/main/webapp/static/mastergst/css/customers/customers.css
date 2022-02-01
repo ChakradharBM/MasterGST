@@ -1,0 +1,19 @@
+.customerswraps{ margin-top:60px;} 
+.customerswraps-in { /*padding-top:60px; */}
+.customers-wrap { background:#00aeef url(../../images/consumers/shape1.png) right top no-repeat; padding:120px 15px 15px; margin:40px auto; float:left; width:100%; overflow:hidden;/*transition: all 0.1s ease;*/ }
+div#enterprises { padding: 20px;}
+.left-sidebar { position:relative; text-align:center }
+.left-sidebar { padding:30px; }
+.left-sidebar h2 { font-size:40px; font-weight:bold; color:#fff }
+.left-sidebar p { font-size:20px; color:#fff; font-family:latolight; }
+.rainbow-bg { background:url(../../images/consumers/rainbow1.png) bottom center no-repeat; width:340px; height:177px; position:absolute; bottom:-20px; right:15%; }
+.rainbow-bg img.bgicon { position: absolute; bottom: 0; left: 33%; }
+.right-sidebar { position:relative; }
+.right-sidebar-in { padding:30px; }
+.right-sidebar p, .customers-wrap ul li { color:#fff; font-size:18px; font-family:latolight; }
+.arrows-bg { width:435px; height:471px; position:absolute; bottom:0; right:0; z-index:-1 }
+.right-sidebar .btn { background-color:#314999; font-size:16px; font-weight:bold; float:right; }
+.customers-wrap.darkblue { background:#314999 url(../../images/consumers/shape2.png) left top no-repeat; }
+.customers-wrap.darkblue .rainbow-bg { background:url(../../images/consumers/rainbow2.png) bottom center no-repeat; }
+.customers-wrap.darkblue .right-sidebar .btn { background-color:#26bcf3; }
+ 

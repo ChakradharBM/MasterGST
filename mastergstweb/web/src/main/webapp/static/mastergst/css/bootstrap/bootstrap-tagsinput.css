@@ -1,0 +1,63 @@
+.bootstrap-tagsinput,.pfilter,.sfilter,.gstr2afilter,.mismatchfilter,.Gstr2bReconsilationfilter {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  padding:1px 2px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 4px;
+  max-width: 100%;
+  min-height:25px;
+   cursor: text; width:100%;
+   position:relative;
+}
+.bootstrap-tagsinput input,.pfilter input,.sfilter input,.gstr2afilter input,.mismatchfilter input,.Gstr2bReconsilationfilter input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 2px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder,.pfilter.form-control input::-moz-placeholder,.sfilter.form-control input::-moz-placeholder ,.gstr2afilter.form-control input::-moz-placeholder ,.mismatchfilter.form-control input::-moz-placeholder,.Gstr2bReconsilationfilter.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder,.pfilter.form-control input:-ms-input-placeholder,.sfilter.form-control input:-ms-input-placeholder ,.gstr2afilter.form-control input:-ms-input-placeholder ,.mismatchfilter.form-control input:-ms-input-placeholder,.Gstr2bReconsilationfilter.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder,.pfilter.form-control input::-webkit-input-placeholder,.sfilter.form-control input::-webkit-input-placeholder,.gstr2afilter.form-control input::-webkit-input-placeholder,.mismatchfilter.form-control input::-webkit-input-placeholder,.Gstr2bReconsilationfilter.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus,.pfilter input:focus,.sfilter input:focus,.gstr2afilter input:focus,.mismatchfilter input:focus,.Gstr2bReconsilationfilter input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag,.pfilter .tag,.sfilter .tag,.gstr2afilter .tag,.mismatchfilter .tag,.Gstr2bReconsilationfilter .tag {
+  margin-right: 2px;
+  color: white;
+}
+.bootstrap-tagsinput .tag [data-role="remove"],.pfilter .tag [data-role="remove"],.sfilter .tag [data-role="remove"],.gstr2afilter .tag [data-role="remove"],.mismatchfilter .tag [data-role="remove"], .Gstr2bReconsilationfilter .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after,.pfilter .tag [data-role="remove"]:after,.sfilter .tag [data-role="remove"]:after,.gstr2afilter .tag [data-role="remove"]:after,.mismatchfilter .tag [data-role="remove"]:after,.Gstr2bReconsilationfilter .tag [data-role="remove"]:after {
+  content: "x";
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover,.pfilter .tag [data-role="remove"]:hover,.sfilter .tag [data-role="remove"]:hover ,.gstr2afilter .tag [data-role="remove"]:hover ,.mismatchfilter .tag [data-role="remove"]:hover,.Gstr2bReconsilationfilter .tag [data-role="remove"]:hover  {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active,.pfilter .tag [data-role="remove"]:hover:active,.sfilter .tag [data-role="remove"]:hover:active,.gstr2afilter .tag [data-role="remove"]:hover:active,.mismatchfilter .tag [data-role="remove"]:hover:active,.Gstr2bReconsilationfilter .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.bootstrap-tagsinput,.pfilter,.sfilter,.gstr2afilter,.mismatchfilter,.Gstr2bReconsilationfilter { background-color: #fff; border: 1px solid #ccc; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); display: inline-block; color: #555; vertical-align: middle; border-radius: 4px; max-width: 100%;cursor: text; }
+.bootstrap-tagsinput .tag,.pfilter .tag,.sfilter .tag,.gstr2afilter .tag,.mismatchfilter .tag,.Gstr2bReconsilationfilter .tag{ margin-right: 2px; color: white; padding: 0px 5px; border-radius: 2px;    font-size:12px;}
+.label-info { background-color: #5bc0de; }
+#divAuditFilters .btaginput [data-role="remove"],#divselGstr2bReconsilationInvArrayFilters .btaginput [data-role="remove"],#divFiltersGSTR2B .btaginput [data-role="remove"],#divExpFiltersEXPENSES .btaginput [data-role="remove"],.Gstr2bReconsilationfilter .btaginput [data-role="remove"],#divFilterssalesTab .btaginput [data-role="remove"],#divFilterspurchasesTab .btaginput [data-role="remove"],#divFiltersGstr2b .btaginput [data-role="remove"],#divFiltersEINVOICE .btaginput [data-role="remove"],#divFiltersANX1 .btaginput [data-role="remove"],#divFiltersyearlyEWAYBILL .btaginput [data-role="remove"],#divFilterscustomEWAYBILL .btaginput [data-role="remove"],#divFilterscustomGSTR1 .btaginput [data-role="remove"],#divFiltersyearlyGSTR1 .btaginput [data-role="remove"],#divPFilters .btaginput [data-role="remove"],#divFilters .btaginput [data-role="remove"],#divFiltersGSTR1 .btaginput [data-role="remove"]#divFiltersEWAYBILL .btaginput [data-role="remove"],#divFiltersGSTR2 .btaginput [data-role="remove"],#divFiltersPurchase_Register .btaginput [data-role="remove"],#divFiltersUnclaimed .btaginput [data-role="remove"],#divG2Filters .btaginput [data-role="remove"],#divMMFilters .btaginput [data-role="remove"],#divFiltersGSTR6 .btaginput [data-role="remove"],#divFiltersGSTR2A .btaginput [data-role="remove"],#divFiltersGSTR1Amnd .btaginput [data-role="remove"],#divFiltersGSTR4 .btaginput [data-role="remove"],#divFiltersGSTR5 .btaginput [data-role="remove"],#divFiltersDELIVERYCHALLANS .btaginput [data-role="remove"],#divFiltersPurchaseOrder .btaginput [data-role="remove"],#divFiltersESTIMATES .btaginput [data-role="remove"],#divFiltersPROFORMAINVOICES .btaginput [data-role="remove"],#divFiltersSalesRegister .btaginput [data-role="remove"],#divFiltersdivFiltersPurchaseRegister .btaginput [data-role="remove"],#divFiltersdivFiltersdivFiltersPartner .btaginput [data-role="remove"],#divcommonGstr2bReconsilationFilters .btaginput [data-role="remove"]{ margin-left: 4px; cursor: pointer; margin-right:2px}
+#divAuditFilters .btaginput [data-role="remove"]:after,#divselGstr2bReconsilationInvArrayFilters .btaginput [data-role="remove"]:after,#divFiltersGSTR2B .btaginput [data-role="remove"]:after,#divExpFiltersEXPENSES .btaginput [data-role="remove"]:after,.Gstr2bReconsilationfilter .btaginput [data-role="remove"]:after,#divFilterssalesTab .btaginput [data-role="remove"]:after,#divFilterspurchasesTab .btaginput [data-role="remove"]:after,#divFiltersGstr2b .btaginput [data-role="remove"]:after,#divFiltersEINVOICE .btaginput [data-role="remove"]:after,#divFiltersANX1 .btaginput [data-role="remove"]:after,#divFilterscustomEWAYBILL .btaginput [data-role="remove"]:after,#divFiltersyearlyEWAYBILL .btaginput [data-role="remove"]:after,#divPFilters .btaginput [data-role="remove"]:after,#divFilterscustomGSTR1 .btaginput [data-role="remove"]:after,#divFiltersyearlyGSTR1 .btaginput [data-role="remove"]:after,#divPFilters .btaginput [data-role="remove"]:after,#divFilters .btaginput [data-role="remove"]:after,#divFiltersGSTR1 .btaginput [data-role="remove"]:after,#divFiltersGSTR2 .btaginput [data-role="remove"]:after,#divFiltersPurchase_Register .btaginput [data-role="remove"]:after,#divFiltersUnclaimed .btaginput [data-role="remove"]:after,#divG2Filters .btaginput [data-role="remove"]:after,#divMMFilters .btaginput [data-role="remove"]:after ,#divFiltersGSTR6 .btaginput [data-role="remove"]:after ,#divFiltersGSTR2A .btaginput [data-role="remove"]:after,#divFiltersGSTR1Amnd .btaginput [data-role="remove"]:after,#divFiltersGSTR4 .btaginput [data-role="remove"]:after,#divFiltersGSTR5 .btaginput [data-role="remove"]:after,#divFiltersDELIVERYCHALLANS .btaginput [data-role="remove"]:after,#divFiltersPROFORMAINVOICES .btaginput [data-role="remove"]:after,#divFiltersESTIMATES .btaginput [data-role="remove"]:after,#divFiltersPurchaseOrder .btaginput [data-role="remove"]:after,#divFiltersSalesRegister .btaginput [data-role="remove"]:after,#divFiltersPurchaseRegister .btaginput [data-role="remove"]:after,#divFiltersEWAYBILL .btaginput [data-role="remove"]:after,#divFiltersPartner .btaginput [data-role="remove"]:after,#divcommonGstr2bReconsilationFilters .btaginput [data-role="remove"]:after{ content: "x"; padding: 1px!important;}
+#divAuditFilters .btaginput,#divselGstr2bReconsilationInvArrayFilters .btaginput,#divFiltersGSTR2B .btaginput,#divExpFiltersEXPENSES .btaginput,.Gstr2bReconsilationfilter .btaginput, #divFilterssalesTab .btaginput,#divFilterspurchasesTab .btaginput,#divFiltersGstr2b .btaginput,#divFiltersEINVOICE .btaginput,#divFiltersANX1 .btaginput,#divFiltersyearlyEWAYBILL .btaginput,#divFilterscustomEWAYBILL .btaginput,#divFilterscustomGSTR1 .btaginput,#divFiltersyearlyGSTR1 .btaginput,#divPFilters .btaginput,#divFilters .btaginput,#divFiltersGSTR1 .btaginput,#divFiltersPurchase_Register .btaginput,#divFiltersUnclaimed .btaginput,#divFiltersGSTR2 .btaginput,#divG2Filters .btaginput,#divMMFilters .btaginput,#divFiltersGSTR6 .btaginput ,#divFiltersGSTR2A .btaginput,#divFiltersGSTR1Amnd .btaginput,#divFiltersGSTR4 .btaginput,#divFiltersGSTR5 .btaginput,#divFiltersDELIVERYCHALLANS .btaginput,#divFiltersPROFORMAINVOICES .btaginput,#divFiltersESTIMATES .btaginput,#divFiltersPurchaseOrder .btaginput,#divFiltersSalesRegister .btaginput,#divFiltersPurchaseRegister .btaginput,#divFiltersEWAYBILL .btaginput,#divFiltersPartner .btaginput,#divcommonGstr2bReconsilationFilters .btaginput{background-color: #374583; color: white; border-radius: 2px; padding:1px!important;line-height:22px;}
+.deltag{cursor:pointer}

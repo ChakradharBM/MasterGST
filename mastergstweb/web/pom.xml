@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>master-webmvc</groupId>
+	<artifactId>mastergst-webmvc</artifactId>
+	<packaging>war</packaging>
+	<name>Master GST Web Application</name>
+	<description>Master GST Web Application</description>
+	<url>http://www.mastergst.com</url>
+	<parent>
+		<groupId>mastergst</groupId>
+		<artifactId>mastergst</artifactId>
+		<version>1.0</version>
+		<relativePath>../</relativePath>
+	</parent>
+
+   <dependencies>
+		<dependency>
+			<groupId>com.mastergst.core</groupId>
+			<artifactId>mastergst-core</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.configuration</groupId>
+			<artifactId>mastergst-configuration</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.login.runtime.domain</groupId>
+			<artifactId>mastergst-login-runtime-domain</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.login.runtime.repository</groupId>
+			<artifactId>mastergst-login-runtime-repository</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.login.runtime.service</groupId>
+			<artifactId>mastergst-login-runtime-service</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.login.runtime.response</groupId>
+			<artifactId>mastergst-login-runtime-response</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.web.login.runtime.controller</groupId>
+			<artifactId>mastergst-web-login-runtime-controller</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		 <dependency>
+			<groupId>com.mastergst.usermanagement.runtime.domain</groupId>
+			<artifactId>mastergst-usermanagement-runtime-domain</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.usermanagement.runtime.response</groupId>
+			<artifactId>mastergst-usermanagement-runtime-response</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.usermanagement.runtime.repository</groupId>
+			<artifactId>mastergst-usermanagement-runtime-repository</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mastergst.usermanagement.runtime.service</groupId>
+			<artifactId>mastergst-usermanagement-runtime-service</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.mastergst.web.usermanagement.runtime.controller</groupId>
+			<artifactId>mastergst-web-usermanagement-runtime-controller</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>mastergst</groupId>
+			<artifactId>mgst-storage</artifactId>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
+  <build>
+		<finalName>mastergst</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>${maven-war-plugin.version}</version>
+			</plugin>
+		</plugins>
+  </build>
+</project>

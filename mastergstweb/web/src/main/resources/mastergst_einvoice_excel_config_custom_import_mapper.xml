@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+  <worksheet name="Invoices">
+	<loop startRow="0" endRow="0">
+		<loopbreakcondition>
+			<rowcheck offset="0">
+	            <cellcheck offset="0">Invoice No*</cellcheck>
+				<cellcheck offset="1">Invoice Date*</cellcheck>
+				<cellcheck offset="2">Supply Type*</cellcheck>
+				<cellcheck offset="3">IGST On Intra</cellcheck>
+				<cellcheck offset="4">Reverse Charge</cellcheck>
+				
+				<cellcheck offset="5">GSTIN/UIN*</cellcheck>
+				<cellcheck offset="6">Buyer Legal Name*</cellcheck>
+				<cellcheck offset="7">Buyer Trade Name</cellcheck>
+				<cellcheck offset="8">Place Of Supply*</cellcheck>
+				<cellcheck offset="9">Buyer Address1*</cellcheck>
+				<cellcheck offset="10">Buyer Address2</cellcheck>
+				<cellcheck offset="11">Buyer Location*</cellcheck>
+				<cellcheck offset="12">Buyer Pincode*</cellcheck>
+				<cellcheck offset="13">Buyer State*</cellcheck>
+				<cellcheck offset="14">Buyer Phone Number</cellcheck>
+				<cellcheck offset="15">Buyer EmailId</cellcheck>
+				
+				<cellcheck offset="16">Dispatch Name</cellcheck>
+				<cellcheck offset="17">Dispatch Address1</cellcheck>
+				<cellcheck offset="18">Dispatch Address2</cellcheck>
+				<cellcheck offset="19">Dispatch Location</cellcheck>
+				<cellcheck offset="20">Dispatch Pincode</cellcheck>
+				<cellcheck offset="21">Dispatch State</cellcheck>
+				
+				<cellcheck offset="22">Shipping GSTIN</cellcheck>
+				<cellcheck offset="23">Shipping Legal Name</cellcheck>
+				<cellcheck offset="24">Shipping Trade Name</cellcheck>
+				<cellcheck offset="25">Shipping Address1</cellcheck>
+				<cellcheck offset="26">Shipping Address2</cellcheck>
+				<cellcheck offset="27">Shipping Location</cellcheck>
+				<cellcheck offset="28">Shipping Pincode</cellcheck>
+				<cellcheck offset="29">Shipping State</cellcheck>
+				
+				<cellcheck offset="30">E-Commerce GSTIN</cellcheck>
+				<cellcheck offset="31">Item/Product/Service</cellcheck>
+				<cellcheck offset="32">Category(Goods/Services)*</cellcheck>
+				<cellcheck offset="33">HSN / SAC Code*</cellcheck>
+				<cellcheck offset="34">Unique Quantity Code*</cellcheck>
+				<cellcheck offset="35">Bar Code</cellcheck>
+				<cellcheck offset="36">Quantity</cellcheck>
+				<cellcheck offset="37">Free Quantity</cellcheck>
+				<cellcheck offset="38">Item Rate*</cellcheck>
+				<cellcheck offset="39">Discount</cellcheck>
+				<cellcheck offset="40">Other Charges</cellcheck>
+				
+				<cellcheck offset="41">Total Taxable Value*</cellcheck>
+				<cellcheck offset="42">Section</cellcheck>
+				<cellcheck offset="43">TCS Percentage</cellcheck>
+				<cellcheck offset="44">IGST Rate*</cellcheck>
+				<cellcheck offset="45">IGST Amount*</cellcheck>
+				<cellcheck offset="46">CGST Rate*</cellcheck>
+				<cellcheck offset="47">CGST Amount*</cellcheck>
+				<cellcheck offset="48">SGST Rate*</cellcheck>
+				<cellcheck offset="49">SGST Amount*</cellcheck>
+				<cellcheck offset="50">CESS Rate</cellcheck>
+				<cellcheck offset="51">CESS Amount</cellcheck>
+				<cellcheck offset="52">Total Invoice Value*</cellcheck>
+	        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="0" endRow="0" />
+	<loop startRow="1" endRow="1" items="invoiceList" var="invoice" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+	  <section startRow="1" endRow="1">
+		<mapping row="1" col="0">invoice.b2b[0].inv[0].inum</mapping>
+		<mapping row="1" col="1">invoice.strDate</mapping>
+		<mapping row="1" col="2" nullAllowed="true">invoice.einvCategory</mapping>
+		<mapping row="1" col="3" nullAllowed="true">invoice.igstOnIntra</mapping>
+		<mapping row="1" col="4" nullAllowed="true">invoice.revchargetype</mapping>
+		
+		<mapping row="1" col="5" nullAllowed="true">invoice.b2b[0].ctin</mapping>
+		<mapping row="1" col="6">invoice.billedtoname</mapping>
+		<mapping row="1" col="7">invoice.buyerDtls.trdNm</mapping>
+		<mapping row="1" col="8" nullAllowed="true">invoice.statename</mapping>
+		<mapping row="1" col="9" nullAllowed="true">invoice.b2b[0].inv[0].address</mapping>
+		<mapping row="1" col="10">invoice.buyerDtls.addr2</mapping>
+		<mapping row="1" col="11">invoice.buyerDtls.loc</mapping>
+		<mapping row="1" col="12">invoice.buyerDtls.pin</mapping>
+		<mapping row="1" col="13">invoice.buyerDtls.state</mapping>
+		<mapping row="1" col="14">invoice.buyerDtls.ph</mapping>
+		<mapping row="1" col="15">invoice.buyerDtls.em</mapping>
+		
+		<mapping row="1" col="16">invoice.dispatchname</mapping>
+		<mapping row="1" col="17">invoice.dispatchAddr1</mapping>
+		<mapping row="1" col="18" nullAllowed="true">invoice.dispatchAddr2</mapping>
+		<mapping row="1" col="19" nullAllowed="true">invoice.dispatchLoc</mapping>
+		<mapping row="1" col="20">invoice.dispatchpin</mapping>
+		<mapping row="1" col="21">invoice.dispatchState</mapping>
+	
+		<mapping row="1" col="22" nullAllowed="true">invoice.shipmentGstin</mapping>
+		<mapping row="1" col="23">invoice.shipmentTrdnm</mapping>
+		<mapping row="1" col="24">invoice.shipmentLgnm</mapping>
+		<mapping row="1" col="25" nullAllowed="true">invoice.shipmentAddr1</mapping>
+		<mapping row="1" col="26" nullAllowed="true">invoice.shipmentAddr2</mapping>
+		<mapping row="1" col="27">invoice.shipmentLoc</mapping>
+		<mapping row="1" col="28">invoice.shipmentpin</mapping>
+		<mapping row="1" col="29">invoice.shipmentState</mapping>
+		
+		<mapping row="1" col="30" nullAllowed="true">invoice.b2b[0].inv[0].etin</mapping>
+		<mapping row="1" col="31" nullAllowed="true">invoice.items[0].itemno</mapping>
+		<mapping row="1" col="32">invoice.items[0].category</mapping>
+		<mapping row="1" col="33" nullAllowed="true">invoice.items[0].hsn</mapping>
+		<mapping row="1" col="34" nullAllowed="true">invoice.items[0].uqc</mapping>
+		<mapping row="1" col="35" nullAllowed="true">invoice.items[0].barCode</mapping>
+		<mapping row="1" col="36">invoice.items[0].quantity</mapping>
+		<mapping row="1" col="37" nullAllowed="true">invoice.items[0].freeQty</mapping>
+		<mapping row="1" col="38">invoice.items[0].rateperitem</mapping>
+		<mapping row="1" col="39" nullAllowed="true">invoice.items[0].discount</mapping>
+		<mapping row="1" col="40" nullAllowed="true">invoice.items[0].othrCharges</mapping>
+		<mapping row="1" col="41">invoice.items[0].taxablevalue</mapping>
+		<mapping row="1" col="42">invoice.section</mapping>
+		<mapping row="1" col="43">invoice.tcstdspercentage</mapping>
+		<mapping row="1" col="44" nullAllowed="true">invoice.items[0].igstrate</mapping>
+		<mapping row="1" col="45" nullAllowed="true">invoice.items[0].igstamount</mapping>
+		<mapping row="1" col="46" nullAllowed="true">invoice.items[0].cgstrate</mapping>
+		<mapping row="1" col="47" nullAllowed="true">invoice.items[0].cgstamount</mapping>
+		<mapping row="1" col="48" nullAllowed="true">invoice.items[0].sgstrate</mapping>
+		<mapping row="1" col="49" nullAllowed="true">invoice.items[0].sgstamount</mapping>
+		<mapping row="1" col="50">invoice.items[0].cessrate</mapping>
+		<mapping row="1" col="51">invoice.items[0].cessamount</mapping>
+		<mapping row="1" col="52">invoice.items[0].total</mapping>
+	  </section>
+	  <loopbreakcondition>
+		<rowcheck offset="0">
+		  <cellcheck offset="0" />
+		</rowcheck>
+	  </loopbreakcondition>
+	</loop>
+  </worksheet>
+  
+  <worksheet name="Exports">
+	<loop startRow="0" endRow="0">
+		<loopbreakcondition>
+			<rowcheck offset="0">
+	        	<cellcheck offset="0">Invoice No*</cellcheck>
+				<cellcheck offset="1">Invoice Date*</cellcheck>
+				<cellcheck offset="2">Supply Type*</cellcheck>
+				<cellcheck offset="3">IGST On Intra</cellcheck>
+				<cellcheck offset="4">Reverse Charge</cellcheck>
+				
+				<cellcheck offset="5">Buyer Legal Name*</cellcheck>
+				<cellcheck offset="6">Buyer Trade Name</cellcheck>
+				<cellcheck offset="7">Place Of Supply*</cellcheck>
+				<cellcheck offset="8">Buyer Address1*</cellcheck>
+				<cellcheck offset="9">Buyer Address2</cellcheck>
+				<cellcheck offset="10">Buyer Location*</cellcheck>
+				<cellcheck offset="11">Buyer Pincode*</cellcheck>
+				<cellcheck offset="12">Buyer State*</cellcheck>
+				<cellcheck offset="13">Buyer Phone Number</cellcheck>
+				<cellcheck offset="14">Buyer EmailId</cellcheck>
+			
+				<cellcheck offset="15">Dispatch Name</cellcheck>
+				<cellcheck offset="16">Dispatch Address1</cellcheck>
+				<cellcheck offset="17">Dispatch Address2</cellcheck>
+				<cellcheck offset="18">Dispatch Location</cellcheck>
+				<cellcheck offset="19">Dispatch Pincode</cellcheck>
+				<cellcheck offset="20">Dispatch State</cellcheck>
+				
+				<cellcheck offset="21">Shipping GSTIN</cellcheck>
+				<cellcheck offset="22">Shipping Legal Name</cellcheck>
+				<cellcheck offset="23">Shipping Trade Name</cellcheck>
+				<cellcheck offset="24">Shipping Address1</cellcheck>
+				<cellcheck offset="25">Shipping Address2</cellcheck>
+				<cellcheck offset="26">Shipping Location</cellcheck>
+				<cellcheck offset="27">Shipping Pincode</cellcheck>
+				<cellcheck offset="28">Shipping State</cellcheck>
+				
+				<cellcheck offset="29">E-Commerce GSTIN</cellcheck>
+				<cellcheck offset="30">Country Code</cellcheck>
+				<cellcheck offset="31">Additional Currency Code</cellcheck>
+				<cellcheck offset="32">Refund Claim</cellcheck>
+				<cellcheck offset="33">Port Code</cellcheck>
+				<cellcheck offset="34">Shipping Bill No</cellcheck>
+				<cellcheck offset="35">Shipping Bill Date</cellcheck>
+				<cellcheck offset="36">Item/Product/Service</cellcheck>
+				<cellcheck offset="37">Category (Goods/Services)*</cellcheck>
+				<cellcheck offset="38">HSN / SAC Code*</cellcheck>
+				<cellcheck offset="39">Unique Quantity Code*</cellcheck>
+				<cellcheck offset="40">Bar Code</cellcheck>
+				<cellcheck offset="41">Quantity</cellcheck>
+				<cellcheck offset="42">Free Quantity</cellcheck>
+				<cellcheck offset="43">Item Rate*</cellcheck>
+				<cellcheck offset="44">Discount</cellcheck>
+				<cellcheck offset="45">Other Charges</cellcheck>
+				<cellcheck offset="46">Total Taxable Value*</cellcheck>
+				<cellcheck offset="47">Section</cellcheck>
+				<cellcheck offset="48">TCS Percentage</cellcheck>
+				<cellcheck offset="49">IGST Rate*</cellcheck>
+				<cellcheck offset="50">IGST Amount*</cellcheck>
+				<cellcheck offset="51">CGST Rate*</cellcheck>
+				<cellcheck offset="52">CGST Amount*</cellcheck>
+				<cellcheck offset="53">SGST Rate*</cellcheck>
+				<cellcheck offset="54">SGST Amount*</cellcheck>
+				<cellcheck offset="55">CESS Rate</cellcheck>
+				<cellcheck offset="56">CESS Amount</cellcheck>
+				<cellcheck offset="57">Total Invoice Value*</cellcheck>
+	        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="0" endRow="0" />
+	<loop startRow="1" endRow="1" items="exportList" var="export" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+		<section startRow="1" endRow="1">
+			<mapping row="1" col="0">export.b2b[0].inv[0].inum</mapping>
+			<mapping row="1" col="1">export.strDate</mapping>
+			<mapping row="1" col="2">export.einvCategory</mapping>
+			<mapping row="1" col="3" nullAllowed="true">export.igstOnIntra</mapping>
+			<mapping row="1" col="4" nullAllowed="true">export.revchargetype</mapping>
+			
+			<mapping row="1" col="5">export.billedtoname</mapping>
+			<mapping row="1" col="6">export.buyerDtls.trdNm</mapping>
+			<mapping row="1" col="7" nullAllowed="true">export.statename</mapping>
+			<mapping row="1" col="8" nullAllowed="true">export.b2b[0].inv[0].address</mapping>
+			<mapping row="1" col="9">export.buyerDtls.addr2</mapping>
+			<mapping row="1" col="10">export.buyerDtls.loc</mapping>
+			<mapping row="1" col="11">export.buyerDtls.pin</mapping>
+			<mapping row="1" col="12">export.buyerDtls.state</mapping>
+			<mapping row="1" col="13">export.buyerDtls.ph</mapping>
+			<mapping row="1" col="14">export.buyerDtls.em</mapping>
+			
+			<mapping row="1" col="15">export.dispatchname</mapping>
+			<mapping row="1" col="16">export.dispatchAddr1</mapping>
+			<mapping row="1" col="17" nullAllowed="true">export.dispatchAddr2</mapping>
+			<mapping row="1" col="18" nullAllowed="true">export.dispatchLoc</mapping>
+			<mapping row="1" col="19">export.dispatchpin</mapping>
+			<mapping row="1" col="20">export.dispatchState</mapping>
+			
+			<mapping row="1" col="21" nullAllowed="true">export.shipmentGstin</mapping>
+			<mapping row="1" col="22">export.shipmentTrdnm</mapping>
+			<mapping row="1" col="23">export.shipmentLgnm</mapping>
+			<mapping row="1" col="24" nullAllowed="true">export.shipmentAddr1</mapping>
+			<mapping row="1" col="25" nullAllowed="true">export.shipmentAddr2</mapping>
+			<mapping row="1" col="26">export.shipmentLoc</mapping>
+			<mapping row="1" col="27">export.shipmentpin</mapping>
+			<mapping row="1" col="28">export.shipmentState</mapping>
+			
+			<mapping row="1" col="29" nullAllowed="true">export.b2b[0].inv[0].etin</mapping>
+			<mapping row="1" col="30">export.countryCode</mapping>
+			<mapping row="1" col="31">export.addcurrencyCode</mapping>
+			<mapping row="1" col="32">export.refundClaim</mapping>
+			<mapping row="1" col="33">export.exp[0].inv[0].sbpcode</mapping>
+			<mapping row="1" col="34">export.exp[0].inv[0].sbnum</mapping>
+			<mapping row="1" col="35">export.exp[0].inv[0].sbdt</mapping>
+			<mapping row="1" col="36" nullAllowed="true">export.items[0].itemno</mapping>
+			<mapping row="1" col="37">export.items[0].category</mapping>
+			<mapping row="1" col="38" nullAllowed="true">export.items[0].hsn</mapping>
+			<mapping row="1" col="39" nullAllowed="true">export.items[0].uqc</mapping>
+			<mapping row="1" col="40" nullAllowed="true">export.items[0].barCode</mapping>
+			<mapping row="1" col="41">export.items[0].quantity</mapping>
+			<mapping row="1" col="42" nullAllowed="true">export.items[0].freeQty</mapping>
+			<mapping row="1" col="43">export.items[0].rateperitem</mapping>
+			<mapping row="1" col="44" nullAllowed="true">export.items[0].discount</mapping>
+			<mapping row="1" col="45" nullAllowed="true">export.items[0].othrCharges</mapping>
+			<mapping row="1" col="46">export.items[0].taxablevalue</mapping>
+			<mapping row="1" col="47">export.section</mapping>
+			<mapping row="1" col="48">export.tcstdspercentage</mapping>
+			<mapping row="1" col="49" nullAllowed="true">export.items[0].igstrate</mapping>
+			<mapping row="1" col="50" nullAllowed="true">export.items[0].igstamount</mapping>
+			<mapping row="1" col="51" nullAllowed="true">export.items[0].cgstrate</mapping>
+			<mapping row="1" col="52" nullAllowed="true">export.items[0].cgstamount</mapping>
+			<mapping row="1" col="53" nullAllowed="true">export.items[0].sgstrate</mapping>
+			<mapping row="1" col="54" nullAllowed="true">export.items[0].sgstamount</mapping>
+			<mapping row="1" col="55">export.items[0].cessrate</mapping>
+			<mapping row="1" col="56">export.items[0].cessamount</mapping>
+			<mapping row="1" col="57">export.items[0].total</mapping>	
+	  	</section>
+	  	<loopbreakcondition>
+			<rowcheck offset="0">
+		  		<cellcheck offset="0" />
+			</rowcheck>
+	  	</loopbreakcondition>
+	</loop>
+  </worksheet>
+  <worksheet name="Credit_Debit_Notes">
+	<loop startRow="0" endRow="0">
+		<loopbreakcondition>
+			<rowcheck offset="0">
+	        	<cellcheck offset="0">Document Type*</cellcheck>
+				<cellcheck offset="1">Credit/Debit Note No*</cellcheck>
+				<cellcheck offset="2">Credit/Debit Note Date*</cellcheck>
+				<cellcheck offset="3">Supply Type*</cellcheck>
+			<cellcheck offset="4">IGST On Intra</cellcheck>
+			<cellcheck offset="5">Original Invoice No</cellcheck>
+			<cellcheck offset="6">Original Invoice Date</cellcheck>
+			
+			<cellcheck offset="7">GSTIN/UIN*</cellcheck>
+			<cellcheck offset="8">Buyer Legal Name*</cellcheck>
+			<cellcheck offset="9">Buyer Trade Name</cellcheck>
+			<cellcheck offset="10">Place Of Supply*</cellcheck>
+			<cellcheck offset="11">Buyer Address1*</cellcheck>
+			<cellcheck offset="12">Buyer Address2</cellcheck>
+			<cellcheck offset="13">Buyer Location*</cellcheck>
+			<cellcheck offset="14">Buyer Pincode*</cellcheck>
+			<cellcheck offset="15">Buyer State*</cellcheck>
+			<cellcheck offset="16">Buyer Phone Number</cellcheck>
+			<cellcheck offset="17">Buyer EmailId</cellcheck>
+		
+			<cellcheck offset="18">Dispatch Name</cellcheck>
+			<cellcheck offset="19">Dispatch Address1</cellcheck>
+			<cellcheck offset="20">Dispatch Address2</cellcheck>
+			<cellcheck offset="21">Dispatch Location</cellcheck>
+			<cellcheck offset="22">Dispatch Pincode</cellcheck>
+			<cellcheck offset="23">Dispatch State</cellcheck>
+	
+			<cellcheck offset="24">Shipping GSTIN</cellcheck>
+			<cellcheck offset="25">Shipping Legal Name</cellcheck>
+			<cellcheck offset="26">Shipping Trade Name</cellcheck>
+			<cellcheck offset="27">Shipping Address1</cellcheck>
+			<cellcheck offset="28">Shipping Address2</cellcheck>
+			<cellcheck offset="29">Shipping Location</cellcheck>
+			<cellcheck offset="30">Shipping Pincode</cellcheck>
+			<cellcheck offset="31">Shipping State</cellcheck>
+			
+			<cellcheck offset="32">Item/Product/Service</cellcheck>
+			<cellcheck offset="33">Category (Goods/Services)*</cellcheck>
+			<cellcheck offset="34">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="35">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="36">Bar Code</cellcheck>
+			<cellcheck offset="37">Quantity</cellcheck>
+			<cellcheck offset="38">Free Quantity</cellcheck>
+			<cellcheck offset="39">Item Rate*</cellcheck>
+			<cellcheck offset="40">Discount</cellcheck>
+			<cellcheck offset="41">Other Charges</cellcheck>
+			<!-- <cellcheck offset="19">Assessable Value*</cellcheck> -->
+			<cellcheck offset="42">Total Taxable Value*</cellcheck>
+			<cellcheck offset="43">Section</cellcheck>
+			<cellcheck offset="44">TCS Percentage</cellcheck>
+			<cellcheck offset="45">IGST Rate*</cellcheck>
+			<cellcheck offset="46">IGST Amount*</cellcheck>
+			<cellcheck offset="47">CGST Rate*</cellcheck>
+			<cellcheck offset="48">CGST Amount*</cellcheck>
+			<cellcheck offset="49">SGST Rate*</cellcheck>
+			<cellcheck offset="50">SGST Amount*</cellcheck>
+			<cellcheck offset="51">CESS Rate</cellcheck>
+			<cellcheck offset="52">CESS Amount</cellcheck>
+			<cellcheck offset="53">Total Invoice Value*</cellcheck>  
+	        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="0" endRow="0" />
+	<loop startRow="1" endRow="1" items="creditList" var="credit" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+		<section startRow="1" endRow="1">
+			<mapping row="1" col="0">credit.cdnr[0].nt[0].ntty</mapping>
+			<mapping row="1" col="1">credit.b2b[0].inv[0].inum</mapping>
+			<mapping row="1" col="2">credit.strDate</mapping>
+			<mapping row="1" col="3" nullAllowed="true">credit.einvCategory</mapping>
+			<mapping row="1" col="4">credit.igstOnIntra</mapping>
+			<mapping row="1" col="5">credit.cdnr[0].nt[0].ntNum</mapping>
+			<mapping row="1" col="6">credit.cdnr[0].nt[0].ntDt</mapping>
+			
+			<mapping row="1" col="7" nullAllowed="true">credit.b2b[0].ctin</mapping>
+			<mapping row="1" col="8">credit.billedtoname</mapping>
+			<mapping row="1" col="9">credit.buyerDtls.trdNm</mapping>
+			<mapping row="1" col="10" nullAllowed="true">credit.statename</mapping>
+			<mapping row="1" col="11" nullAllowed="true">credit.b2b[0].inv[0].address</mapping>
+			<mapping row="1" col="12">credit.buyerDtls.addr2</mapping>
+			<mapping row="1" col="13">credit.buyerDtls.loc</mapping>
+			<mapping row="1" col="14">credit.buyerDtls.pin</mapping>
+			<mapping row="1" col="15">credit.buyerDtls.state</mapping>
+			<mapping row="1" col="16">credit.buyerDtls.ph</mapping>
+			<mapping row="1" col="17">credit.buyerDtls.em</mapping>
+			
+			<mapping row="1" col="18">credit.dispatchname</mapping>
+			<mapping row="1" col="19">credit.dispatchAddr1</mapping>
+			<mapping row="1" col="20" nullAllowed="true">credit.dispatchAddr2</mapping>
+			<mapping row="1" col="21" nullAllowed="true">credit.dispatchLoc</mapping>
+			<mapping row="1" col="22">credit.dispatchpin</mapping>
+			<mapping row="1" col="23">credit.dispatchState</mapping>
+			
+			<mapping row="1" col="24" nullAllowed="true">credit.shipmentGstin</mapping>
+			<mapping row="1" col="25">credit.shipmentTrdnm</mapping>
+			<mapping row="1" col="26">credit.shipmentLgnm</mapping>
+			<mapping row="1" col="27" nullAllowed="true">credit.shipmentAddr1</mapping>
+			<mapping row="1" col="28" nullAllowed="true">credit.shipmentAddr2</mapping>
+			<mapping row="1" col="29">credit.shipmentLoc</mapping>
+			<mapping row="1" col="30">credit.shipmentpin</mapping>
+			<mapping row="1" col="31">credit.shipmentState</mapping>
+			
+			<mapping row="1" col="32" nullAllowed="true">credit.items[0].itemno</mapping>
+			<mapping row="1" col="33">credit.items[0].category</mapping>
+			<mapping row="1" col="34" nullAllowed="true">credit.items[0].hsn</mapping>
+			<mapping row="1" col="35" nullAllowed="true">credit.items[0].uqc</mapping>
+			<mapping row="1" col="36" nullAllowed="true">credit.items[0].barCode</mapping>
+			<mapping row="1" col="37">credit.items[0].quantity</mapping>
+			<mapping row="1" col="38" nullAllowed="true">credit.items[0].freeQty</mapping>
+			<mapping row="1" col="39">credit.items[0].rateperitem</mapping>
+			<mapping row="1" col="40" nullAllowed="true">credit.items[0].discount</mapping>
+			<mapping row="1" col="41" nullAllowed="true">credit.items[0].othrCharges</mapping>
+			<!-- <mapping row="2" col="19">credit.items[0].assAmt</mapping> -->
+			<mapping row="1" col="42">credit.items[0].taxablevalue</mapping>
+			<mapping row="1" col="43">credit.section</mapping>
+			<mapping row="1" col="44">credit.tcstdspercentage</mapping>
+			<mapping row="1" col="45" nullAllowed="true">credit.items[0].igstrate</mapping>
+			<mapping row="1" col="46" nullAllowed="true">credit.items[0].igstamount</mapping>
+			<mapping row="1" col="47" nullAllowed="true">credit.items[0].cgstrate</mapping>
+			<mapping row="1" col="48" nullAllowed="true">credit.items[0].cgstamount</mapping>
+			<mapping row="1" col="49" nullAllowed="true">credit.items[0].sgstrate</mapping>
+			<mapping row="1" col="50" nullAllowed="true">credit.items[0].sgstamount</mapping>
+			<mapping row="1" col="51">credit.items[0].cessrate</mapping>
+			<mapping row="1" col="52">credit.items[0].cessamount</mapping>
+			<mapping row="1" col="53">credit.items[0].total</mapping>		
+	  	</section>
+	  	<loopbreakcondition>
+			<rowcheck offset="0">
+		  		<cellcheck offset="0" />
+			</rowcheck>
+	  	</loopbreakcondition>
+		</loop>
+  </worksheet>
+   <worksheet name="Credit_Debit_Note_Unregistered">
+		<loop startRow="0" endRow="0">
+		<loopbreakcondition>
+			<rowcheck offset="0">
+	        	<cellcheck offset="0">Document Type*</cellcheck>
+				<cellcheck offset="1">Credit/Debit Note No*</cellcheck>
+				<cellcheck offset="2">Credit/Debit Note Date*</cellcheck>
+				<cellcheck offset="3">Supply Type*</cellcheck>
+			<cellcheck offset="4">IGST On Intra</cellcheck>
+			<cellcheck offset="5">Original Invoice No</cellcheck>
+			<cellcheck offset="6">Original Invoice Date</cellcheck>
+			
+			<cellcheck offset="7">Buyer Legal Name*</cellcheck>
+			<cellcheck offset="7">Buyer Trade Name</cellcheck>
+			<cellcheck offset="9">Place Of Supply*</cellcheck>
+			<cellcheck offset="10">Buyer Address1*</cellcheck>
+			<cellcheck offset="11">Buyer Address2</cellcheck>
+			<cellcheck offset="12">Buyer Location*</cellcheck>
+			<cellcheck offset="13">Buyer Pincode*</cellcheck>
+			<cellcheck offset="14">Buyer State*</cellcheck>
+			<cellcheck offset="15">Buyer Phone Number</cellcheck>
+			<cellcheck offset="16">Buyer EmailId</cellcheck>
+		
+			<cellcheck offset="17">Dispatch Name</cellcheck>
+			<cellcheck offset="18">Dispatch Address1</cellcheck>
+			<cellcheck offset="19">Dispatch Address2</cellcheck>
+			<cellcheck offset="20">Dispatch Location</cellcheck>
+			<cellcheck offset="21">Dispatch Pincode</cellcheck>
+			<cellcheck offset="22">Dispatch State</cellcheck>
+	
+			<cellcheck offset="23">Shipping GSTIN</cellcheck>
+			<cellcheck offset="24">Shipping Legal Name</cellcheck>
+			<cellcheck offset="25">Shipping Trade Name</cellcheck>
+			<cellcheck offset="26">Shipping Address1</cellcheck>
+			<cellcheck offset="27">Shipping Address2</cellcheck>
+			<cellcheck offset="28">Shipping Location</cellcheck>
+			<cellcheck offset="29">Shipping Pincode</cellcheck>
+			<cellcheck offset="30">Shipping State</cellcheck>
+			
+			<cellcheck offset="31">Item/Product/Service</cellcheck>
+			<cellcheck offset="32">Category (Goods/Services)*</cellcheck>
+			<cellcheck offset="33">HSN / SAC Code*</cellcheck>
+			<cellcheck offset="34">Unique Quantity Code*</cellcheck>
+			<cellcheck offset="35">Bar Code</cellcheck>
+			<cellcheck offset="36">Quantity</cellcheck>
+			<cellcheck offset="37">Free Quantity</cellcheck>
+			<cellcheck offset="38">Item Rate*</cellcheck>
+			<cellcheck offset="39">Discount</cellcheck>
+			<cellcheck offset="40">Other Charges</cellcheck>
+			<!-- <cellcheck offset="19">Assessable Value*</cellcheck> -->
+			<cellcheck offset="41">Total Taxable Value*</cellcheck>
+			<cellcheck offset="42">Section</cellcheck>
+			<cellcheck offset="43">TCS Percentage</cellcheck>
+			<cellcheck offset="44">IGST Rate*</cellcheck>
+			<cellcheck offset="45">IGST Amount*</cellcheck>
+			<cellcheck offset="46">CGST Rate*</cellcheck>
+			<cellcheck offset="47">CGST Amount*</cellcheck>
+			<cellcheck offset="48">SGST Rate*</cellcheck>
+			<cellcheck offset="49">SGST Amount*</cellcheck>
+			<cellcheck offset="50">CESS Rate</cellcheck>
+			<cellcheck offset="51">CESS Amount</cellcheck>
+			<cellcheck offset="52">Total Invoice Value*</cellcheck>  
+	        </rowcheck>
+		</loopbreakcondition>
+	</loop>
+	<section startRow="0" endRow="0" />
+	<loop startRow="1" endRow="1" items="cdnurList" var="cdnurInv" varType="com.mastergst.usermanagement.runtime.domain.GSTR1">
+		<section startRow="1" endRow="1">
+			<mapping row="1" col="0">cdnurInv.cdnur[0].ntty</mapping>
+			<mapping row="1" col="1">cdnurInv.b2b[0].inv[0].inum</mapping>
+			<mapping row="1" col="2">cdnurInv.strDate</mapping>
+			<mapping row="1" col="3" nullAllowed="true">cdnurInv.einvCategory</mapping>
+			<mapping row="1" col="4">cdnurInv.igstOnIntra</mapping>
+			<mapping row="1" col="5">cdnurInv.cdnur[0].inum</mapping>
+			<mapping row="1" col="6">cdnurInv.cdnur[0].idt</mapping>
+			<mapping row="1" col="7">cdnurInv.billedtoname</mapping>
+			<mapping row="1" col="8">cdnurInv.buyerDtls.trdNm</mapping>
+			<mapping row="1" col="9" nullAllowed="true">cdnurInv.statename</mapping>
+			<mapping row="1" col="10" nullAllowed="true">cdnurInv.b2b[0].inv[0].address</mapping>
+			<mapping row="1" col="11">cdnurInv.buyerDtls.addr2</mapping>
+			<mapping row="1" col="12">cdnurInv.buyerDtls.loc</mapping>
+			<mapping row="1" col="13">cdnurInv.buyerDtls.pin</mapping>
+			<mapping row="1" col="14">cdnurInv.buyerDtls.state</mapping>
+			<mapping row="1" col="15">cdnurInv.buyerDtls.ph</mapping>
+			<mapping row="1" col="16">cdnurInv.buyerDtls.em</mapping>
+		
+			<mapping row="1" col="17">cdnurInv.dispatchname</mapping>
+			<mapping row="1" col="18">cdnurInv.dispatchAddr1</mapping>
+			<mapping row="1" col="19" nullAllowed="true">cdnurInv.dispatchAddr2</mapping>
+			<mapping row="1" col="20" nullAllowed="true">cdnurInv.dispatchLoc</mapping>
+			<mapping row="1" col="21">cdnurInv.dispatchpin</mapping>
+			<mapping row="1" col="22">cdnurInv.dispatchState</mapping>
+		
+			<mapping row="1" col="23" nullAllowed="true">cdnurInv.shipmentGstin</mapping>
+			<mapping row="1" col="24">cdnurInv.shipmentTrdnm</mapping>
+			<mapping row="1" col="25">cdnurInv.shipmentLgnm</mapping>
+			<mapping row="1" col="26" nullAllowed="true">cdnurInv.shipmentAddr1</mapping>
+			<mapping row="1" col="27" nullAllowed="true">cdnurInv.shipmentAddr2</mapping>
+			<mapping row="1" col="28">cdnurInv.shipmentLoc</mapping>
+			<mapping row="1" col="29">cdnurInv.shipmentpin</mapping>
+			<mapping row="1" col="30">cdnurInv.shipmentState</mapping>
+			
+			<mapping row="1" col="31" nullAllowed="true">cdnurInv.items[0].itemno</mapping>
+			<mapping row="1" col="32">cdnurInv.items[0].category</mapping>
+			<mapping row="1" col="33" nullAllowed="true">cdnurInv.items[0].hsn</mapping>
+			<mapping row="1" col="34" nullAllowed="true">cdnurInv.items[0].uqc</mapping>
+			<mapping row="1" col="35" nullAllowed="true">cdnurInv.items[0].barCode</mapping>
+			<mapping row="1" col="36">cdnurInv.items[0].quantity</mapping>
+			<mapping row="1" col="37" nullAllowed="true">cdnurInv.items[0].freeQty</mapping>
+			<mapping row="1" col="38">cdnurInv.items[0].rateperitem</mapping>
+			<mapping row="1" col="39" nullAllowed="true">cdnurInv.items[0].discount</mapping>
+			<mapping row="1" col="40" nullAllowed="true">cdnurInv.items[0].othrCharges</mapping>
+			<mapping row="1" col="41">cdnurInv.items[0].taxablevalue</mapping>
+			<mapping row="1" col="42">cdnurInv.section</mapping>
+			<mapping row="1" col="43">cdnurInv.tcstdspercentage</mapping>
+			<mapping row="1" col="44" nullAllowed="true">cdnurInv.items[0].igstrate</mapping>
+			<mapping row="1" col="45" nullAllowed="true">cdnurInv.items[0].igstamount</mapping>
+			<mapping row="1" col="46" nullAllowed="true">cdnurInv.items[0].cgstrate</mapping>
+			<mapping row="1" col="47" nullAllowed="true">cdnurInv.items[0].cgstamount</mapping>
+			<mapping row="1" col="48" nullAllowed="true">cdnurInv.items[0].sgstrate</mapping>
+			<mapping row="1" col="49" nullAllowed="true">cdnurInv.items[0].sgstamount</mapping>
+			<mapping row="1" col="50">cdnurInv.items[0].cessrate</mapping>
+			<mapping row="1" col="51">cdnurInv.items[0].cessamount</mapping>
+			<mapping row="1" col="52">cdnurInv.items[0].total</mapping>		
+	  	</section>
+	  	<loopbreakcondition>
+			<rowcheck offset="0">
+		  		<cellcheck offset="0" />
+			</rowcheck>
+	  	</loopbreakcondition>
+		</loop>
+  </worksheet>
+
+</workbook>

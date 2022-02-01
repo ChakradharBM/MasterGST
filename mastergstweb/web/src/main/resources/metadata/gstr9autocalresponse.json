@@ -1,0 +1,194 @@
+{
+"data": {
+"table5": {
+"nil": {
+"txval": 0
+},
+"dr_nt": {
+"txval": 0
+},
+"amd_neg": {
+"txval": 0
+},
+"non_gst": {
+"txval": 0
+},
+"exmt": {
+"txval": 0
+},
+"amd_pos": {
+"txval": 0
+},
+"sez": {
+"txval": 0
+},
+"rchrg": {
+"txval": 0
+},
+"zero_rtd": {
+"txval": 0
+},
+"cr_nt": {
+"txval": 0
+},
+"chksum": "92314a0c85445e401fc386b73ec0578995be194df4f4bb1194d6cf91ac7a46ac"
+},
+"table4": {
+"dr_nt": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"b2c": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"b2b": {
+"csamt": 0,
+"samt": 61747.65,
+"txval": 3908286,
+"camt": 61747.65,
+"iamt": 579996.18
+},
+"amd_neg": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"at": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"amd_pos": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"sez": {
+"csamt": 0,
+"txval": 0,
+"iamt": 0
+},
+"rchrg": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"deemed": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"exp": {
+"csamt": 0,
+"txval": 0,
+"iamt": 0
+},
+"cr_nt": {
+"csamt": 0,
+"samt": 0,
+"txval": 0,
+"camt": 0,
+"iamt": 0
+},
+"chksum": "552d79a46f3e54383607014177f712025552b0234630a05802a9a701054cef2d"
+},
+"fp": "032018",
+"gstin": "36AAGCB1286Q1Z5",
+"table9": {
+"csamt": {
+"txpyble": 0,
+"txpaid_cash": 0,
+"tax_paid_itc_csamt": 0
+},
+"samt": {
+"tax_paid_itc_iamt": 0,
+"tax_paid_itc_samt": 12405,
+"txpyble": 61748,
+"txpaid_cash": 49343
+},
+"intr": {
+"txpyble": 0,
+"txpaid_cash": 0
+},
+"fee": {
+"txpyble": 40640,
+"txpaid_cash": 40640
+},
+"camt": {
+"tax_paid_itc_iamt": 0,
+"txpyble": 61748,
+"tax_paid_itc_camt": 12405,
+"txpaid_cash": 49343
+},
+"iamt": {
+"tax_paid_itc_iamt": 35589,
+"tax_paid_itc_samt": 13581,
+"txpyble": 579997,
+"tax_paid_itc_camt": 13581,
+"txpaid_cash": 517246
+},
+"chksum": "2f6d493f118e0335b879623a569590f3fdc4effd5888a5724be4ae2b2c7404e7"
+},
+"table8": {
+"itc_2a": {
+"csamt": 0,
+"samt": 22239.83,
+"camt": 22239.83,
+"iamt": 62858.14
+},
+"chksum": "4648f8060fcd4a7f8ebe37f6c734752bd90d975df78eb9b65d8d62f4fbe4cddf"
+},
+"table6": {
+"tran2": {
+"samt": 0,
+"camt": 0
+},
+"tran1": {
+"samt": 0,
+"camt": 0
+},
+"itc_3b": {
+"csamt": 0,
+"samt": 25985.19,
+"camt": 25985.19,
+"iamt": 35589.93
+},
+"isd": {
+"csamt": 0,
+"samt": 0,
+"camt": 0,
+"iamt": 0
+},
+"chksum": "d6b2bad360d8b0948a601562ba1e10b329f0cffd2345b1d4ddf5d9a5f73a9850"
+}
+},
+"status_cd": "1",
+"status_desc": "GSTR request succeeds",
+"header": {
+"state_cd": "36",
+"txn": "65022b3d3a91464ba171bd6a84b6a394",
+"gst_username": "bvmit_2017",
+"client_secret": "3b504660fe144825ad6503fc057a398c",
+"client_id": "l7xx34699ff5c1044fbd8b85c4158a506621",
+"ip_address": "183.83.171.186",
+"ret_period": "032018",
+"gstin": "36AAGCB1286Q1Z5"
+}
+}

@@ -1,0 +1,24 @@
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom{top: 187px !important}
+.db-ca-wrap table.dataTable.row-border tbody tr td{text-align: right;white-space: nowrap;padding-left:2px;padding-right:2px}
+p.3bvs2ainfo {font-weight: 500 !important;font-size: 15px !important;}
+th.text-center.books_header, .books_th {color: white !important;background-color: #8064a2 !important}
+th.text-center.month_header {color: black;background-color: #e6edfb !important;font-size: 22px !important;font-weight: 500;}
+.gstr3b-th {background-color: #538dd5 !important;}
+.gstr1-th {background-color: #7d3938ba;}
+.b-gstr1_td {background-color: rgba(83, 141, 213, 0.18);}
+.gstr1_td {background-color: rgb(242, 230, 231);}
+.gst3b_td {background-color: rgba(164, 128, 208, 0.32);}
+.gstr1-th {background-color: #7d3938ba !important}
+.reportTable tr td:first-child, .reportTable tr th:first-child {background-color: #78c1f9}
+.reportTable tr:nth-child(1), .reportTable tr:nth-child(2), .reportTable tr:nth-child(3),.reportTable tr:nth-child(4), .reportTable tr:nth-child(5),.reportTable tr:nth-child(6), .reportTable tr:nth-child(7),.reportTable tr:nth-child(8), .reportTable tr:nth-child(9),.reportTable tr:nth-child(10), .reportTable tr:nth-child(11),.reportTable tr:nth-child(12), .reportTable tr:nth-child(13),.reportTable tr:nth-child(14), .reportTable tr:nth-child(16) {background-color: unset !important}
+.reportTable4{width: 1110px; overflow-x: auto;}
+.dropdown:hover .dropdown-content {display: block;}
+.arrow-up {width: 0; height: 0; border-left: 9px solid transparent;border-right: 9px solid transparent;border-bottom: 12px solid white; position: absolute;top: -8px;}
+.dropdown {position: relative;display: inline-block;}
+.dropdown-content ul li{list-style:none;}
+.dropdown-content {display: none;position: absolute;background-color: white;min-width: 500px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;color: black;padding: 12px 16px;text-decoration: none;margin-left: -13px; text-transform: capitalize;}
+.excel_btn{background-color: #8ee3fe;margin-right: 10px;color: #435a9e !important;font-size: 14px;padding: 5px 10px!important;border-radius: 4px;border: 1px;width: 73px;cursor: pointer;font-weight: bold;}
+.excel_btn:hover{background-color: #364365!important;color: white!important;text-decoration:unset}
+#month4_reportTable , .tax_de_hr{border: 1px solid white;}
+.maintable_hr{font-size: 16px; background-color: #78c1f9 !important; color: black!important;border: 1px solid white;}
+.customtable.reportTable{width:1109px;overflow-x:auto!important}

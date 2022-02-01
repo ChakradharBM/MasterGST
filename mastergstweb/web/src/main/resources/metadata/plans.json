@@ -1,0 +1,12 @@
+{'plans': [
+{'category': 'ASP', 'name': 'Small', 'price': 4999, 'invoice': 60000, 'client': 25, 'user': 0, 'transaction': 0, 'duration': 12},
+{'category': 'ASP', 'name': 'Medium', 'price': 12999, 'invoice': 150000, 'client': 100, 'user': 0, 'transaction': 0, 'duration': 12},
+{'category': 'ASP', 'name': 'Large', 'price': 24999, 'invoice': 325000, 'client': 250, 'user': 0, 'transaction': 0, 'duration': 12},
+{'category': 'ASP', 'name': 'Pro', 'price': 34999, 'invoice': 500000, 'client': 0, 'user': 0, 'transaction': 0, 'duration': 12},
+{'category': 'AddOn', 'name': 'Pack 999', 'price': 999, 'invoice': 10000, 'client': 0, 'user': 0, 'transaction': 0, 'duration': 0},
+{'category': 'AddOn', 'name': 'Pack 2499', 'price': 2499, 'invoice': 25000, 'client': 0, 'user': 0, 'transaction': 0, 'duration': 0},
+{'category': 'AddOn', 'name': 'Pack 4999', 'price': 4999, 'invoice': 50000, 'client': 0, 'user': 0, 'transaction': 0, 'duration': 0},
+{'category': 'AddOn', 'name': 'Pack 9999', 'price': 9999, 'invoice': 100000, 'client': 0, 'user': 0, 'transaction': 0, 'duration': 0},
+{'category': 'Business', 'name': 'Small', 'price': 4999, 'invoice': 10000, 'client': 2, 'user': 0, 'transaction': 0, 'duration': 12},
+{'category': 'Business', 'name': 'Medium', 'price': 11999, 'invoice': 50000, 'client': 5, 'user': 0, 'transaction': 0, 'duration': 12}
+]}

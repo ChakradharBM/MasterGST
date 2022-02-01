@@ -1,0 +1,168 @@
+table.sortable_table tbody tr{ background-color:transparent!important; }
+#invoiceModal { font-family:'latolight', sans-serif;  transition: all 0.5s ease; -ms-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; }
+#invoiceModal .invoice-hdr.bluehdr { padding:10px 10px 5px; }
+#invoiceModal1,#invoiceModal2,#invoiceModal3,#invoiceModal4,#invoiceModal5{ font-family:'latolight', sans-serif;  transition: all 0.5s ease; -ms-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; }
+#invoiceModal1 .invoice-hdr.bluehdr,#invoiceModal2 .invoice-hdr.bluehdr,#invoiceModal3 .invoice-hdr.bluehdr,#invoiceModal4 .invoice-hdr.bluehdr,#invoiceModal5 .invoice-hdr.bluehdr{ padding:10px 10px 5px; }
+.sortable-form .form-control, .sortable-form label, .checkbox>label, .sortable-form h6 { color: #090909;font-size:13px; margin-bottom:0 }
+#invoice label{color:#000000!important;float:left}
+.sortable-form h6 { margin-bottom:5px; }
+.balancedue { font-family:'latolight', sans-serif; }
+.balancedue .fa { font-size:32px }
+.balancedue .fa-rupee:before{ font-size:32px!important }
+.totalamount .fa { font-size:14px; margin-right:5px; }
+.table-sortable { position: relative; }
+.table-sortable .sortable-placeholder { height: 37px; }
+.table-sortable .sortable-placeholder:after { position: absolute; z-index: 10; content: " "; height: 37px; background: #f9f9f9; left: 0; right: 0; }
+.table .btn { float:left; margin:0 5px 0 0; padding:0px 5px }
+table#sortable_table .edit, table#sortable_table .save { display:none!important; }
+table#sortable_table1 .edit, table#sortable_table1 .save, table#sortable_table2 .edit, table#sortable_table2 .save , table#sortable_table3 .edit, table#sortable_table3 .save , table#sortable_table4 .edit, table#sortable_table4 .save ,table#vsortable_table4 .edit, table#vsortable_table4 .save ,table#hsnsummarysortable_table4 .edit, table#hsnsummarysortable_table4 .save ,table#vsortable_table5 .edit, table#vsortable_table5 .save , table#sortable_table5 .edit, table#sortable_table5 .save { display:none!important; }
+.save { float: left; }
+table .fa { padding:2px 4px; display:contents }
+.permissionInvoices-Sales-Edit, .permissionInvoices-Purchase-Edit{float:right;margin-right: 6px;}
+table#vehicleupdate_table .form-control,table#sortable_table .form-control,table#configTermsTable .form-control,table#econfigTermsTable .form-control { width:95%; min-width:auto; padding:5px 1px; font-family: 'source_sans_proregular';font-size: 13px;   color: black;}
+table#vehicleupdate_table .form-control,table#sortable_table1 .form-control, table#sortable_table2 .form-control, table#sortable_table3 .form-control, table#sortable_table4 .form-control ,table#vsortable_table4 .form-control ,table#hsnsummarysortable_table4 .form-control ,table#vsortable_table5 .form-control , table#sortable_table5 .form-control,table#configTermsTable .form-control { width:90%; min-width:auto; padding:5px 1px; font-family: 'source_sans_proregular';font-size: 13px}
+table#vehicle_table .form-control,table#configTermsTable .form-control{min-width:auto;padding:5px 1px;  font-family: 'source_sans_proregular';font-size: 13pxmax-width: unset;width: 95%;}
+.sortable-form .form-control { height:auto!important; padding: 5px; border-radius:0px; }
+.sortable-form textarea.form-control { min-height:80px; padding: 5px; resize: vertical; overflow-x: hidden; overflow-y: auto }
+.sortable-form select.form-control { height:28px!important; border-radius:0px; min-width: 138px;}
+.sortable-form input.form-control, .sortable-form select.form-control{max-width:180px; width:180px}
+table#configTermsTable,table#econfigTermsTable,table#vehicle_table ,table#vehicleupdate_table,table#sortable_table , #payment_table { margin:0; width:100%; border-collapse:collapse }
+table#configTermsTable tr,table#econfigTermsTable tr,table#vehicle_table tr,table#vehicleupdate_table tr,table#sortable_table tr , #payment_table tr { font-size:13px; border-collapse:collapse }
+table#configTermsTable tr td,table#econfigTermsTable tr td,table#vehicle_table tr td,table#vehicleupdate_table tr td,table#sortable_table tr td , table#payment_table tr td { border:1px solid #ddd; border-collapse:collapse }
+table#configTermsTable tr td,table#econfigTermsTable tr td,table#vehicle_table tr td,table#vehicleupdate_table tr td,table#sortable_table tr td , table#payment_table tr td { padding:5px 3px; }
+table#configTermsTable tr th,table#econfigTermsTable tr th,table#vehicle_table tr th,table#vehicleupdate_table tr th,table#sortable_table tr th , table#payment_table tr th { background-color:#5769bb; color:#fff; padding:5px 3px; text-align:center }
+table#sortable_table1, table#sortable_table2, table#sortable_table3 , table#sortable_table4 ,table#vsortable_table4 ,table#hsnsummarysortable_table4 ,table#vsortable_table5 , table#sortable_table5 { margin:0; width:100%; border-collapse:collapse }
+table#sortable_table1 tr, table#sortable_table2 tr, table#sortable_table3 tr, table#sortable_table4 tr ,table#vsortable_table4 tr ,table#hsnsummarysortable_table4 tr ,table#vsortable_table5 tr , table#sortable_table5 tr { font-size:13px; border-collapse:collapse }
+table#sortable_table1 tr td, table#sortable_table2 tr td, table#sortable_table3 tr td, table#sortable_table4 tr td,table#vsortable_table4 tr td,table#hsnsummarysortable_table4 tr td,table#vsortable_table5 tr td, table#sortable_table5 tr td{ border:1px solid #ddd!important; border-collapse:collapse }
+table#sortable_table1 tr td , table#sortable_table2 tr td, table#sortable_table3 tr td, table#sortable_table4 tr td,table#vsortable_table4 tr td,table#hsnsummarysortable_table4 tr td,table#vsortable_table5 tr td, table#sortable_table5 tr td { padding:5px 3px; }
+table#sortable_table1 tr th, table#sortable_table2 tr th, table#sortable_table3 tr th, table#sortable_table4 tr th,table#vsortable_table4 tr th,table#hsnsummarysortable_table4 tr th,table#vsortable_table5 tr th, table#sortable_table5 tr th{ background-color:#5769bb; color:#fff; padding:5px 3px; text-align:center }
+.addrowshadow { -webkit-appearance: none;-webkit-box-shadow: 0 0 6px 2px #555151b0;; box-shadow: 0 0 6px 2px #555151b0;; z-index:9; -ms-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; background-color: unset!important; }
+.sortable-form { font:'latolight', sans-serif; }
+#invoiceModal .modal-footer { background-color:#e5e5e5;padding:6px; }
+#invoiceModal .modal-footer .btn { padding:3px 10px; }
+#invoiceModal .meterialform .checkbox label { top:5px; line-height:26px }
+#invoiceModal .meterialform .checkbox .helper { top:5px }
+#invoiceModal .close { opacity:.8 }
+#invoiceModal thead th,#addTermModal thead th { border:1px solid #8793c7; }
+#invoiceModal tfoot tr, #invoiceModal tfoot th,#addTermModal tfoot tr { border:1px solid #ddd; color:#000000!important; }
+#invoiceModal tfoot th.tfootbg { background-color:#FFCCCC; color:#000000; text-align:right }
+#invoiceModal1 .modal-footer, #invoiceModal2 .modal-footer, #invoiceModal3 .modal-footer , #invoiceModal4 .modal-footer, #invoiceModal5 .modal-footer { background-color:#e5e5e5; padding:8px 0px; }
+#invoiceModal1 .modal-footer .btn, #invoiceModal2 .modal-footer .btn, #invoiceModal3 .modal-footer .btn, #invoiceModal4 .modal-footer .btn, #invoiceModal5 .modal-footer .btn { padding:3px 10px; }
+#invoiceModal1 .meterialform .checkbox label, #invoiceModal2 .meterialform .checkbox label, #invoiceModal3 .meterialform .checkbox label, #invoiceModal4 .meterialform .checkbox label, 
+#invoiceModal5 .meterialform .checkbox label{ top:5px; line-height:26px }
+#invoiceModal1 .meterialform .checkbox .helper, #invoiceModal2 .meterialform .checkbox .helper, #invoiceModal3 .meterialform .checkbox .helper, #invoiceModal4 .meterialform .checkbox .helper, #invoiceModal5 .meterialform .checkbox .helper{ top:5px }
+#invoiceModal1 .close, #invoiceModal2 .close, #invoiceModal3 .close , #invoiceModal4 .close, #invoiceModal5 .close  { opacity:.8 }
+#invoiceModal1 thead th, #invoiceModal2 thead th , #invoiceModal3 thead th, #invoiceModal4 thead th, #invoiceModal5 thead th { border:1px solid #8793c7; }
+#invoiceModal1 tfoot tr, #invoiceModal1 tfoot th, #invoiceModal2 tfoot tr, #invoiceModal2 tfoot th, #invoiceModal3 tfoot tr, #invoiceModal3 tfoot th, #invoiceModal4 tfoot tr, #invoiceModal4 tfoot th, #invoiceModal5 tfoot tr, #invoiceModal5 tfoot th{ border:1px solid #ddd; color:#000000!important; }
+#invoiceModal1 tfoot th.tfootbg, #invoiceModal2 tfoot th.tfootbg, #invoiceModal3 tfoot th.tfootbg, #invoiceModal4 tfoot th.tfootbg, #invoiceModal5 tfoot th.tfootbg { background-color:#FFCCCC; color:#000000; text-align:right }
+.add-btn { background-color:#00CC33; color:#fff; font-size:16px; font-family:Arial, Helvetica, sans-serif; line-height:20px; font-weight:600; text-align:center; width:20px; height:20px; border-radius:100%; display:inline-block }
+.tfootwitebg { background-color:#fff!important; }
+.tablegreybg { background-color:#f5f5f5; pointer:event }
+.add { cursor:pointer; }
+.mt-6 { margin-top:60px!important; }
+.table#sortable_table { position:relative; z-index:9 }
+.modalmaskbg { position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index: 0; }
+ .hide,.typebox {display:none;}
+ .sortable-form .form-control{ width:100%}
+ .fullscreen .modal-content,.fullscreen .modal-body{ padding:0!important}
+ .fullscreen button.close{top:2px!important}
+ .modal-backdrop{background-color:#fff!important}
+.fullscreen .modal-body{    max-height: calc(100vh - 80px);overflow-y: auto;}
+.fullscreen .modal-content{height: 100vh;overflow-y: auto;overflow-x: hidden;}
+#sortable_table select.form-control,#vehicle_table select.form-control,#vehicleupdate_table select.form-control{height:25px!important;padding: 0px;}
+ #sortable_table1 select.form-control, #sortable_table2 select.form-control, #sortable_table3 select.form-control, #sortable_table4 select.form-control,#vsortable_table4 select.form-control,#vsortable_table5 select.form-control, #sortable_table5 select.form-control{height:auto!important}
+ .customtable .xdsoft_datetimepicker{left:226px!important}
+ .balancedue h1 {float: right;  margin-left: 10px; vertical-align: middle;}
+ .balancedue label{margin-top:10px!important}
+ #invoiceModal .help-block .list-unstyled li,#invoiceModal1 .help-block .list-unstyled li,#invoiceModal2 .help-block .list-unstyled li,#invoiceModal3 .help-block .list-unstyled li,#invoiceModal4 .help-block .list-unstyled li,#invoiceModal5 .help-block .list-unstyled li{line-height: 1; margin-top: -11px; margin-left: 15px;background-color: rgba(255, 255, 255, 0.77); border-radius: 4px; box-shadow: 0px 0px 8px #da8e8e; padding: 5px;}
+ #invoiceModal .help-block .list-unstyled li:after,#invoiceModal1 .help-block .list-unstyled li:after,#invoiceModal2 .help-block .list-unstyled li:after,#invoiceModal3 .help-block .list-unstyled li:after,#invoiceModal4 .help-block .list-unstyled li:after,#invoiceModal5 .help-block .list-unstyled li:after{content:''; border-top:6px solid #da8e8e;border-right:6px solid transparent;border-left:6px solid transparent; position:absolute;bottom:-6px;left:45%}
+ #invNoMissing,#invNoMissing1,#revNoMissing {position: absolute; top: 50px;  background-color: rgba(255, 255, 255, 0.8);  z-index: 9;  left: 15px; box-shadow: 0px 0px 6px #aaa; padding: 0px 0px 0px 5px; border-radius: 5px;font-size:12px;color:red;right:0}
+ .fullscreen .modal-dialog {  width: 100%;position: fixed;left: 0;top: 0;padding: 0;margin: 0;right:0; bottom:0; max-width:100%;}
+ .bold-txt{font-weight:600}
+ .itc_reversal{margin-left:1px}
+ #gstStatus{margin-left: 15px; margin-top: 25PX;}
+ #invoiceModal tfoot tr{background-color:#ffffff}
+ #transactiondate{display: block;min-width: 183px;font-size: 12px;margin-top: -30px;margin-left: 26px;color: red;padding-left: 4px;box-shadow: 0px 0px 8px #da8e8e;}
+ #transactiondate:after{content: '';border-top: 6px solid #da8e8e;border-right: 6px solid transparent;border-left: 6px solid transparent;position: absolute;bottom: -6px;left: 45%;}
+ #icon-drop1{ width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid rgb(255, 255, 255);position: absolute;margin-top: -15px;;margin-left: 7px;left: 0px;}
+  #icon-drop{ width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid rgb(255, 255, 255);position: absolute;margin-top: -15px;margin-left: 7px;}
+ .item-close-icon{font-size:12px;float:right;color:white;cursor: pointer;}
+ .itemno_clo_span{    position: absolute;right: 10px;}
+ .itemnot_lable{padding: 5px 0px;text-align: center;font-size:14px;margin-left: 3px;}
+ .itemnot_hdr{width: 100%;background-color:#3F51B5;color: white;}
+ .itemnote_info_icon i{font-size: 11px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    background-color: #00cc33;
+    font-family: Arial, Helvetica, sans-serif;}
+ .itemnote_info_icon{border-radius: 10px;padding: 3px; background-color: #00cc33;}
+ .item_notes{min-width:160px;min-height:62px;}
+ .vehicleTable tbody tr td input{border: 1px solid #ddd;}
+ .meterialform.msg_check .checkbox input.uncheck_inv:checked~.helper::before{height: 11px;width: 2px;left: 5px;top: 11px;}
+  .meterialform.msg_check .checkbox input.uncheck_inv:checked~.helper::after{height: 6px;top: 7px;left: 0px;}
+  .meterialform.msg_check .checkbox .helper{border-radius:4px;color: #337ab7;}
+  .hsnsummarybtn{font-size: 15px; position: absolute; left: 15%; font-weight: bold; margin-top: 14px;}
+    .datepattern{width: max-content}
+    .adddropdown .select > i,.eadddropdown .select > i {font-size: 11px;color: black;cursor: pointer;transition: all .3s ease-in-out;float: right;line-height: 20px}
+.adddropdown,.eadddropdown{width: 180px!important;}
+.adddropdown ul,.eadddropdown ul{left: 6.9%;border-radius: 0px;width: 180px!important;font-size:13px;padding: 0px 2px 1px;white-space: nowrap;line-height: 0.9;}
+.adddropdown ul li,.eadddropdown ul li{padding: 5px;width: 30%;cursor: pointer;}
+.adddropdown .bold-txt,.eadddropdown .bold-txt{font-size: 13px;}
+.termMenu,.etermMenu{top: 0;left: 15px;margin-top:22%;padding-left: 5px;font-size: 12px;font-family: sans-serif; }
+    .exp_ledger{left:335px!important;}.imps_ledger{left:311px!important;}
+    .crddr_ledger{left:359px!important;} .crdr_ledger{left:334px!important;}
+    .nil_ledger{left:390px!important;}.impg_ledger{left:313px!important;}
+    .adv_ledger{left:425px!important;} .nil1_ledger{left:411px!important;}
+    .advadj_ledger{left:57px!important;}
+    .b2b_ledger{left:312px!important;}
+	.term-span{   display: inline-block;right:34px; position: absolute; text-align: right; font-size: 13px; margin-top: 27px; color: #464a4c; z-index: 4;}
+   #sortable_table tbody tr , .tablegreybg {background-color:unset!important}
+    .meterialform .radio input.disclass:checked~.helper::before {
+    border: .5rem solid #acb2b4;cursor:no-drop;
+}
+.meterialform .radio input.disclass:checked~.helper::before{
+    color: #acb2b4;cursor:no-drop;
+}
+.meterialform .radio input.disclass:checked~.helper::before{
+    border: .5rem solid #acb2b4;cursor:no-drop;
+}
+.cal-inv{
+	position: absolute;
+    margin-left: 155px;
+    margin-top: 30px;
+    z-index: 0;
+    color: gray;
+}
+.dateddlable{
+	font-size:12px;
+}
+.cesstype label{color:white}
+.modal-d {
+  content: "";
+    display: block;
+    position: absolute;
+    bottom: auto;
+    margin-top: -19px;
+    margin-left: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 9px 7px 0;
+    border-color: transparent #344371 transparent transparent;
+    -webkit-filter: drop-shadow(-2px 0px 1px rgba(0, 0, 0, .5));
+    -moz-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, .5));
+    -ms-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .5));
+    -o-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .5));
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, .5));
+}
+.checkbox.checkbox-inline input:checked~.helper::before{height: 11px;width: 2px;left: 5px;top: 11px;}
+.checkbox.checkbox-inline input:checked~.helper::after{height: 6px;top: 7px;left: 0px;}
+.checkbox.checkbox-inline .helper{border-radius:4px;color: #337ab7;}
+
+.checkbox.checkbox-inline+ {
+    margin-top: 0;
+}
+

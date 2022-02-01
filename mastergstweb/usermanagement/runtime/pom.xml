@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>usermanagement-runtime</groupId>
+	<artifactId>usermanagement-runtime</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+	<name>Master GST User Management Runtime</name>
+	<url>http://www.mastergst.com</url>
+	<description>Master GST User Management Runtime</description>
+
+	<parent>
+		<groupId>usermanagement</groupId>
+		<artifactId>usermanagement</artifactId>
+		<version>1.0</version>
+		<relativePath>../</relativePath>
+	</parent>
+
+	<modules>
+		<module>domain</module> 
+		<module>response</module>	
+		<module>repository</module> 
+		<module>service</module> 
+		<module>controller</module> 
+	</modules>
+
+</project>

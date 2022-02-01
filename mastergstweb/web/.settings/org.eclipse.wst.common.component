@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mastergst">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="mastergst-core-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-core/mastergst-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-configuration-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-configuration/mastergst-configuration">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-login-runtime-domain-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-login-runtime-domain/mastergst-login-runtime-domain">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-login-runtime-repository-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-login-runtime-repository/mastergst-login-runtime-repository">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-login-runtime-service-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-login-runtime-service/mastergst-login-runtime-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-login-runtime-response-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-login-runtime-response/mastergst-login-runtime-response">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-web-login-runtime-controller-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-web-login-runtime-controller/mastergst-web-login-runtime-controller">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-usermanagement-runtime-domain-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-usermanagement-runtime-domain/mastergst-usermanagement-runtime-domain">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-usermanagement-runtime-response-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-usermanagement-runtime-response/mastergst-usermanagement-runtime-response">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-usermanagement-runtime-repository-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-usermanagement-runtime-repository/mastergst-usermanagement-runtime-repository">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-usermanagement-runtime-service-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-usermanagement-runtime-service/mastergst-usermanagement-runtime-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mastergst-web-usermanagement-runtime-controller-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mastergst-web-usermanagement-runtime-controller/mastergst-web-usermanagement-runtime-controller">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mgst-storage-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mgst-storage/mgst-storage">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="mastergst"/>
+        <property name="java-output-path" value="/mastergst-webmvc/target/classes"/>
+    </wb-module>
+</project-modules>

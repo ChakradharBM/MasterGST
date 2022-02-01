@@ -1,0 +1,275 @@
+{
+	'commonledger': [
+		{	
+			'ledgerName': 'Deferred tax assets (net)',
+			'grpsubgrpName':'Deferred tax assets (net)',
+			'ledgerpath':'Assets/Deferred tax assets (net)/Deferred tax assets (net)'
+		},
+		{	
+			'ledgerName': 'Bank',
+			'grpsubgrpName':'Bank accounts',
+			'ledgerpath':'Assets/Current Assets/Bank accounts'
+		},
+		{	
+			'ledgerName': 'Cash',
+			'grpsubgrpName':'Cash in hand',
+			'ledgerpath':'Assets/Current Assets/Cash in hand'
+		},
+		{	
+			'ledgerName': 'Profit & Loss A/c',
+			'grpsubgrpName':'Reserves & Surplus',
+			'ledgerpath':'Liabilities/Capital Fund/Reserves & Surplus'
+		},
+		{	
+			'ledgerName': 'Deferred tax liabilities (Net)',
+			'grpsubgrpName':'Deferred tax liabilities (Net)',
+			'ledgerpath':'Liabilities/Deferred tax liabilities/Deferred tax liabilities (Net)'
+		},
+		{	
+			'ledgerName': 'Sales',
+			'grpsubgrpName':'Sales',
+			'ledgerpath':'Income/Direct Income/Sales'
+		},
+		{	
+			'ledgerName': 'Sales-Exempt',
+			'grpsubgrpName':'Sales',
+			'ledgerpath':'Income/Direct Income/Sales'
+		},
+		{	
+			'ledgerName': 'Discount Received',
+			'grpsubgrpName':'Other income',
+			'ledgerpath':'Income/Indirect Income/Other income'
+		},
+		{	
+			'ledgerName': 'Purchases',
+			'grpsubgrpName':'Purchases',
+			'ledgerpath':'Expenses/Direct expenses/Purchases'
+		},
+		{	
+			'ledgerName': 'Purchase-Exempt',
+			'grpsubgrpName':'Purchases',
+			'ledgerpath':'Expenses/Direct expenses/Purchases'
+		},
+		{	
+			'ledgerName': 'Input ITC Reversal',
+			'grpsubgrpName':'Purchases',
+			'ledgerpath':'Expenses/Direct expenses/Purchases'
+		},
+		{	
+			'ledgerName': 'Input Ineligible ISD',
+			'grpsubgrpName':'Purchases',
+			'ledgerpath':'Expenses/Direct expenses/Purchases'
+		},
+		{	
+			'ledgerName': 'Salaries & Wages',
+			'grpsubgrpName':'Employee Cost',
+			'ledgerpath':'Expenses/Indirect expenses/Employee Cost'
+		},
+		{	
+			'ledgerName': 'Staff welfare',
+			'grpsubgrpName':'Employee Cost',
+			'ledgerpath':'Expenses/Indirect expenses/Employee Cost'
+		},	
+		{	
+			'ledgerName': 'Interest on Loan',
+			'grpsubgrpName':'Finance cost',
+			'ledgerpath':'Expenses/Indirect expenses/Finance cost'
+		},
+		{	
+			'ledgerName': 'Rent',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Repairs & Maintenance',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Power & Fuel',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Travelling & Conveyance expenses',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Telephone & Internet charges',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Business promotion expenses',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Office Maintenance',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': ' Lodging & Boarding expenses',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Discount Allowed',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Audit fees',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Legal & professional fees',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Advertisement expenses',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Other expenses',
+			'grpsubgrpName':'Other expenses',
+			'ledgerpath':'Expenses/Indirect expenses/Other expenses'
+		},
+		{	
+			'ledgerName': 'Output SGST',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'Output CGST',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'Output IGST',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'Output CESS',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'Output SGST RCM',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'Output CGST RCM',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'Output IGST RCM',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'TCS Payable',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{
+			'ledgerName': 'Input IGST RCM',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Input SGST RCM',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Input CGST RCM',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Input IGST',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Input SGST',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes(Assets)'
+		},
+		{	
+			'ledgerName': 'Input CGST',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Input CESS',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'TDS Receivable',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'IGST Refund Receivable',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Tax on Advance',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Other Debtors',
+			'grpsubgrpName':'Sundry Debtors',
+			'ledgerpath':'Assets/Current Assets/Sundry Debtors'
+		},
+		{	
+			'ledgerName': 'Other Creditors',
+			'grpsubgrpName':'Sundry Creditors',
+			'ledgerpath':'Assets/Current Assets/Sundry Creditors'
+		},
+		{	
+			'ledgerName': 'HO-ISD',
+			'grpsubgrpName':'Sundry Creditors',
+			'ledgerpath':'Assets/Current Assets/Sundry Creditors'
+		},
+		{	
+			'ledgerName': 'Input CESS RCM',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Output CESS RCM',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'TDS Payable',
+			'grpsubgrpName':'Duties & Taxes (Liability)',
+			'ledgerpath':'Liabilities/Current liabilities/Duties & Taxes (Liability)'
+		},
+		{	
+			'ledgerName': 'TCS Receivable',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		},
+		{	
+			'ledgerName': 'Tax on Advance RCM',
+			'grpsubgrpName':'Duties & Taxes (Assets)',
+			'ledgerpath':'Assets/Current Assets/Duties & Taxes (Assets)'
+		}
+		
+	]
+}
